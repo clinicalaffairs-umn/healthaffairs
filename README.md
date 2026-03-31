@@ -13,5 +13,5 @@ Office of Academic Clinical Affairs is a UMN Composer-based Drupal 9 application
 
 ## Important notes
 
-None
+None.
 
