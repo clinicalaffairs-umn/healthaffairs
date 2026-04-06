@@ -1,10 +1,10 @@
-uuid: 0d280c8a-27fb-4127-8d3b-4e1e5b19846e
+uuid: c29321b4-5d04-4463-aca5-1a238ffb1560
 langcode: en
 status: false
 dependencies: {  }
 id: local
 label: Local
-description: 'Config split for local development. Enables dev modules, disables caching/aggregation.'
+description: 'Config split for local development.'
 weight: 0
 stackable: false
 no_patching: false

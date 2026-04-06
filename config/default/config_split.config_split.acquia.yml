@@ -1,18 +1,27 @@
-uuid: 8399ca40-25b9-45c5-ae55-626af6a3b23a
+uuid: ab1c294f-7cc6-4cdb-b016-1355b4f0cc12
 langcode: en
 status: false
 dependencies: {  }
 id: acquia
 label: Acquia
-description: 'Config split for modules that only run on Acquia-hosted environments.'
+description: 'Config split for Acquia-hosted environments.'
 weight: 0
 stackable: false
 no_patching: false
 storage: folder
 folder: ../docroot/sites/default/config/envs/acquia
 module:
+  acquia_connector: 0
+  acquia_purge: 0
+  memcache: 0
+  purge: 0
+  purge_drush: 0
+  purge_processor_cron: 0
+  purge_processor_lateruntime: 0
+  purge_queuer_coretags: 0
+  purge_tokens: 0
+  purge_ui: 0
   samlauth: 0
-  lightning_umn_acquia: 0
 theme: {  }
 complete_list: {  }
 partial_list: {  }

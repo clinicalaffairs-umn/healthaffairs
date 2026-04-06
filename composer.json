@@ -13,9 +13,6 @@
         "mnsami/composer-custom-directory-installer": "^2.0"
     },
     "replace": {
-        "drupal/ckeditor": "*",
-        "drupal/crop": "*",
-        "drupal/libraries": "4.*",
         "drupal/core": "11.*"
     },
     "extra": {

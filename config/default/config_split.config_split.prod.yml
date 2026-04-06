@@ -1,4 +1,4 @@
-uuid: 620f2656-7442-44fb-9050-90d819f00e3b
+uuid: 2f43468b-b633-4a5e-a6b6-5e4699613a30
 langcode: en
 status: false
 dependencies: {  }
@@ -10,7 +10,9 @@ stackable: false
 no_patching: false
 storage: folder
 folder: ../docroot/sites/default/config/envs/prod
-module: {  }
+module:
+  simple_sitemap: 0
+  simple_sitemap_engines: 0
 theme: {  }
 complete_list: {  }
 partial_list:
