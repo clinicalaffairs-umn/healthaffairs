@@ -1,0 +1,15 @@
+uuid: 30733235-fe38-4bc0-8bcf-3aa180ec26ad
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: KTHYBfmrhAFK1_3zkPT9-xhTnrxf4NBpLzzO7IMRT78
+name: folwell_circle
+label: 'Folwell Circle Image'
+effects:
+  47c06365-3ad8-4259-9c94-6fa4864e0451:
+    uuid: 47c06365-3ad8-4259-9c94-6fa4864e0451
+    id: image_convert_avif
+    weight: 1
+    data:
+      extension: webp

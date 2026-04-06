@@ -1,0 +1,14 @@
+uuid: 5f2bf3f8-e06d-41df-8fc2-4389dd4054af
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: OCRdRhuCet1vrj4okBjOJeIwfSlVXmxl1ObhJa4cbJw
+id: shadow_subtle
+label: 'Shadow - subtle'
+classes: shadow-subtle
+type: section
+group: section_shadow
+weight: 0
+block_restrictions: {  }
+layout_restrictions: {  }

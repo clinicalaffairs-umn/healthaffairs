@@ -1,0 +1,12 @@
+uuid: 76665346-573f-431b-b4b5-7c3b58b44533
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: tCpLff0sOk9MXIqbjSdWCDP7eg91937yVGwO6hiAK44
+id: folwell_directional_link
+label: 'Folwell Directional Link'
+icon_uuid: null
+icon_default: null
+description: 'Allows the user to return to the previous page and progress to the next page when reading about a sequential process, also referred to as sequential navigation or pagination.'
+behavior_plugins: {  }

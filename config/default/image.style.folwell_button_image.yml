@@ -1,0 +1,23 @@
+uuid: e0f062b4-6db4-4a37-96f2-df7e37e7905f
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: zV8SV3FbHEGyGVUtI31RDHlO-dqwEWz5cSgYALRGpWA
+name: folwell_button_image
+label: 'Folwell Button Image'
+effects:
+  1a69dec2-7667-4054-9db5-2f1d4de36de3:
+    uuid: 1a69dec2-7667-4054-9db5-2f1d4de36de3
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 675
+      height: 450
+      anchor: center-center
+  e61e6579-6bdc-4796-8d33-51962c1623f5:
+    uuid: e61e6579-6bdc-4796-8d33-51962c1623f5
+    id: image_convert_avif
+    weight: 2
+    data:
+      extension: webp

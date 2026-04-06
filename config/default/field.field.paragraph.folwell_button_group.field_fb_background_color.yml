@@ -1,0 +1,25 @@
+uuid: 29cf1fd5-4049-4602-93c7-c52b2c094a08
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_fb_background_color
+    - paragraphs.paragraphs_type.folwell_button_group
+  module:
+    - options
+_core:
+  default_config_hash: NOl__3NL4BVjdtbolE8ETfEi5DLbmKPG8rYV9e0WazI
+id: paragraph.folwell_button_group.field_fb_background_color
+field_name: field_fb_background_color
+entity_type: paragraph
+bundle: folwell_button_group
+label: 'Background Color'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: bg-white
+default_value_callback: ''
+settings: {  }
+field_type: list_string

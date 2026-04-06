@@ -1,0 +1,21 @@
+uuid: fe8e7e6f-44a6-492d-80ce-c87a3e2e1079
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - text
+_core:
+  default_config_hash: YmeMYJ0XszF8Azny8jvE1GUuxJ1uFRHaBl9t2SdHJjg
+id: paragraph.field_carousel_text
+field_name: field_carousel_text
+entity_type: paragraph
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

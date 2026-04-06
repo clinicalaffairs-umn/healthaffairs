@@ -1,0 +1,21 @@
+uuid: d4c570ca-72b6-40d2-9b8e-c9660c8d5fd3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_accordion_title
+    - paragraphs.paragraphs_type.folwell_accordion
+_core:
+  default_config_hash: hwfAxIdmlqaz6uxrDZl34Mj6gsGkSuLTQwCatJ4qC9I
+id: paragraph.folwell_accordion.field_accordion_title
+field_name: field_accordion_title
+entity_type: paragraph
+bundle: folwell_accordion
+label: 'Accordion Title'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

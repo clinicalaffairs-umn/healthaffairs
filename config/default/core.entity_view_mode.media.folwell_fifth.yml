@@ -1,0 +1,17 @@
+uuid: 6f607b1c-848d-4d46-92e3-9b9f8b82053e
+langcode: en
+status: true
+dependencies:
+  module:
+    - lightning_core
+    - media
+third_party_settings:
+  lightning_core:
+    description: ''
+_core:
+  default_config_hash: eOlmSlBbDI0Whn3s2-C_lC40_aHyAMnWA6WFsX7Z4Nc
+id: media.folwell_fifth
+label: 'Folwell Fifth Page Image'
+description: null
+targetEntityType: media
+cache: true

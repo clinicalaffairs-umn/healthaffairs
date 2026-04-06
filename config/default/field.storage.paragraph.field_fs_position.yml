@@ -1,0 +1,38 @@
+uuid: afc8d5b7-963e-4258-b8b1-b0820a0d4d92
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+_core:
+  default_config_hash: mdJ4Z7cH9ITzhAVJCP3_oV01pAC6E7ajcdngQvVQjmw
+id: paragraph.field_fs_position
+field_name: field_fs_position
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: left
+      label: Left
+    -
+      value: right
+      label: Right
+    -
+      value: middle
+      label: Middle
+    -
+      value: bottom_left
+      label: 'Bottom left'
+    -
+      value: bottom_right
+      label: 'Bottom right'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

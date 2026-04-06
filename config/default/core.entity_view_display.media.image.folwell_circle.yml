@@ -1,0 +1,48 @@
+uuid: 2a45f316-a666-4a6b-9353-c8226792595b
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.folwell_circle
+    - field.field.media.image.field_media_image
+    - field.field.media.image.field_media_in_library
+    - image.style.folwell_circle
+    - media.type.image
+  module:
+    - image
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+_core:
+  default_config_hash: q8fzbFkzis2Qrg7jW325YDE9umvqFFvZUYuMMBYJqqU
+id: media.image.folwell_circle
+targetEntityType: media
+bundle: image
+mode: folwell_circle
+content:
+  field_media_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: folwell_circle
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: folwell_circle
+    third_party_settings: {  }
+    weight: null
+    region: content
+hidden:
+  created: true
+  field_media_in_library: true
+  name: true
+  thumbnail: true
+  uid: true

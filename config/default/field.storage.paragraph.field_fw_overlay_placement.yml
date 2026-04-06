@@ -1,0 +1,44 @@
+uuid: b2c915aa-8cbe-4628-9ec5-e8085fadd45f
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+_core:
+  default_config_hash: 8Hax8GQETRTkyF7m_ulNh_15m7zyz6ewr5bkBVby4D0
+id: paragraph.field_fw_overlay_placement
+field_name: field_fw_overlay_placement
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: bottom-96
+      label: Bottom
+    -
+      value: full-96
+      label: 'Full Image'
+    -
+      value: left-33
+      label: Left
+    -
+      value: right-33
+      label: Right
+    -
+      value: callout-bottom-left
+      label: 'Bottom left'
+    -
+      value: callout-bottom-right
+      label: 'Bottom right'
+    -
+      value: callout-middle
+      label: Middle
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

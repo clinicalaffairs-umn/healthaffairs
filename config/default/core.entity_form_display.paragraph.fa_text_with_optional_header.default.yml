@@ -1,0 +1,38 @@
+uuid: 048900fb-f6fc-4c84-9800-e74ef37cd45a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.fa_text_with_optional_header.field_fa_accordion_item_header
+    - field.field.paragraph.fa_text_with_optional_header.field_fa_text_item_body
+    - paragraphs.paragraphs_type.fa_text_with_optional_header
+  module:
+    - text
+_core:
+  default_config_hash: FypvG8JhROH6ZUaOPqVs0w9-uGbQjLzvihnSxxEQMf4
+id: paragraph.fa_text_with_optional_header.default
+targetEntityType: paragraph
+bundle: fa_text_with_optional_header
+mode: default
+content:
+  field_fa_accordion_item_header:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 256
+      placeholder: ''
+    third_party_settings: {  }
+  field_fa_text_item_body:
+    type: text_textarea
+    weight: 1
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  moderation_state: true
+  status: true
+  uid: true

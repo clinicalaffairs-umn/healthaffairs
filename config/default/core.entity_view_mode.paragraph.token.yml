@@ -1,0 +1,15 @@
+uuid: 1bed504a-a195-4dc7-aeab-7ef2114dce1a
+langcode: en
+status: true
+dependencies:
+  module:
+    - lightning_core
+    - paragraphs
+third_party_settings:
+  lightning_core:
+    internal: true
+id: paragraph.token
+label: Token
+description: null
+targetEntityType: paragraph
+cache: true

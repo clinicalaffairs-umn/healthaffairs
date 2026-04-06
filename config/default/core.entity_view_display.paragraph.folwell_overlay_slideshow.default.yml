@@ -1,0 +1,52 @@
+uuid: 7b5d4215-9153-4b3f-93ef-ad67078e95e8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.folwell_overlay_slideshow.field_fa_accordion_item_header
+    - field.field.paragraph.folwell_overlay_slideshow.field_fs_slide_item
+    - paragraphs.paragraphs_type.folwell_overlay_slideshow
+  module:
+    - slick_paragraphs
+_core:
+  default_config_hash: XFgov0ERPC3HmRoiCNq7Yyx-g4e7jdzkSdqLr2eniEY
+id: paragraph.folwell_overlay_slideshow.default
+targetEntityType: paragraph
+bundle: folwell_overlay_slideshow
+mode: default
+content:
+  field_fa_accordion_item_header:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_fs_slide_item:
+    type: slick_paragraphs_vanilla
+    label: hidden
+    settings:
+      optionset: folwell_slideshow
+      view_mode: default
+      cache: 0
+      admin_uri: ''
+      use_lb: false
+      use_theme_field: false
+      skin: default
+      overridables:
+        arrows: '0'
+        autoplay: '0'
+        dots: '0'
+        draggable: '0'
+        infinite: '0'
+        mouseWheel: '0'
+        randomize: '0'
+        variableWidth: '0'
+      override: false
+      skin_arrows: ''
+      skin_dots: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

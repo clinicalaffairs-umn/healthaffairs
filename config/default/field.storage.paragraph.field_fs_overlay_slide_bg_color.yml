@@ -1,0 +1,35 @@
+uuid: 530d35f8-05f1-424c-8a3a-0e3970121324
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+_core:
+  default_config_hash: 8dEDJ6g5V8U00ZCuoREtHjNxVyWta4ImroZXJfHZH7I
+id: paragraph.field_fs_overlay_slide_bg_color
+field_name: field_fs_overlay_slide_bg_color
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: overlay-gold
+      label: Gold
+    -
+      value: overlay-gray
+      label: Gray
+    -
+      value: overlay-maroon
+      label: Maroon
+    -
+      value: overlay-white
+      label: White
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

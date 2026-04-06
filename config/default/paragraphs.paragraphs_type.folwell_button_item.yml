@@ -1,0 +1,12 @@
+uuid: a4a51925-5716-46c0-ba45-5b2aa243891a
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: K-KdKWqV2W6AP3-gypQZp5HXORY1IaND509n7VaPhGs
+id: folwell_button_item
+label: 'Button Item'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

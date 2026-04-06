@@ -1,0 +1,101 @@
+uuid: 719fe479-125d-43ce-9076-e90227cf8691
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.folwell_callout.field_fa_text_item_body
+    - field.field.paragraph.folwell_callout.field_fw_callout_image
+    - field.field.paragraph.folwell_callout.field_fw_callout_link
+    - field.field.paragraph.folwell_callout.field_fw_callout_position
+    - field.field.paragraph.folwell_callout.field_fw_callout_style
+    - field.field.paragraph.folwell_callout.field_fw_callout_title
+    - field.field.paragraph.folwell_callout.field_fw_callout_title_format
+    - field.field.paragraph.folwell_callout.field_fw_horiz_callout_text_pos
+    - field.field.paragraph.folwell_callout.field_fw_link_title
+    - paragraphs.paragraphs_type.folwell_callout
+  module:
+    - link
+    - options
+    - text
+_core:
+  default_config_hash: E8ugByk77HaPDxBxcKXsUPgeymM6ylAcRbFvf8qy2Zg
+id: paragraph.folwell_callout.default
+targetEntityType: paragraph
+bundle: folwell_callout
+mode: default
+content:
+  field_fa_text_item_body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_fw_callout_image:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_fw_callout_link:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_fw_callout_position:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  field_fw_callout_style:
+    type: list_key
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_fw_callout_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_fw_callout_title_format:
+    type: list_key
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_fw_horiz_callout_text_pos:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_fw_link_title:
+    type: boolean
+    label: hidden
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 4
+    region: content
+hidden: {  }

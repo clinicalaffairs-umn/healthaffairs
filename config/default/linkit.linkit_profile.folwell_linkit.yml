@@ -1,0 +1,40 @@
+uuid: d5d1c756-0e3f-4435-a877-61e9f5270f48
+langcode: en
+status: true
+dependencies:
+  module:
+    - file
+    - node
+_core:
+  default_config_hash: VnajJNILZpY1MmvQ1Z0UEFNBj34Fk6IWVoA4rWVQV2g
+label: 'Folwell Linkit'
+id: folwell_linkit
+description: ''
+matchers:
+  8aa53624-6aec-4406-ba02-e242b754df5c:
+    id: 'entity:node'
+    uuid: 8aa53624-6aec-4406-ba02-e242b754df5c
+    settings:
+      include_unpublished: false
+      metadata: 'by [node:author] | [node:created:medium]'
+      bundles: {  }
+      group_by_bundle: true
+      substitution_type: canonical
+      limit: 100
+    weight: 0
+  6c17ff7f-f8f9-4211-85fe-396fd990d32a:
+    id: 'entity:file'
+    uuid: 6c17ff7f-f8f9-4211-85fe-396fd990d32a
+    settings:
+      file_extensions: ''
+      file_status: 1
+      images:
+        show_dimensions: false
+        show_thumbnail: false
+        thumbnail_image_style: null
+      substitution_type: file
+      metadata: ''
+      bundles: null
+      group_by_bundle: null
+      limit: 100
+    weight: 0

@@ -1,0 +1,24 @@
+uuid: 3ee76174-c67b-4e9f-926d-1163d15ab373
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_carousel_text
+    - paragraphs.paragraphs_type.video_carousel
+  module:
+    - text
+_core:
+  default_config_hash: qNx9fxhz0jLmX5nvI6CjUy5RQSXyTBDYAEsnA5qtDJs
+id: paragraph.video_carousel.field_carousel_text
+field_name: field_carousel_text
+entity_type: paragraph
+bundle: video_carousel
+label: 'Carousel Text'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

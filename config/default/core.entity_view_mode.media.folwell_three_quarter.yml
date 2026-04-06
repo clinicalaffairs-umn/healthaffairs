@@ -1,0 +1,17 @@
+uuid: 45b13907-f45d-4928-b326-9cc7b5373a44
+langcode: en
+status: true
+dependencies:
+  module:
+    - lightning_core
+    - media
+third_party_settings:
+  lightning_core:
+    description: ''
+_core:
+  default_config_hash: 22tUOKhRX4HC9wgd-2DdlZGOoj0l1W_6TEn9FLHLonw
+id: media.folwell_three_quarter
+label: 'Folwell Three Quarter Page Image'
+description: ''
+targetEntityType: media
+cache: true

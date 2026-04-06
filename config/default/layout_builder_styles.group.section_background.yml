@@ -1,0 +1,12 @@
+uuid: 24c328cd-8d2f-4d11-bccc-26e756086c9b
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: y3Cg1cIVeiF-to9K-s3hqIa9gp4KFlZNhzDLWbvS4W0
+id: section_background
+label: 'Section background'
+multiselect: single
+form_type: checkboxes
+required: false
+weight: 0

@@ -1,0 +1,43 @@
+uuid: 4f7dc625-b30b-4924-a8fa-5e8ca14d8c16
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.folwell_component
+    - field.field.block_content.folwell_component.field_fb_folwell_component
+  module:
+    - paragraphs
+_core:
+  default_config_hash: Z4A1iPoQI6hsCVkmNz4j3WZn2t_L5mGxxAG-unMVoOg
+id: block_content.folwell_component.default
+targetEntityType: block_content
+bundle: folwell_component
+mode: default
+content:
+  field_fb_folwell_component:
+    type: paragraphs
+    weight: 26
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+      closed_mode: summary
+      autocollapse: none
+      closed_mode_threshold: 0
+      features:
+        duplicate: duplicate
+        collapse_edit_all: collapse_edit_all
+    third_party_settings: {  }
+    region: content
+  info:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

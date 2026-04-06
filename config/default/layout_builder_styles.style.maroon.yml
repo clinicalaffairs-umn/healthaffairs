@@ -1,0 +1,14 @@
+uuid: 42db69fb-60e1-400c-8bab-847c54a932e0
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 5bCm4N-jrpyTPFRWGe8TxWX8nOMDpnnf7f_X4xfawBc
+id: maroon
+label: 'Maroon - light'
+classes: "background-color\r\nbg-maroon-light"
+type: section
+group: section_background
+weight: 0
+block_restrictions: {  }
+layout_restrictions: {  }

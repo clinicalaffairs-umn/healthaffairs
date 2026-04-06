@@ -1,0 +1,22 @@
+uuid: a490abbd-0332-4946-b6fd-098bd03a236f
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+    - paragraphs
+_core:
+  default_config_hash: MtbZ9OkjjGq1du03AzjjTGEX53kjUp9bIa3vrwNJMM4
+id: paragraph.field_video_thumbnail
+field_name: field_video_thumbnail
+entity_type: paragraph
+type: entity_reference
+settings:
+  target_type: media
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,66 @@
+uuid: 6931616f-8006-42bf-a8c5-88104797c510
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_fs_slide_item
+    - paragraphs.paragraphs_type.folwell_slideshow
+    - paragraphs.paragraphs_type.fs_slide
+  module:
+    - entity_reference_revisions
+_core:
+  default_config_hash: STcSW0v9W7XYx5yyIG2OehMus5hgzH07AgkRmZGLSTo
+id: paragraph.folwell_slideshow.field_fs_slide_item
+field_name: field_fs_slide_item
+entity_type: paragraph
+bundle: folwell_slideshow
+label: 'Slide Item'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      fs_slide: fs_slide
+    target_bundles_drag_drop:
+      fa_accordion_item:
+        weight: 13
+        enabled: false
+      fa_table:
+        weight: 14
+        enabled: false
+      fa_text_with_optional_header:
+        weight: 15
+        enabled: false
+      folwell_100_image:
+        weight: 16
+        enabled: false
+      folwell_20_image:
+        weight: 17
+        enabled: false
+      folwell_33_image:
+        weight: 18
+        enabled: false
+      folwell_50_image:
+        weight: 19
+        enabled: false
+      folwell_accordion:
+        weight: 20
+        enabled: false
+      folwell_callout:
+        weight: 21
+        enabled: false
+      folwell_image:
+        weight: 22
+        enabled: false
+      folwell_slideshow:
+        weight: 23
+        enabled: false
+      fs_slide:
+        enabled: true
+        weight: 24
+field_type: entity_reference_revisions

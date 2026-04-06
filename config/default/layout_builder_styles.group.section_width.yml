@@ -1,0 +1,12 @@
+uuid: 81ae42e5-10f2-4306-be7b-e10b1ac23f90
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: KmriG0IvhoiZensl_PnZWOC1ZgcgU6CGUMA7nStDFpk
+id: section_width
+label: 'Section width'
+multiselect: single
+form_type: checkboxes
+required: false
+weight: 0

@@ -1,0 +1,17 @@
+uuid: 7c186413-20e5-4c96-8e8a-ca6cd0dd7cd5
+langcode: en
+status: true
+dependencies:
+  module:
+    - lightning_core
+    - media
+third_party_settings:
+  lightning_core:
+    description: ''
+_core:
+  default_config_hash: FiNAyXz_U0JVGbWDla5s-_0wV2ke3PQOsxQfctFPRUc
+id: media.folwell_circle
+label: 'Folwell Circle Image'
+description: null
+targetEntityType: media
+cache: true

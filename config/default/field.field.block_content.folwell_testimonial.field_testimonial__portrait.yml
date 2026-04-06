@@ -1,0 +1,31 @@
+uuid: 004058da-cbe7-45f5-aaf4-831eecf86117
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.folwell_testimonial
+    - field.storage.block_content.field_testimonial__portrait
+    - media.type.image
+_core:
+  default_config_hash: _JFgBCWp882wL91c4v_Y1reMHB35gLrHK5TWHCFlLBw
+id: block_content.folwell_testimonial.field_testimonial__portrait
+field_name: field_testimonial__portrait
+entity_type: block_content
+bundle: folwell_testimonial
+label: 'Portrait image'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

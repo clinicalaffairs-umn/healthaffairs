@@ -1,0 +1,29 @@
+uuid: 99082ac5-9e40-4969-be44-75c1d91c0216
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+_core:
+  default_config_hash: jlOHub51e6JclavAMTDeIvuN80HtjGQzK9njZv0mBvI
+id: paragraph.field_fi_infographic_style
+field_name: field_fi_infographic_style
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: fl-infographic-group__gold
+      label: 'Gold Bar'
+    -
+      value: fl-infographic-group__plain
+      label: Plain
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

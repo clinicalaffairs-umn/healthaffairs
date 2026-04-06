@@ -1,0 +1,14 @@
+uuid: e885b569-a288-4d70-86f4-410c299bfb68
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: gECufmvDD-JBS7QI8Pvz0QUHGPSO2B1LDG4O04Y2E0Q
+id: block_border_all_sides
+label: 'Border - all sides'
+classes: border
+type: component
+group: block_border
+weight: 0
+block_restrictions: {  }
+layout_restrictions: {  }

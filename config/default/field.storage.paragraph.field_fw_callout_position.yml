@@ -1,0 +1,41 @@
+uuid: 68fc3289-9977-450f-9e30-b57182b0a34b
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+_core:
+  default_config_hash: 5RlBBp6rkk8X2DBfTGRHoVwpvjVRbrJBdx0uMNV9wA8
+id: paragraph.field_fw_callout_position
+field_name: field_fw_callout_position
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: callout-middle
+      label: Middle
+    -
+      value: top-left
+      label: 'Top Left'
+    -
+      value: top-right
+      label: 'Top Right'
+    -
+      value: bottom-right
+      label: 'Bottom Right'
+    -
+      value: bottom-left
+      label: 'Bottom Left'
+    -
+      value: bottom
+      label: Bottom
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

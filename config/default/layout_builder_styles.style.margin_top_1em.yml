@@ -1,0 +1,14 @@
+uuid: 5fc8074f-3fa3-4172-9487-085e7c72dd01
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: PUcJXt1j4zkkhBy0PA9Xotm8fuItIbZJj9QFTiP4sC4
+id: margin_top_1em
+label: 'Margin-top - 1em'
+classes: margin-top-1
+type: component
+group: block_margin
+weight: 0
+block_restrictions: {  }
+layout_restrictions: {  }

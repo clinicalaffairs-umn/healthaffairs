@@ -1,0 +1,26 @@
+uuid: 7f0b49c4-f54d-45ee-96ee-cb6c5523b109
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.folwell_equal_height_callouts.field_fw_equal_height_callouts
+    - paragraphs.paragraphs_type.folwell_equal_height_callouts
+  module:
+    - entity_reference_revisions
+_core:
+  default_config_hash: JfaZtY7j75XVQIbRSm108h5a4y5qSTtKL7Dfo-foOuE
+id: paragraph.folwell_equal_height_callouts.default
+targetEntityType: paragraph
+bundle: folwell_equal_height_callouts
+mode: default
+content:
+  field_fw_equal_height_callouts:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

@@ -1,0 +1,24 @@
+uuid: d6942560-33f1-4185-a8ef-36b28f98322f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_fa_text_item_body
+    - paragraphs.paragraphs_type.folwell_callout
+  module:
+    - text
+_core:
+  default_config_hash: Nb5d-U_jzkQdghFGnae6wXLBO3trYYbkFwW5qk9CTto
+id: paragraph.folwell_callout.field_fa_text_item_body
+field_name: field_fa_text_item_body
+entity_type: paragraph
+bundle: folwell_callout
+label: 'Callout Text'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

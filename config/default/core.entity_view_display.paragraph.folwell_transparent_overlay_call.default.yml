@@ -1,0 +1,45 @@
+uuid: 3fe847aa-2529-4c13-a53f-397826c9af29
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.folwell_transparent_overlay_call.field_fa_text_item_body
+    - field.field.paragraph.folwell_transparent_overlay_call.field_fw_callout_image
+    - field.field.paragraph.folwell_transparent_overlay_call.field_fw_overlay_placement
+    - field.field.paragraph.folwell_transparent_overlay_call.field_fw_overlaycallout_bg_color
+    - paragraphs.paragraphs_type.folwell_transparent_overlay_call
+  module:
+    - options
+    - text
+_core:
+  default_config_hash: 7fmzJxuRC6L4LGbMCRJdjOdh5-X35-MsC10cjhGk1u8
+id: paragraph.folwell_transparent_overlay_call.default
+targetEntityType: paragraph
+bundle: folwell_transparent_overlay_call
+mode: default
+content:
+  field_fa_text_item_body:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_fw_callout_image:
+    weight: 0
+    label: hidden
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  field_fw_overlaycallout_bg_color:
+    type: list_default
+    weight: 2
+    region: content
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_fw_overlay_placement: true

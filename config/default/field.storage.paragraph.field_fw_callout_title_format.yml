@@ -1,0 +1,38 @@
+uuid: 8b8ae0db-2f7c-4689-90a4-c9294d5215e1
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+_core:
+  default_config_hash: 5sNnm48N59ENiNE4eYFjvotEyZA5-BrSHN8GmDTdCVw
+id: paragraph.field_fw_callout_title_format
+field_name: field_fw_callout_title_format
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: h2
+      label: H2
+    -
+      value: h3
+      label: H3
+    -
+      value: h4
+      label: H4
+    -
+      value: h5
+      label: H5
+    -
+      value: h6
+      label: H6
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

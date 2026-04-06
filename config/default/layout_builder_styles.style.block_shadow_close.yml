@@ -1,0 +1,14 @@
+uuid: 771fe73a-0f43-4237-947f-eecf5a9ecb90
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 4sn5LsPE9aaXP0D8dJyFTg3L_59uLubZRvIsKuqGutc
+id: block_shadow_close
+label: 'Shadow - close'
+classes: shadow-close
+type: component
+group: block_shadow
+weight: 0
+block_restrictions: {  }
+layout_restrictions: {  }

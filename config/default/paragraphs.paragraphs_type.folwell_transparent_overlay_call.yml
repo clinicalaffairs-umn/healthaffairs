@@ -1,0 +1,12 @@
+uuid: a433133b-8854-480f-bb36-5c788de7dd73
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: BPNRIak7v2xVNQzK7KlVCVadc-Cy17hrha2Xm8xRKeY
+id: folwell_transparent_overlay_call
+label: 'Folwell Transparent Overlay Callout'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

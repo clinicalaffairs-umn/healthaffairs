@@ -1,0 +1,12 @@
+uuid: d9ca3512-8727-4f44-9a46-a8aae271d2d4
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: NvYiSl6OE7t3KpukWE9SoDKVRpQKf-b3iTWBurxxET0
+id: content_width
+label: 'Content width'
+multiselect: single
+form_type: checkboxes
+required: false
+weight: 0

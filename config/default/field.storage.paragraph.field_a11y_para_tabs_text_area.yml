@@ -1,0 +1,19 @@
+uuid: 285e6f10-4e09-4ff9-a9f0-3a06ce611182
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - text
+id: paragraph.field_a11y_para_tabs_text_area
+field_name: field_a11y_para_tabs_text_area
+entity_type: paragraph
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

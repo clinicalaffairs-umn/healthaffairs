@@ -1,0 +1,14 @@
+uuid: bbe9207d-2cc9-47c1-ad4b-d8e0c7dfec5e
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 3av_Ca9HeA-5h9LlNTLcCtkbn7XqzTHnbu9uMUj5epY
+id: shadow_emboss
+label: 'Shadow - emboss'
+classes: shadow-emboss
+type: section
+group: section_shadow
+weight: 0
+block_restrictions: {  }
+layout_restrictions: {  }

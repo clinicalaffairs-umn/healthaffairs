@@ -1,0 +1,12 @@
+uuid: 860d3838-c4aa-48fb-b8d0-a5cb82ff5ff1
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: JstPcCvn9KJhCI9R4bYkitL-N0GSZUqv-O-vvEpL8Q0
+id: section_border
+label: 'Section border'
+multiselect: single
+form_type: checkboxes
+required: false
+weight: 0

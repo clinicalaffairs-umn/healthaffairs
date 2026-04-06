@@ -1,0 +1,82 @@
+uuid: e5f55a63-ff92-40d0-bc6b-4b65d99211dc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.video_carousel.field_carousel_link
+    - field.field.paragraph.video_carousel.field_carousel_text
+    - field.field.paragraph.video_carousel.field_carousel_theme
+    - field.field.paragraph.video_carousel.field_carousel_title
+    - field.field.paragraph.video_carousel.field_carousel_title_format
+    - field.field.paragraph.video_carousel.field_carousel_videos
+    - paragraphs.paragraphs_type.video_carousel
+  module:
+    - link
+    - paragraphs
+    - text
+_core:
+  default_config_hash: r5Fb5SxQdmzKTNquJ2tDuJmNySUuGgowGFGrF1Xez_U
+id: paragraph.video_carousel.default
+targetEntityType: paragraph
+bundle: video_carousel
+mode: default
+content:
+  field_carousel_link:
+    type: link_default
+    weight: 4
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_carousel_text:
+    type: text_textarea
+    weight: 3
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_carousel_theme:
+    type: options_buttons
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_carousel_title:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_carousel_title_format:
+    type: options_select
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_carousel_videos:
+    type: paragraphs
+    weight: 5
+    region: content
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: closed
+      closed_mode: summary
+      autocollapse: none
+      closed_mode_threshold: 0
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: video_with_thumbnail
+      features:
+        add_above: '0'
+        collapse_edit_all: collapse_edit_all
+        convert: '0'
+        duplicate: duplicate
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

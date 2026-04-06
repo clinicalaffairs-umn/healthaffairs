@@ -1,0 +1,14 @@
+uuid: b3e5f294-4245-4127-8474-26aa5ddc4aea
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: d5nVbmtpKwA_HnoBO6zQX6JSggC03Tllbf2CS-y-doU
+id: margin_bottom_2em
+label: 'Margin-bottom - 2em'
+classes: margin-bottom-2
+type: component
+group: block_margin
+weight: 0
+block_restrictions: {  }
+layout_restrictions: {  }

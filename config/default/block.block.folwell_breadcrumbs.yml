@@ -1,0 +1,27 @@
+uuid: dd5f1cf9-4781-4f1d-87ff-2d83715b91fd
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - folwell
+_core:
+  default_config_hash: it1oGcBnMqxszHvttLtaZbhyK0XJhjGnQ5NiwI8PseY
+id: folwell_breadcrumbs
+theme: folwell
+region: breadcrumb
+weight: -5
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility:
+  request_path:
+    id: request_path
+    pages: "<front>\r\n"
+    negate: true
+    context_mapping: {  }

@@ -1,0 +1,23 @@
+uuid: 70036b3b-d7d9-4e98-b5d9-6bca5248313f
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: O3dkKAEwH0PwNptjYxXKgT2uF4-RoHPqLvFWt0BVATg
+name: folwell_half
+label: 'Folwell Half Page'
+effects:
+  0ae4c918-2b2c-48f5-bc17-6f9cb15ecad2:
+    uuid: 0ae4c918-2b2c-48f5-bc17-6f9cb15ecad2
+    id: image_scale
+    weight: 1
+    data:
+      width: 568
+      height: null
+      upscale: false
+  5cff32eb-630e-442b-867d-423b11e683a6:
+    uuid: 5cff32eb-630e-442b-867d-423b11e683a6
+    id: image_convert_avif
+    weight: 2
+    data:
+      extension: webp

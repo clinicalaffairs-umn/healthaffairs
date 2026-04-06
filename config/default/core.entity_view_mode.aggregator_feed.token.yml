@@ -1,0 +1,15 @@
+uuid: 95bac4e5-410c-4e8b-ba2d-8e82e6749314
+langcode: en
+status: true
+dependencies:
+  module:
+    - aggregator
+    - lightning_core
+third_party_settings:
+  lightning_core:
+    internal: true
+id: aggregator_feed.token
+label: Token
+description: null
+targetEntityType: aggregator_feed
+cache: true

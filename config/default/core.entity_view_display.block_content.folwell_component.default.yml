@@ -1,0 +1,26 @@
+uuid: 31c43bac-5fd6-437e-b663-064575db6ed2
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.folwell_component
+    - field.field.block_content.folwell_component.field_fb_folwell_component
+  module:
+    - entity_reference_revisions
+_core:
+  default_config_hash: JHbhCeOSSxn8fhmE15oxn4wf7RK34jj7wml-QOabXMs
+id: block_content.folwell_component.default
+targetEntityType: block_content
+bundle: folwell_component
+mode: default
+content:
+  field_fb_folwell_component:
+    type: entity_reference_revisions_entity_view
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+hidden: {  }

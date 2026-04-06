@@ -1,0 +1,14 @@
+uuid: ccc5cdad-4b82-4f70-b42e-a7382b55d5bb
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: CNr3O_3BWdd_Wm5eLQJjK0swxDV7yh6sswRuV5HnxUg
+id: margin_top_2
+label: 'Margin-top - 2'
+classes: margin-top-2
+type: section
+group: section_margin
+weight: 0
+block_restrictions: {  }
+layout_restrictions: {  }

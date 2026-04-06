@@ -1,0 +1,35 @@
+uuid: b458615c-e32a-425d-a022-84d5aef6ea93
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.fa_table.field_fa_accordion_item_header
+    - field.field.paragraph.fa_table.field_fa_table
+    - paragraphs.paragraphs_type.fa_table
+  module:
+    - tablefield
+_core:
+  default_config_hash: xsY2tE_scNu4KpDuSGrb3lywR2gRxYjuHYP4LzrLKck
+id: paragraph.fa_table.default
+targetEntityType: paragraph
+bundle: fa_table
+mode: default
+content:
+  field_fa_accordion_item_header:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_fa_table:
+    type: tablefield
+    label: hidden
+    settings:
+      row_header: true
+      column_header: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

@@ -1,0 +1,167 @@
+uuid: b6570d2b-96e6-4d85-90cc-95baade25818
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.folwell_ckeditor
+  module:
+    - ckeditor5
+_core:
+  default_config_hash: d1OJzQyumTPE31TnNma7FqAtQk2Oz30vZ4F85lfC_us
+format: folwell_ckeditor
+editor: ckeditor5
+settings:
+  toolbar:
+    items:
+      - undo
+      - redo
+      - '|'
+      - bold
+      - italic
+      - superscript
+      - subscript
+      - removeFormat
+      - specialCharacters
+      - heading
+      - '|'
+      - alignment
+      - style
+      - '|'
+      - link
+      - anchor
+      - '|'
+      - bulletedList
+      - numberedList
+      - outdent
+      - indent
+      - '|'
+      - drupalMedia
+      - '|'
+      - horizontalLine
+      - insertTable
+      - sourceEditing
+      - blockQuote
+      - callout
+      - pullquote
+      - simplepullquote
+      - fontawesome
+      - '-'
+  plugins:
+    ckeditor5_heading:
+      enabled_headings:
+        - heading1
+        - heading2
+        - heading3
+        - heading4
+        - heading5
+        - heading6
+    ckeditor5_style:
+      styles:
+        -
+          label: 'Intro Text'
+          element: '<p class="txt-intro">'
+        -
+          label: 'Photo Credit'
+          element: '<p class="photo-credit">'
+        -
+          label: 'Link List'
+          element: '<ul class="link-list">'
+        -
+          label: Cite
+          element: '<cite class="cite">'
+    ckeditor5_sourceEditing:
+      allowed_tags:
+        - '<dd>'
+        - '<dt>'
+        - '<small>'
+        - '<button id data-* class>'
+        - '<canvas id class>'
+        - '<cite id data-*>'
+        - '<div id data-* class>'
+        - '<dl id data-* class>'
+        - '<figure id class>'
+        - '<header id data-*>'
+        - '<iframe src id title width height frameborder allowfullscreen class>'
+        - '<img src alt data-* id class>'
+        - '<pre class>'
+        - '<section class>'
+        - '<span id>'
+        - '<a name hreflang data-*>'
+        - '<blockquote cite id>'
+        - '<caption data-*>'
+        - '<drupal-media title>'
+        - '<h1 id class>'
+        - '<h2 id class>'
+        - '<h3 id class>'
+        - '<h4 id class>'
+        - '<h5 id class>'
+        - '<h6 id class>'
+        - '<li id data-*>'
+        - '<ol id data-*>'
+        - '<p data-* class>'
+        - '<strong id>'
+        - '<table id data-* border cellpadding cellspacing>'
+        - '<tbody width data-*>'
+        - '<td scope>'
+        - '<tfoot colspan rowspan width data-*>'
+        - '<th scope>'
+        - '<thead width data-*>'
+        - '<tr width data-*>'
+        - '<ul id data-*>'
+    ckeditor5_list:
+      properties:
+        reversed: false
+        startIndex: true
+        styles: true
+    ckeditor5_alignment:
+      enabled_alignments:
+        - left
+        - center
+        - right
+        - justify
+    media_media:
+      allow_view_mode_override: true
+    ckeditor_link_styles_linkStyles:
+      styles:
+        -
+          label: 'Regular Button'
+          element: '<a class="fw-btn-regular">'
+        -
+          label: 'Small Button'
+          element: '<a class="fw-btn-small">'
+        -
+          label: 'Emphasis Button'
+          element: '<a class="fw-btn-arrow">'
+        -
+          label: 'Maroon Outline Button'
+          element: '<a class="fw-btn-outline">'
+        -
+          label: 'White Outline Button'
+          element: '<a class="fw-btn-outline--white">'
+        -
+          label: 'Gray Outline Button'
+          element: '<a class="fw-btn-outline--gray">'
+        -
+          label: 'Full-Width Button'
+          element: '<a class="fw-btn-full">'
+        -
+          label: '50% Width Button'
+          element: '<a class="fw-btn-50">'
+        -
+          label: 'Give Button'
+          element: '<a class="fw-btn-give">'
+        -
+          label: 'Emphasis Link'
+          element: '<a class="emphasis">'
+    editor_advanced_link_link:
+      enabled_attributes:
+        - class
+        - id
+        - rel
+        - target
+        - title
+    linkit_extension:
+      linkit_enabled: true
+      linkit_profile: folwell_linkit
+image_upload:
+  status: false

@@ -1,0 +1,14 @@
+uuid: 3a602b0b-8c9b-4a03-8150-35bd2ac0ae8a
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: OanlA5upM9ZUx4la59uMb3bZA88i42eZ3hJ0uo7g7rQ
+id: padding_small
+label: 'Padding - small'
+classes: padding-sm
+type: section
+group: section_padding
+weight: 0
+block_restrictions: {  }
+layout_restrictions: {  }

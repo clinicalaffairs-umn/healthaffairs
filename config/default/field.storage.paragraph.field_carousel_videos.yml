@@ -1,0 +1,22 @@
+uuid: 5353a66f-57e1-4524-a93f-ffb9c479dda0
+langcode: en
+status: true
+dependencies:
+  module:
+    - entity_reference_revisions
+    - paragraphs
+_core:
+  default_config_hash: Lpupgt9f-dWc7rtCYOQOx1IGyh7v4C3rzA93s2L2k2g
+id: paragraph.field_carousel_videos
+field_name: field_carousel_videos
+entity_type: paragraph
+type: entity_reference_revisions
+settings:
+  target_type: paragraph
+module: entity_reference_revisions
+locked: false
+cardinality: 4
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

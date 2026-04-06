@@ -1,0 +1,42 @@
+uuid: 3b7cec36-8134-4bc5-9139-4a4096193d24
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - menu_block
+    - system
+  theme:
+    - folwell
+_core:
+  default_config_hash: 3r5mpur28XMWIxsEMK4prNuX23gdhiVunAmLVPRTCtc
+id: folwell_verticalnavigation
+theme: folwell
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'menu_block:main'
+settings:
+  id: 'menu_block:main'
+  label: 'Main navigation'
+  label_display: visible
+  provider: menu_block
+  follow: 1
+  follow_parent: active
+  level: 1
+  depth: 3
+  expand_all_items: false
+  parent: 'main:'
+  render_parent: false
+  suggestion: folwell_vertical_nav
+  label_type: parent
+  label_link: 1
+  hide_on_nonactive: false
+  expand: true
+visibility:
+  request_path:
+    id: request_path
+    pages: '*'
+    negate: false
+    context_mapping: {  }

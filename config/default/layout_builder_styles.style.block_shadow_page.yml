@@ -1,0 +1,14 @@
+uuid: 212e308d-c195-424f-ab66-c1dacc6b219a
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: mlqBa0ssGydYYhzuPELe9jLOkU7kjS0_nii9N1M576g
+id: block_shadow_page
+label: 'Shadow - page'
+classes: shadow-page
+type: component
+group: block_shadow
+weight: 0
+block_restrictions: {  }
+layout_restrictions: {  }

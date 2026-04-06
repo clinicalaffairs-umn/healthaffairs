@@ -1,0 +1,23 @@
+uuid: 9097f90a-1ad7-4da5-a855-ed9eb1d000ca
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_fw_overlay_placement
+    - paragraphs.paragraphs_type.folwell_transparent_overlay_call
+  module:
+    - options
+_core:
+  default_config_hash: Byayznin6P3haDO9x4-IjHveGPlSSu-YlYbghWulQcg
+id: paragraph.folwell_transparent_overlay_call.field_fw_overlay_placement
+field_name: field_fw_overlay_placement
+entity_type: paragraph
+bundle: folwell_transparent_overlay_call
+label: 'Overlay Placement'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

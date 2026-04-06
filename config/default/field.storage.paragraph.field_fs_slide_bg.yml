@@ -1,0 +1,32 @@
+uuid: 3eb25c19-e64b-47ac-ab4f-f9d778eccbc1
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+_core:
+  default_config_hash: Y8Bw4Gjqs4ToLy7JX71TitZeOPbJBhowrA7QcPHZLCg
+id: paragraph.field_fs_slide_bg
+field_name: field_fs_slide_bg
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: overlay-gold
+      label: Gold
+    -
+      value: overlay-gray
+      label: Gray
+    -
+      value: overlay-maroon
+      label: Maroon
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

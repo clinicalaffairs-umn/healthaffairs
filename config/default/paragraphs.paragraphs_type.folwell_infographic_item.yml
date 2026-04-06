@@ -1,0 +1,12 @@
+uuid: b2d9926e-99e4-4c03-9dad-315201be7ef2
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 1OdWKgxTNGt8vhICbhuw153oo2NXkERdmtxZB0cpeaE
+id: folwell_infographic_item
+label: 'Infographic item'
+icon_uuid: null
+icon_default: null
+description: 'Single infographic item'
+behavior_plugins: {  }

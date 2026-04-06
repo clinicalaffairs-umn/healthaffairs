@@ -1,0 +1,30 @@
+# Drupal defaults
+/default.services.yml
+/default.settings.php
+/files/
+
+# Local/env settings (never commit)
+settings.local.php
+settings.ddev.php
+
+# Composer (site-level lock not needed — platform manages deps)
+vendor/
+composer.lock
+
+# Node
+themes/*/node_modules/
+
+# Generated files
+themes/*/images/core/
+
+# IDE
+.idea
+*.swp
+*~
+
+# Databases
+*.sql
+*.sql.gz
+
+# OS
+.DS_Store

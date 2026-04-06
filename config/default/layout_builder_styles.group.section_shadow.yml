@@ -1,0 +1,12 @@
+uuid: b8788141-52ca-4d17-a61f-14e9719c9b2a
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: KHSLx7_YECa6i4OT7n7q1sn-g2eMjeHE9jTQXfcnjUI
+id: section_shadow
+label: 'Section shadow'
+multiselect: single
+form_type: checkboxes
+required: false
+weight: 0

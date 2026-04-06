@@ -1,0 +1,21 @@
+uuid: f2d593b0-6461-47c8-bbaa-0f8d5fdc041d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_fi_infographic_text
+    - paragraphs.paragraphs_type.folwell_infographic_item
+_core:
+  default_config_hash: 8tUx4NH5MX5E7ejI7KpbqMJHqgGtrkhh94AQZOmvP0o
+id: paragraph.folwell_infographic_item.field_fi_infographic_text
+field_name: field_fi_infographic_text
+entity_type: paragraph
+bundle: folwell_infographic_item
+label: Text
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

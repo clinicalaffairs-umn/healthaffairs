@@ -1,0 +1,35 @@
+uuid: 41d72150-1ec4-4074-9220-40ff59ea7a9c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.fa_accordion_item.field_fa_accordion_item_content
+    - field.field.paragraph.fa_accordion_item.field_fa_accordion_item_header
+    - paragraphs.paragraphs_type.fa_accordion_item
+  module:
+    - entity_reference_revisions
+_core:
+  default_config_hash: BsbBHWYgdkYkACFG6Xq9oUk84eAwk_upKg_vtjJlyRg
+id: paragraph.fa_accordion_item.default
+targetEntityType: paragraph
+bundle: fa_accordion_item
+mode: default
+content:
+  field_fa_accordion_item_content:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_fa_accordion_item_header:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

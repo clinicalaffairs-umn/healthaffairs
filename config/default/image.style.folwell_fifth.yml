@@ -1,0 +1,23 @@
+uuid: 57a286fb-60bd-434a-b53a-581aa3debc94
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: phgh310A5-58rKqSNmkwp3sURPswwtEeqYgVinr3m50
+name: folwell_fifth
+label: 'Folwell Fifth Page'
+effects:
+  ee77446b-10bf-4a62-b9c3-2906c70dedc8:
+    uuid: ee77446b-10bf-4a62-b9c3-2906c70dedc8
+    id: image_scale
+    weight: 1
+    data:
+      width: 206
+      height: null
+      upscale: false
+  6eb8492d-0f3e-4c7b-9dc2-31630fe64dc9:
+    uuid: 6eb8492d-0f3e-4c7b-9dc2-31630fe64dc9
+    id: image_convert_avif
+    weight: 2
+    data:
+      extension: webp

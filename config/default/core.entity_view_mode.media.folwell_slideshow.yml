@@ -1,0 +1,17 @@
+uuid: 6d1d2eab-1eb2-476a-8930-2f227b31f663
+langcode: en
+status: true
+dependencies:
+  module:
+    - lightning_core
+    - media
+third_party_settings:
+  lightning_core:
+    description: ''
+_core:
+  default_config_hash: 6iOHzeiUgVQqmHrh7TWVBUCXJyNRGgTUCItGjIbqE7Q
+id: media.folwell_slideshow
+label: 'Folwell Slideshow'
+description: null
+targetEntityType: media
+cache: true

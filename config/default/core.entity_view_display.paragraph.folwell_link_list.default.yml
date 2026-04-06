@@ -1,0 +1,29 @@
+uuid: 94e7d92c-e93f-4d21-bac1-067a2d89226d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.folwell_link_list.field_fl_link_list_item
+    - paragraphs.paragraphs_type.folwell_link_list
+  module:
+    - link
+_core:
+  default_config_hash: A4tjeoV9wNT5x3ZC0RMBtV5qGU7GK4hGEDOY8LFw_-k
+id: paragraph.folwell_link_list.default
+targetEntityType: paragraph
+bundle: folwell_link_list
+mode: default
+content:
+  field_fl_link_list_item:
+    weight: 0
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+hidden: {  }

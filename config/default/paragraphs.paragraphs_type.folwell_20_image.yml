@@ -1,0 +1,12 @@
+uuid: d3526b2a-d066-465f-a06d-6f7784e05080
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: '-kYE8Zbyr0ppu61JFdy86OwSfdfDYKfA6Rxyo7vGYKA'
+id: folwell_20_image
+label: 'Folwell 20% Image'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

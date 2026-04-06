@@ -1,0 +1,14 @@
+uuid: 1344fffc-dcde-43b0-a9ad-6ea98a614476
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: mRek-FRYFHzyfieshyWSH-2IE1GmW5ecD9rPs5XEmgc
+id: gray_lighter
+label: 'Gray - lighter'
+classes: "background-color\r\nbg-gray-lighter"
+type: section
+group: section_background
+weight: 0
+block_restrictions: {  }
+layout_restrictions: {  }

@@ -1,0 +1,31 @@
+uuid: a6025f64-2f71-49a4-bdf3-ec3d012d9bd5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_fdl_previous_page_image
+    - media.type.image
+    - paragraphs.paragraphs_type.folwell_directional_link
+_core:
+  default_config_hash: ccbygxEa3sAZMQ5Ez2R2nTht_s3Ge1s-PXJvJNsRxa0
+id: paragraph.folwell_directional_link.field_fdl_previous_page_image
+field_name: field_fdl_previous_page_image
+entity_type: paragraph
+bundle: folwell_directional_link
+label: 'Previous Page Image'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: image
+field_type: entity_reference

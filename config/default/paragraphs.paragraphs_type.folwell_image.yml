@@ -1,0 +1,12 @@
+uuid: ba5d0f4c-6d49-4a4e-a69b-84cbcc5337d2
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: _zL_LLbYH1XH9S06dYchsSdvRCcdQzJfzV-_FE-I1YI
+id: folwell_image
+label: 'Folwell Image'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

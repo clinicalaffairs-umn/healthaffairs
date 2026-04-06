@@ -1,0 +1,14 @@
+uuid: 1e201959-4c44-4b54-9fca-da504a0366aa
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: Bcz2ODT4Y7rt_Ubj4ae8AV5wM19RIs_rGnYyxDf9Tlw
+id: shadow_close
+label: 'Shadow - close'
+classes: shadow-close
+type: section
+group: section_shadow
+weight: 0
+block_restrictions: {  }
+layout_restrictions: {  }

@@ -1,0 +1,26 @@
+uuid: 12efc63f-2d51-456f-b4a7-06c90bce5a27
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.folwell_75_image.field_fw_callout_image
+    - paragraphs.paragraphs_type.folwell_75_image
+  module:
+    - media_library
+_core:
+  default_config_hash: U9xiqtJJnH56-44zOQ5ZRous3jnhvXhj3H89IxPm5fQ
+id: paragraph.folwell_75_image.default
+targetEntityType: paragraph
+bundle: folwell_75_image
+mode: default
+content:
+  field_fw_callout_image:
+    type: media_library_widget
+    weight: 101
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

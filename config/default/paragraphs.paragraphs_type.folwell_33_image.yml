@@ -1,0 +1,12 @@
+uuid: 1e1175d3-073c-45bd-9624-f9b41564e646
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: lAU5YKUHM4XQxqScRWPF7dlkx1cD_ZA3yf1KbZAe0DM
+id: folwell_33_image
+label: 'Folwell 33% Image'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

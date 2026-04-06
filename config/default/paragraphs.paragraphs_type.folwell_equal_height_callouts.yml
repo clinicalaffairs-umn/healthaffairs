@@ -1,0 +1,12 @@
+uuid: f78b5a56-c2df-4a44-8a04-02a8850932a3
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: PIbq_5W2HOfI28xlI1LbJlxHYL3OY-rOG_kZIfJCd04
+id: folwell_equal_height_callouts
+label: 'Folwell Equal Height Callouts'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

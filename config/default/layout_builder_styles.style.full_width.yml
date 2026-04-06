@@ -1,0 +1,14 @@
+uuid: 3e62b919-effb-44a1-9723-7212c75beaec
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: ukiZdaSelMcecORWHtyeA2lC79D9Z1xoqNc4C9Aw53E
+id: full_width
+label: Full-width
+classes: section__full-width
+type: section
+group: section_width
+weight: 0
+block_restrictions: {  }
+layout_restrictions: {  }

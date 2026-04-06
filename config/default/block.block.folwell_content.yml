@@ -1,0 +1,22 @@
+uuid: 0e94a61d-4bc4-4624-9c51-40de7ef5931e
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - folwell
+_core:
+  default_config_hash: OxF3LIOFQ0-7ApVlyNyj-xpE7WNF5Y654MIQDkdnA50
+id: folwell_content
+theme: folwell
+region: content
+weight: -1
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

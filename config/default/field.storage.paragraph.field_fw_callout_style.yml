@@ -1,0 +1,56 @@
+uuid: a7073a86-5ea3-4d5f-9668-aded8d94208c
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+_core:
+  default_config_hash: 4yA4wdAgE_aA2YsFhwQL8ZkDFksBoqfgkDjBBOpO9Io
+id: paragraph.field_fw_callout_style
+field_name: field_fw_callout_style
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: callout-background
+      label: 'Gray Background'
+    -
+      value: callout-gold
+      label: 'Gold Background'
+    -
+      value: callout-maroon
+      label: 'Maroon Background'
+    -
+      value: callout-border-all
+      label: 'Gold Border'
+    -
+      value: callout-border-top
+      label: 'Gold Top Line'
+    -
+      value: callout-border-left
+      label: 'Gold Left Line'
+    -
+      value: callout-horizontal
+      label: 'Horizontal Gold'
+    -
+      value: callout-hmaroon
+      label: 'Horizontal Maroon'
+    -
+      value: callout-ogoldbar
+      label: 'Overlay Gold Bar'
+    -
+      value: callout-overlay
+      label: 'Overlay Gold'
+    -
+      value: callout-omaroon
+      label: 'Overlay Maroon'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

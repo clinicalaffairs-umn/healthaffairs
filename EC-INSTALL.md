@@ -1,159 +1,159 @@
-Clinical Affairs Local Development
-==================================
-Reviewed by Wilbur, 2022-05-23
+Health Affairs Local Development
+================================
+Created: 2026-04-05
 
 # Project Details
-- **NAME:**  clinicalaffairs
-- **URL:** https://clinicalaffairs.umn.edu/ 
-- https://clinicalaffairs-d8.dev.umn.edu/ 
-- **LOCAL URL:** http://clinicalaffairs.docksal.site
+- **NAME:** healthaffairs
+- **URL:** https://healthaffairs.umn.edu/
+- **DEV URL:** https://healthaffairs.dev.umn.edu/
+- **STG URL:** https://healthaffairs.stg.umn.edu/
+- **LOCAL URL:** http://healthaffairs.ddev.site
 - **BRANCH:** main
 
 ## UMN Site Dashboard
-https://drupalmanagement.umn.edu/clinicalaffairs.umn.edu-1
+<!-- Update with the actual dashboard URL when available -->
+https://drupalmanagement.umn.edu/healthaffairs.umn.edu
+
+## Requirements and platform docs
 
 - [EC: Local development requirements](https://docs.google.com/document/d/1_yeISu5bW5637TCeXByi82LUUfD1jeeSDHh5IeiPz4o/edit?usp=sharing)
-
 - [EC: Developing on UMN](https://docs.google.com/document/d/1Il3u6HYlCxwWeEljtqEBH9pon69DPhKpg2ZvDYvmWLo/edit)
 
 # Local Development Setup
 
-`cd ~/Projects`
+```bash
+cd ~/Projects
+```
 
-`git clone -b 9.x-prod git@github.umn.edu:drupalplatform/d8-composer.git clinicalaffairs`
+Clone the UMN platform repo:
 
-`cd clinicalaffairs/`
+```bash
+git clone -b 11.x-prod git@github.umn.edu:drupalplatform/d8-composer.git healthaffairs
+cd healthaffairs/
+```
 
-`composer install`
+Install platform dependencies (may hang during patching — Ctrl-C and continue if so):
 
-`cd docroot/sites`
+```bash
+composer install
+```
 
-`rm -rf default`
+Clone the site repo into `docroot/sites/default`:
 
-`git clone -b develop git@github.umn.edu:oaca/clinicalaffairs-d8.git default`
+```bash
+cd docroot/sites
+rm -rf default
+git clone -b main git@github.com:clinicalaffairs-umn/healthaffairs.git default
+cd default
+```
 
-`cd default`
+Install site-specific dependencies:
 
-`composer install`
+```bash
+composer install
+```
 
-`cd docksal`
+Run the DDEV setup script:
 
-`./install.sh`  
+```bash
+cd .ddev
+./install.sh
+```
 
-`cd ~/Projects/clinicalaffairs/`
+Start DDEV (must be run from project root):
 
-`fin start`
+```bash
+cd ~/Projects/healthaffairs
+ddev start
+ddev auth ssh
+```
 
-`fin hosts add`
+If `composer install` hung earlier, run it again inside DDEV:
 
-**Get Current Database**
+```bash
+ddev composer install
+```
 
-Pull the latest website database from the UMN Deployment website:
-https://drupalmanagement.umn.edu/clinicalaffairs.umn.edu-1
+## Get Current Database
 
-Copy the database file to the project folder:
-`~/Projects/clinicalaffairs`
+Pull the latest database from the UMN Deployment website:
+https://drupalmanagement.umn.edu/healthaffairs.umn.edu
 
-**Load the downloaded DB**
+Copy the database file to the project root (`~/Projects/healthaffairs`).
 
-`gunzip -dfkv <<downloaded-db-name.sql.gz>>`
+## Load the Database
 
-`fin db import <<downloaded-db-name.sql>>`
-
-`fin drush cr`
-
-`fin drush cim -y`
-
-`fin drush uli`
+```bash
+gunzip -dfkv <downloaded-db-name.sql.gz>
+ddev import-db --file=<downloaded-db-name.sql>
+ddev drush cr
+ddev drush cim -y
+ddev drush uli
+```
 
 Open the generated login URL and you should be set to go.
 
 # Local Development Refresh
 
-`cd ~/Projects/clinicalaffairs`
+```bash
+cd ~/Projects/healthaffairs
+```
 
-`git pull`
+Confirm there is no uncommitted config on the LIVE site.
 
-`rm -rf vendor`
+```bash
+git pull
+rm -rf vendor
+ddev start
+ddev composer install
 
-`fin restart`
+cd docroot/sites/default
+git checkout main
+git pull
+rm -rf vendor
+ddev composer install
 
-`fin composer install`
+cd ~/Projects/healthaffairs
+ddev restart
+```
 
-`cd docroot/sites/default`
+Get and load a fresh database (same steps as initial setup above).
 
-`git checkout develop`
+```bash
+ddev drush cr
+ddev drush cim -y
+ddev drush uli
+```
 
-`git pull`
+# Uncommitted Config Changes on the LIVE site
 
-`rm -rf vendor`
+The UMN platform is constantly updated, so this site may contain config changes
+not committed to the code repo. Check for uncommitted config before building or
+updating your local install.
 
-`fin composer install`
+## Check for uncommitted config changes
+https://healthaffairs.umn.edu/admin/config/development/configuration
 
-`fin restart`
+If there are changes, export the config as files:
+https://healthaffairs.umn.edu/admin/config/development/configuration/full/export
 
-**Get the current database**
+## Full Export
+- Export a full archive of the site's config at the link above.
+- Extract the files and place them in the config directory: `config/default/`
+- Commit the updated files and push.
 
-Pull the latest website database from the UMN Deployment website:
-https://drupalmanagement.umn.edu/clinicalaffairs.umn.edu-1
-
-Copy the database file to the project folder:
-
-`cd ~/Projects/clinicalaffairs`
-
-**Load the database**
-
-`gunzip -dfkv <<downloaded-db-name.sql.gz>> `
-
-`fin db import <<downloaded-db-name.sql>>`
-
-`fin drush cr`
-
-`fin drush cim -y`
-
-`fin drush uli`
-
-Open the generated login URL and you should be set to go.
-
-# More Information
-
-## Theming
-The active theme for this project is **oaca_subtheme**:
-`~/Projects/clinicalaffairs/docroot/sites/default/themes/oaca_subtheme`
-
-See the THEME-INSTALL.md file inside of the theme root for install instructions.
-`~/Projects/clinicalaffairs/docroot/sites/default/themes/oaca_subtheme/THEME-INSTALL.md`
-
-# Project Legend
-## Docksal Images
-- DB - docksal/db:mysql:5.7
-- CLI - docksal/cli:php8.0
-- SOLR - docksal/solr:1.0-solr3
-
-See `~/Projects/clinicalaffairs/docroot/sites/default/docksal/docksal.yml` 
-
-## settings.docksal.php
-- base_url
-- CSS/JS aggregation
-- database connection
-- file paths
-- permissions_hardening
-- system_logging level
-- trusted_host_pattern
-
-See `~/Projects/clinicalaffairs/docroot/sites/default/settings.docksal.php`
+## Single Item Export
+- If only a few config items changed, export them individually.
+- Place the files in the config directory: `config/default/`
 
 # Enabling Xdebug
 
-Copy the `.docksal/docksal-local.yml.default` file to the .docksal folder as `docksal-local.yml` and ensure that `XDEBUG_ENABLED=1`
-
-Open `.docksal/etc/php/php.ini` and uncomment the three lines of code directly under [xdebug]:
-
-```
-[xdebug]
-xdebug.mode=debug
-xdebug.discover_client_host=1
-xdebug.client_host=192.168.64.100
+```bash
+ddev xdebug on
 ```
 
-Run `fin restart` to restart the Docksal project.
+To disable:
+
+```bash
+ddev xdebug off
+```

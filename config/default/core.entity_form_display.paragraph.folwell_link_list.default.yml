@@ -1,0 +1,28 @@
+uuid: 7b27829b-4ec7-4fbc-a0c9-53571135d8b3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.folwell_link_list.field_fl_link_list_item
+    - paragraphs.paragraphs_type.folwell_link_list
+  module:
+    - link
+_core:
+  default_config_hash: 8LLHZVE3-uW-dciqVxUb8t3PR0SCa9e6XbncEaHh8ng
+id: paragraph.folwell_link_list.default
+targetEntityType: paragraph
+bundle: folwell_link_list
+mode: default
+content:
+  field_fl_link_list_item:
+    weight: 0
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

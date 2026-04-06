@@ -1,0 +1,12 @@
+uuid: c577a25e-60b9-4f52-85a9-94a80942aeea
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: a20pDl196ZRzEvfWThrZ8H1J_-AbqGnctJ7WFW4SxuE
+id: video_with_thumbnail
+label: 'Video with Thumbnail'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

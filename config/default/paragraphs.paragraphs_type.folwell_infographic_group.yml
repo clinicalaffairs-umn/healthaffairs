@@ -1,0 +1,12 @@
+uuid: 1b1b295b-2ada-41df-874b-c9be7ef936d0
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: niEJmzdK6wVAB0DQpEMEFhVaTX3RNdyxYjL1hFxXZdM
+id: folwell_infographic_group
+label: 'Folwell Infographic Group'
+icon_uuid: null
+icon_default: null
+description: 'A component aiming to present complex information and data in a way that is easy to understand.'
+behavior_plugins: {  }

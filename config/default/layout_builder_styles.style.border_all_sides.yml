@@ -1,0 +1,14 @@
+uuid: fbf36f82-e3b2-40a1-b8b4-869c62c7c8b5
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: FkVD7sXuAqS71tjhMDgKshjFyj4weM4v2qhcJ8zIOdM
+id: border_all_sides
+label: 'Border - all sides'
+classes: border
+type: section
+group: section_border
+weight: 0
+block_restrictions: {  }
+layout_restrictions: {  }

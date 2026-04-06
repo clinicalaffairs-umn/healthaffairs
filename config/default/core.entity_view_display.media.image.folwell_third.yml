@@ -1,0 +1,43 @@
+uuid: fbeb84b3-862e-49bc-991f-f869bf9a20fa
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.folwell_third
+    - field.field.media.image.field_media_image
+    - field.field.media.image.field_media_in_library
+    - image.style.folwell_third
+    - media.type.image
+  module:
+    - image
+_core:
+  default_config_hash: jAADRCOZKF7pnspmtuGsZfcuZlY3Q53cwNSbX8BpIYo
+id: media.image.folwell_third
+targetEntityType: media
+bundle: image
+mode: folwell_third
+content:
+  field_media_image:
+    type: image
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      image_style: folwell_third
+      image_link: ''
+    third_party_settings: {  }
+  image:
+    type: image
+    weight: 0
+    label: hidden
+    settings:
+      image_style: folwell_third
+      image_link: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  field_media_in_library: true
+  name: true
+  thumbnail: true
+  uid: true

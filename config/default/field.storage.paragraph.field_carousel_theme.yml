@@ -1,0 +1,35 @@
+uuid: 6bf22c88-2839-48f7-8339-18d2638a14ca
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+_core:
+  default_config_hash: m8LvoN1eSC74Jk8Wlz1WDxQ44z7lZOwG-xf9Uhqggyw
+id: paragraph.field_carousel_theme
+field_name: field_carousel_theme
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: theme_classic
+      label: Classic
+    -
+      value: theme_vertical
+      label: Vertical
+    -
+      value: theme_wide
+      label: Wide
+    -
+      value: theme_wide_reversed
+      label: 'Wide (reversed)'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,12 @@
+uuid: 0bcd3e10-e885-4a45-ba21-d418b61b9c9d
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: d1zbRnr6ghw0K_FdSAgn-Ku8KsQhoOpRVmlLWi6jQ3g
+id: video_carousel
+label: 'Video Carousel'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

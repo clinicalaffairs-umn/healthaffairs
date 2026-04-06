@@ -1,0 +1,23 @@
+uuid: 18b5473e-0705-41d0-86af-de35b26bbc54
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - entity_reference_revisions
+    - paragraphs
+_core:
+  default_config_hash: 0p8uyyJlaWXxkiNjYAtXitEt3mdEsxhKHcmEfYXb-7o
+id: block_content.field_video_carousel_component
+field_name: field_video_carousel_component
+entity_type: block_content
+type: entity_reference_revisions
+settings:
+  target_type: paragraph
+module: entity_reference_revisions
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

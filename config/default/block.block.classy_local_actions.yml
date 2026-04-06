@@ -1,0 +1,20 @@
+uuid: 6e05dbca-3a6d-42a5-a01d-69d2e2dec9f6
+langcode: en
+status: true
+dependencies:
+  theme:
+    - classy
+_core:
+  default_config_hash: 7LkQEHJGdl8IFZbkftV9HXVYFF4adoktTWEBgBwSwx0
+id: classy_local_actions
+theme: classy
+region: content
+weight: -2
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

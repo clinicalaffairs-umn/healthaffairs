@@ -1,0 +1,25 @@
+uuid: 787803f8-9060-49f6-add7-798f2c1e8033
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_fw_horiz_callout_text_pos
+    - paragraphs.paragraphs_type.folwell_callout
+  module:
+    - options
+_core:
+  default_config_hash: b-nTVW3GKRnpdqTH_zhPr2uIXFBV1zMooof6zAtNKdw
+id: paragraph.folwell_callout.field_fw_horiz_callout_text_pos
+field_name: field_fw_horiz_callout_text_pos
+entity_type: paragraph
+bundle: folwell_callout
+label: 'Horizontal Callout Text Position'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: right
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,14 @@
+uuid: 265130e8-b0c3-4b29-a196-24b720b3c547
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: Md7NLK15ifr7wzduJbXo3EiSNubhkSecY75ThYu2L7g
+id: maroon_light
+label: 'Maroon - light'
+classes: "bg-maroon-light \r\npadding-1"
+type: component
+group: block_background
+weight: 0
+block_restrictions: {  }
+layout_restrictions: {  }

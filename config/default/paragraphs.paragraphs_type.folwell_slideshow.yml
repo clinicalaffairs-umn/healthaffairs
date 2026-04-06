@@ -1,0 +1,12 @@
+uuid: a29eb0b9-b997-43e2-9933-36322b3330b1
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: bQFrs_CcuxN-rJhceCHueBb9gKjRWUJGDDujLv6AUO0
+id: folwell_slideshow
+label: 'Folwell Slideshow'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

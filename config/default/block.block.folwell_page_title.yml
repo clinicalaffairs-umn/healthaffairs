@@ -1,0 +1,20 @@
+uuid: bad7bc98-99ed-4bbe-a806-9c365f26a86a
+langcode: en
+status: true
+dependencies:
+  theme:
+    - folwell
+_core:
+  default_config_hash: prFPlg9lj82KSxlV2khDtfBu3FbVzWQCYBGe67Tl2WU
+id: folwell_page_title
+theme: folwell
+region: content
+weight: -5
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }

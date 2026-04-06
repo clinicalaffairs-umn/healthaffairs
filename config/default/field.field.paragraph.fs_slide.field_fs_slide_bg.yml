@@ -1,0 +1,25 @@
+uuid: a89a9372-ac18-41d1-a3c3-b95d40945ea3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_fs_slide_bg
+    - paragraphs.paragraphs_type.fs_slide
+  module:
+    - options
+_core:
+  default_config_hash: '-eoJOU7UcEkijNZI_zGuHMFEehxMmuPK63pAHBJTIIc'
+id: paragraph.fs_slide.field_fs_slide_bg
+field_name: field_fs_slide_bg
+entity_type: paragraph
+bundle: fs_slide
+label: 'Background Color'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: overlay-gold
+default_value_callback: ''
+settings: {  }
+field_type: list_string

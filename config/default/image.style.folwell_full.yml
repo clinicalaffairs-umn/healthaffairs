@@ -1,0 +1,23 @@
+uuid: e816c7ff-590f-495f-b294-84c8b807e9de
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: b-tLN7Yb4tIIrgE6ncWziSj0I9cyhL0pJ7rTQn7P7Qg
+name: folwell_full
+label: 'Folwell Full Page'
+effects:
+  6e081665-0373-45a0-b4b9-b8c66bd19fe2:
+    uuid: 6e081665-0373-45a0-b4b9-b8c66bd19fe2
+    id: image_scale
+    weight: 1
+    data:
+      width: 1200
+      height: null
+      upscale: false
+  f61a7cd0-e6ca-4192-a3f2-891c24ea107d:
+    uuid: f61a7cd0-e6ca-4192-a3f2-891c24ea107d
+    id: image_convert_avif
+    weight: 2
+    data:
+      extension: webp

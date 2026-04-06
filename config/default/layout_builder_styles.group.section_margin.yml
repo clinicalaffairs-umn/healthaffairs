@@ -1,0 +1,12 @@
+uuid: 666555a5-eb81-49e5-8729-50d8bb06cbbf
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: Z_hU-ijB5fm46khghR1mVwFzap6mpxRG3_42AEWwWOI
+id: section_margin
+label: 'Section margin'
+multiselect: single
+form_type: checkboxes
+required: false
+weight: 0

@@ -1,0 +1,12 @@
+uuid: 161c8274-5ede-4850-b111-544e8eefc018
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 5NitaMMRQ7HcLLUWJBROJ9iyEI9GfQgPzEVPCkOMFt8
+id: block_border
+label: 'Block border'
+multiselect: single
+form_type: checkboxes
+required: false
+weight: 0

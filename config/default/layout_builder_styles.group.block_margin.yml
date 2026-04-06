@@ -1,0 +1,12 @@
+uuid: 8a235eba-934b-4866-9b7c-3e763ff9b152
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: XhBpvryya4VnHenOG-PlWcHjTzRJZDXlxyPhIwYWOLk
+id: block_margin
+label: 'Block margin'
+multiselect: single
+form_type: checkboxes
+required: false
+weight: 0

@@ -1,0 +1,14 @@
+uuid: 200b3051-e6ac-451f-8ee2-58a0fffd5330
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 68WHhT3HRDpe7clQNKF76veQilsJvBPwL19x2MK-W5s
+id: block_border_x
+label: 'Border - x'
+classes: border-x
+type: component
+group: block_border
+weight: 0
+block_restrictions: {  }
+layout_restrictions: {  }

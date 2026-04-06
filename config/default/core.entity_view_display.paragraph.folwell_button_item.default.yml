@@ -1,0 +1,39 @@
+uuid: 460e0cb0-cd2c-4e4a-b6b8-6b748b1e206a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.folwell_button_item.field_fb_button
+    - field.field.paragraph.folwell_button_item.field_fb_image
+    - paragraphs.paragraphs_type.folwell_button_item
+  module:
+    - link
+_core:
+  default_config_hash: VybGpuVg0Om_vcD61k5xNV54fYZoXgkqrgd4GaszhIY
+id: paragraph.folwell_button_item.default
+targetEntityType: paragraph
+bundle: folwell_button_item
+mode: default
+content:
+  field_fb_button:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_fb_image:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: folwell_button_image
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

@@ -1,0 +1,18 @@
+uuid: 8399ca40-25b9-45c5-ae55-626af6a3b23a
+langcode: en
+status: false
+dependencies: {  }
+id: acquia
+label: Acquia
+description: 'Config split for modules that only run on Acquia-hosted environments.'
+weight: 0
+stackable: false
+no_patching: false
+storage: folder
+folder: ../docroot/sites/default/config/envs/acquia
+module:
+  samlauth: 0
+  lightning_umn_acquia: 0
+theme: {  }
+complete_list: {  }
+partial_list: {  }

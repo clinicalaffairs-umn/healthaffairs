@@ -1,0 +1,25 @@
+uuid: f320ed9c-86ce-4397-99c9-ab39a1bec1a0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_fw_link_title
+    - paragraphs.paragraphs_type.folwell_callout
+_core:
+  default_config_hash: Ve-6ExaowrAbIRDrLuuSU5Wzd0QL1-tyOUD4M54kVp8
+id: paragraph.folwell_callout.field_fw_link_title
+field_name: field_fw_link_title
+entity_type: paragraph
+bundle: folwell_callout
+label: 'Add link to title'
+description: 'The link can be added either to the callout title or to the callout image. If you choose "Yes" the link will be added to the title, if you choose "No, the link will be added to the image.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'Yes'
+  off_label: 'No'
+field_type: boolean

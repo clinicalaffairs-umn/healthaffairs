@@ -1,0 +1,25 @@
+uuid: 4f534c20-c2b1-4d1b-a71e-c8ee2278736a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_fi_infographic_style
+    - paragraphs.paragraphs_type.folwell_infographic_group
+  module:
+    - options
+_core:
+  default_config_hash: CM4CiDpiEy1rdBIO0ak37jNgCSnOxD2QBqIhxuiq0Zo
+id: paragraph.folwell_infographic_group.field_fi_infographic_style
+field_name: field_fi_infographic_style
+entity_type: paragraph
+bundle: folwell_infographic_group
+label: 'Infographic Style'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: fl-infographic-group__gold
+default_value_callback: ''
+settings: {  }
+field_type: list_string

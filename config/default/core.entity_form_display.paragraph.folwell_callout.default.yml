@@ -1,0 +1,98 @@
+uuid: 8f706845-938f-452e-891b-7fbcaafb3dea
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.folwell_callout.field_fa_text_item_body
+    - field.field.paragraph.folwell_callout.field_fw_callout_image
+    - field.field.paragraph.folwell_callout.field_fw_callout_link
+    - field.field.paragraph.folwell_callout.field_fw_callout_position
+    - field.field.paragraph.folwell_callout.field_fw_callout_style
+    - field.field.paragraph.folwell_callout.field_fw_callout_title
+    - field.field.paragraph.folwell_callout.field_fw_callout_title_format
+    - field.field.paragraph.folwell_callout.field_fw_horiz_callout_text_pos
+    - field.field.paragraph.folwell_callout.field_fw_link_title
+    - paragraphs.paragraphs_type.folwell_callout
+  module:
+    - link
+    - media_library
+    - text
+_core:
+  default_config_hash: nyE-sBDk_ACZ6lybVVzoGXMCzNDmOyKZ8LDMOj_cQr4
+id: paragraph.folwell_callout.default
+targetEntityType: paragraph
+bundle: folwell_callout
+mode: default
+content:
+  field_fa_text_item_body:
+    type: text_textarea
+    weight: 5
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_fw_callout_image:
+    type: media_library_widget
+    weight: 2
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_fw_callout_link:
+    type: link_default
+    weight: 3
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_fw_callout_position:
+    type: options_select
+    weight: 8
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_fw_callout_style:
+    type: options_select
+    weight: 6
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_fw_callout_title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_fw_callout_title_format:
+    type: options_select
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_fw_horiz_callout_text_pos:
+    type: options_buttons
+    weight: 7
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_fw_link_title:
+    type: boolean_checkbox
+    weight: 4
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  moderation_state:
+    type: moderation_state_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true
+  uid: true

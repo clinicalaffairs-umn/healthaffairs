@@ -1,0 +1,14 @@
+uuid: 93dc7760-a7c2-41b2-b40e-87de7d2efa44
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: x1Z7BHzd7f3PYA_X3K8vDhwIWt8r2PWwCSpiq-BbYX0
+id: border_bottom
+label: 'Border - bottom'
+classes: border-bottom
+type: section
+group: section_border
+weight: 0
+block_restrictions: {  }
+layout_restrictions: {  }

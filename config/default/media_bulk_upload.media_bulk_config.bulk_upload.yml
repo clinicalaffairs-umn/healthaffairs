@@ -1,0 +1,20 @@
+uuid: e5a14e1b-45f4-4e00-a370-22cf3f6db21c
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 07QsCY-Rpyl8hae43DgQdxW3695C7JFwrhJynn7TrwY
+id: bulk_upload
+label: 'Bulk upload'
+media_types:
+  audio: audio
+  document: document
+  image: image
+  instagram: instagram
+  remote_video: remote_video
+  tweet: tweet
+  video: video
+show_alt: null
+show_title: null
+form_mode: ''
+upload_location: ''

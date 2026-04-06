@@ -1,0 +1,25 @@
+uuid: b0baf6e4-7949-4bb1-81f6-9fb9f006a80e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_fw_callout_title_format
+    - paragraphs.paragraphs_type.folwell_callout
+  module:
+    - options
+_core:
+  default_config_hash: UvqHy9ndl4bsNDAfJ_BJcZLo-l2EA0MAPBMeINAuolU
+id: paragraph.folwell_callout.field_fw_callout_title_format
+field_name: field_fw_callout_title_format
+entity_type: paragraph
+bundle: folwell_callout
+label: 'Callout Title Format'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: h2
+default_value_callback: ''
+settings: {  }
+field_type: list_string

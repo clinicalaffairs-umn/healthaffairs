@@ -1,0 +1,63 @@
+uuid: 6087e9c1-f947-4a2f-8b4f-ba3a29b20058
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.folwell_image.field_fa_accordion_item_header
+    - field.field.paragraph.folwell_image.field_fa_text_item_body
+    - field.field.paragraph.folwell_image.field_folwell_image_item
+    - paragraphs.paragraphs_type.folwell_image
+  module:
+    - paragraphs
+    - text
+_core:
+  default_config_hash: oIQF3ZAfI004x-0Z6inUIx7W2CmCsD-F_GjZz6R2vh0
+id: paragraph.folwell_image.default
+targetEntityType: paragraph
+bundle: folwell_image
+mode: default
+content:
+  field_fa_accordion_item_header:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 256
+      placeholder: ''
+    third_party_settings: {  }
+  field_fa_text_item_body:
+    type: text_textarea
+    weight: 2
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_folwell_image_item:
+    type: paragraphs
+    weight: 1
+    region: content
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      closed_mode: summary
+      autocollapse: none
+      closed_mode_threshold: 0
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+      features:
+        collapse_edit_all: collapse_edit_all
+        duplicate: duplicate
+    third_party_settings: {  }
+  moderation_state:
+    type: moderation_state_default
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true
+  uid: true

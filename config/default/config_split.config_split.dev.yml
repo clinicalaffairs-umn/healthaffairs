@@ -1,0 +1,16 @@
+uuid: cbd2bf48-1fd4-40fe-ba61-9bebafc3eacd
+langcode: en
+status: false
+dependencies: {  }
+id: dev
+label: Dev
+description: 'Config split for the Dev environment.'
+weight: 0
+stackable: false
+no_patching: false
+storage: folder
+folder: ../docroot/sites/default/config/envs/dev
+module: {  }
+theme: {  }
+complete_list: {  }
+partial_list: {  }

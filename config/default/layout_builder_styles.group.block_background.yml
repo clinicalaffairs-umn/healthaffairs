@@ -1,0 +1,12 @@
+uuid: ebe88ba4-124d-450d-8d02-ba195224851d
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: YYsBEb2VZo-lDSu8EOiI7h6r0nMxUBMxk4ENQ6hZgQ0
+id: block_background
+label: 'Block background'
+multiselect: single
+form_type: checkboxes
+required: false
+weight: 0

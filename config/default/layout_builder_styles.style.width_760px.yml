@@ -1,0 +1,14 @@
+uuid: 4a520e98-eb76-4650-97d9-758dbe1241e6
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: bN028756KF7XukupPmF877oSQWIURVqH1bOJyNFjrXg
+id: width_760px
+label: 'Width - 760px'
+classes: width--760px
+type: section
+group: content_width
+weight: 0
+block_restrictions: {  }
+layout_restrictions: {  }

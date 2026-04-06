@@ -1,0 +1,32 @@
+uuid: bd45f900-73cf-464d-8c6d-6074cb7c43b8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.folwell_infographic_item.field_fi_infographic_number
+    - field.field.paragraph.folwell_infographic_item.field_fi_infographic_text
+    - paragraphs.paragraphs_type.folwell_infographic_item
+_core:
+  default_config_hash: hWQv7X27ZwqXU191wx09Tx8VHfTDU42ryycY4xNzPn0
+id: paragraph.folwell_infographic_item.default
+targetEntityType: paragraph
+bundle: folwell_infographic_item
+mode: default
+content:
+  field_fi_infographic_number:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_fi_infographic_text:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

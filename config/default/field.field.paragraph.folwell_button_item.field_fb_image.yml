@@ -1,0 +1,31 @@
+uuid: 343bfbad-fe25-4673-9142-c60ff11895af
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_fb_image
+    - media.type.image
+    - paragraphs.paragraphs_type.folwell_button_item
+_core:
+  default_config_hash: 27-Y40eQ8bz678j04Q4uog8zyJwLDDDZhUJxCKK47YY
+id: paragraph.folwell_button_item.field_fb_image
+field_name: field_fb_image
+entity_type: paragraph
+bundle: folwell_button_item
+label: Image
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

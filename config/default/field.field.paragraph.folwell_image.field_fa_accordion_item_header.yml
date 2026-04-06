@@ -1,0 +1,21 @@
+uuid: 83961b37-d9f0-4bbf-b7e4-8b80d077de2f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_fa_accordion_item_header
+    - paragraphs.paragraphs_type.folwell_image
+_core:
+  default_config_hash: br8XVFqudcp81X3xTXIc1mpAak5WXqnLRQSWhzTuZl4
+id: paragraph.folwell_image.field_fa_accordion_item_header
+field_name: field_fa_accordion_item_header
+entity_type: paragraph
+bundle: folwell_image
+label: 'Photo Credit'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

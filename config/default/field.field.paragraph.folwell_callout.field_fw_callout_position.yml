@@ -1,0 +1,23 @@
+uuid: 1974e572-272a-49cf-9db7-dd0574f8c56f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_fw_callout_position
+    - paragraphs.paragraphs_type.folwell_callout
+  module:
+    - options
+_core:
+  default_config_hash: 0ym2shGF-A8djFjrzeq39qp0v80OO8Vo4BA3pGyIpEU
+id: paragraph.folwell_callout.field_fw_callout_position
+field_name: field_fw_callout_position
+entity_type: paragraph
+bundle: folwell_callout
+label: Position
+description: '<big>The position only applies to the overlay gold bar, overlay gold, and overlay maroon styles</big>'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

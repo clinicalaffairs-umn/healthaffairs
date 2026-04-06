@@ -1,0 +1,12 @@
+uuid: 5602a6c8-eadb-4f7b-9aa6-09d891cf5f3c
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 9j1Rb5_Qm_DmcG1Ap06BahcQf-br3jMAI0qV4CiXaqc
+id: block_shadow
+label: 'Block shadow'
+multiselect: single
+form_type: checkboxes
+required: false
+weight: 0

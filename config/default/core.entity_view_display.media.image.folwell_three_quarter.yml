@@ -1,0 +1,41 @@
+uuid: a56cb141-be6f-46df-a463-e34b2a8f95a9
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.folwell_three_quarter
+    - field.field.media.image.field_media_image
+    - field.field.media.image.field_media_in_library
+    - image.style.folwell_three_quarter
+    - media.type.image
+  module:
+    - image
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+_core:
+  default_config_hash: lw8agGNxaqHoJ8BcnM2s8XfJ7jd5iOi0tSp97yzeI1M
+id: media.image.folwell_three_quarter
+targetEntityType: media
+bundle: image
+mode: folwell_three_quarter
+content:
+  field_media_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: folwell_three_quarter
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  created: true
+  field_media_in_library: true
+  name: true
+  thumbnail: true
+  uid: true

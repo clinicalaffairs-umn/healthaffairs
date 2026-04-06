@@ -1,0 +1,24 @@
+uuid: e90e7d6f-7de9-4fc7-8907-641b3a8f638e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_fa_text_item_body
+    - paragraphs.paragraphs_type.folwell_button_group
+  module:
+    - text
+_core:
+  default_config_hash: FlIVq6ixr5La4zOitKQV8KKRaBkEYnywVJ_Nk4iu-qo
+id: paragraph.folwell_button_group.field_fa_text_item_body
+field_name: field_fa_text_item_body
+entity_type: paragraph
+bundle: folwell_button_group
+label: 'Intro Text'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

@@ -1,0 +1,22 @@
+uuid: 3fb4d024-49fa-46d1-859d-0d97f5ffad84
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - folwell
+_core:
+  default_config_hash: FBVTPwHeKhk5fIwx2vFkl1M-xyswPFVSRA9SsduSarE
+id: folwell_help
+theme: folwell
+region: content
+weight: -3
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

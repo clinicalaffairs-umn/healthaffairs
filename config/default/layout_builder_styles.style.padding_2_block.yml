@@ -1,0 +1,14 @@
+uuid: 419d699f-5b2a-46af-b934-e8524f087a84
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: '-iOEWXQM-WP9qbI3QN3QPtcYpumQy71ywUyot1CP5L4'
+id: padding_2_block
+label: 'Padding - 2'
+classes: padding-2
+type: component
+group: block_padding
+weight: 0
+block_restrictions: {  }
+layout_restrictions: {  }

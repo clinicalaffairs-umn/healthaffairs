@@ -1,0 +1,24 @@
+uuid: 2fe46c18-ded5-4b5d-8cff-f5d3545f845d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_fa_text_item_body
+    - paragraphs.paragraphs_type.fs_overlay_slide
+  module:
+    - text
+_core:
+  default_config_hash: xoctmcbWFeuhRwFIdtQZEH7kVKY2nstgK_9wYHFZnkc
+id: paragraph.fs_overlay_slide.field_fa_text_item_body
+field_name: field_fa_text_item_body
+entity_type: paragraph
+bundle: fs_overlay_slide
+label: 'Overlay Content'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

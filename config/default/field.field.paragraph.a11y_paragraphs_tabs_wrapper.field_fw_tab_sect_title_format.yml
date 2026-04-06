@@ -1,0 +1,25 @@
+uuid: 100a877e-d1bf-4f13-ade0-cb2b174a0fa2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_fw_tab_sect_title_format
+    - paragraphs.paragraphs_type.a11y_paragraphs_tabs_wrapper
+  module:
+    - options
+_core:
+  default_config_hash: 23Z05MgHBKhl7BazqrqaeTKxE2JgnzhsOImtn-3G7d0
+id: paragraph.a11y_paragraphs_tabs_wrapper.field_fw_tab_sect_title_format
+field_name: field_fw_tab_sect_title_format
+entity_type: paragraph
+bundle: a11y_paragraphs_tabs_wrapper
+label: 'Tab Section Title Format'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: h2
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,12 @@
+uuid: 7e8b4fa9-6c6d-4711-af26-c8be6b594499
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: BZpI3BaJSYJyfurrdXW4nkhRzmCo6iCcs20uh0slU_w
+id: folwell_callout
+label: 'Folwell Callout'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

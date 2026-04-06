@@ -1,0 +1,32 @@
+uuid: 299344e1-b28d-4331-a963-464fe260664a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.folwell_33_image.field_fw_callout_image
+    - paragraphs.paragraphs_type.folwell_33_image
+  module:
+    - media_library
+_core:
+  default_config_hash: 3UspPXsJoY1aQ47K8Bcff5Qsox7jOftmbGIvt_fzXDs
+id: paragraph.folwell_33_image.default
+targetEntityType: paragraph
+bundle: folwell_33_image
+mode: default
+content:
+  field_fw_callout_image:
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    type: media_library_widget
+    region: content
+  moderation_state:
+    type: moderation_state_default
+    weight: 100
+    settings: {  }
+    region: content
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true
+  uid: true

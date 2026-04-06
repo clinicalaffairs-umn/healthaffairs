@@ -1,0 +1,74 @@
+uuid: 60bdc83d-cff7-423e-b86f-dd976280b2bb
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.landing_page.body
+    - field.field.node.landing_page.field_meta_tags
+    - field.field.node.landing_page.layout_builder__layout
+    - field.field.node.landing_page.layout_selection
+    - node.type.landing_page
+  module:
+    - layout_builder
+    - layout_builder_restrictions
+    - layout_discovery
+    - layout_library
+    - metatag
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components: {  }
+        third_party_settings: {  }
+  layout_library:
+    enable: true
+  layout_builder_restrictions:
+    entity_view_mode_restriction:
+      allowed_layouts:
+        - layout_onecol
+        - layout_twocol_section
+        - layout_threecol_section
+        - layout_fourcol_section
+      allowlisted_blocks:
+        'Chaos tools': {  }
+        Content: {  }
+        'Content fields':
+          - 'field_block:node:landing_page:uid'
+          - 'field_block:node:landing_page:created'
+        core:
+          - page_title_block
+        Help: {  }
+        'Lists (Views)': {  }
+        Menus: {  }
+        'Moderation Dashboard': {  }
+        System:
+          - system_breadcrumb_block
+        User: {  }
+        'User fields': {  }
+        Views: {  }
+_core:
+  default_config_hash: C3t79Uhkus2LSFQ5axCYB5hGlk6tidA5i1t9QXLUXH8
+id: node.landing_page.full
+targetEntityType: node
+bundle: landing_page
+mode: full
+content:
+  field_meta_tags:
+    type: metatag_empty_formatter
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  body: true
+  layout_builder__layout: true
+  layout_selection: true
+  links: true

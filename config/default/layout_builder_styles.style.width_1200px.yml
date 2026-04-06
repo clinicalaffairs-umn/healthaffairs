@@ -1,0 +1,14 @@
+uuid: 09116735-ac6c-49e0-b179-4bd57862c1ba
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: uuezweLfKfcH1ttNnhMP50ONClc5SnSZIDzlWjgKEYY
+id: width_1200px
+label: 'Width - 1200px'
+classes: width--1200px
+type: section
+group: content_width
+weight: 0
+block_restrictions: {  }
+layout_restrictions: {  }

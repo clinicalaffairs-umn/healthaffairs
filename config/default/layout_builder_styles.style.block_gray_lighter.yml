@@ -1,0 +1,14 @@
+uuid: 73502b9e-9b06-494f-ae52-66d1eeea3eba
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: G7-7PyyDYzcWok7Xolu8hAJkWChzWvla_DzXiRaZ0M8
+id: block_gray_lighter
+label: Gray-lighter
+classes: "bg-gray-lighter\r\npadding-1"
+type: component
+group: block_background
+weight: 0
+block_restrictions: {  }
+layout_restrictions: {  }

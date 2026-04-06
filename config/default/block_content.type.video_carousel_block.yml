@@ -1,0 +1,10 @@
+uuid: b327e297-c6df-4529-99af-a70495729e76
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 0L0KzxkBBsmk7UjPFM8_zt_NeAhGy3CikicAj8BDSV8
+id: video_carousel_block
+label: 'Video Carousel Block'
+revision: false
+description: null

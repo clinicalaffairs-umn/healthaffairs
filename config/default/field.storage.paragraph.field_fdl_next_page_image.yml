@@ -1,0 +1,22 @@
+uuid: adb6f5c6-f1c1-48aa-956d-6e1cae8bcde4
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+    - paragraphs
+_core:
+  default_config_hash: 0sl_8r-z1_3lWdP0dAste0cJf1JHr2ZXGe7VjvF_hps
+id: paragraph.field_fdl_next_page_image
+field_name: field_fdl_next_page_image
+entity_type: paragraph
+type: entity_reference
+settings:
+  target_type: media
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

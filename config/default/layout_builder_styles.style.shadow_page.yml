@@ -1,0 +1,14 @@
+uuid: d20f2d84-43f4-4724-aae6-f81f77374f90
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: wyqs5IsazuXB3J8d-NS0XC_rqkyKqchAAzm1yHWh6z0
+id: shadow_page
+label: 'Shadow - page'
+classes: shadow-page
+type: section
+group: section_shadow
+weight: 0
+block_restrictions: {  }
+layout_restrictions: {  }

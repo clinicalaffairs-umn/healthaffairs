@@ -1,0 +1,12 @@
+uuid: d8be1f5a-a145-482d-a346-13665af99e5d
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 9itenWkBM1rUUdM-zP5oUD1YxDyfYXcWMHDN1KXlGCo
+id: folwell_link_list
+label: 'Folwell Link List'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

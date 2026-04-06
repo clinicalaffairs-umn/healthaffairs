@@ -1,0 +1,12 @@
+uuid: cd15d751-5b00-4f10-9c15-14dd2f9f2fff
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: JIYJG5W5Chc5FEjIgEuD-vJemDWicA4YJDEkQBgyrjo
+id: folwell_overlay_slideshow
+label: 'Folwell Overlay Slideshow'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

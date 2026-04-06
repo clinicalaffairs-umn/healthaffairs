@@ -1,0 +1,12 @@
+uuid: 6d3170ae-e79c-466e-8372-decfba77467d
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: vBXwjHfD8z5xn9dfeqdD0oF0TiN-YphG93rFXJuEgQU
+id: fa_text_with_optional_header
+label: 'Text with Optional Header'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

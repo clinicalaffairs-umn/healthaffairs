@@ -1,0 +1,12 @@
+uuid: 09cf7d87-a385-4edb-ae99-3833d3a0ec0d
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: aBKljbC8mf8S6_bbp5UzLvZzLDAVEcvJiDpmV3EcS_I
+id: block_padding
+label: 'Block padding'
+multiselect: single
+form_type: checkboxes
+required: false
+weight: 0

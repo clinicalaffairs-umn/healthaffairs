@@ -1,0 +1,14 @@
+uuid: 58403d2d-e0fa-410b-8691-cc27148c724b
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 7esBCJckURbIpq8srrVBI0dlrpx8LroPBSYtS3fX_wk
+id: padding_1
+label: 'Padding - 1'
+classes: padding-1
+type: section
+group: section_padding
+weight: 0
+block_restrictions: {  }
+layout_restrictions: {  }

@@ -1,0 +1,35 @@
+uuid: 151c8030-5abd-4f46-b409-e407d3d76773
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+_core:
+  default_config_hash: von8-WXr2O_IWJMg4Tu58if4_pXxLOZLf-KRLvPcuu8
+id: paragraph.field_carousel_title_format
+field_name: field_carousel_title_format
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: h2
+      label: H2
+    -
+      value: h3
+      label: H3
+    -
+      value: h4
+      label: H4
+    -
+      value: h5
+      label: H5
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

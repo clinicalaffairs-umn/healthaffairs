@@ -1,0 +1,14 @@
+uuid: dbb93a35-e06c-400f-b0d1-845aadae55e1
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: hNpdO1VL6ccup1HzVnWlFTEXSkidgxZHrQuC-1yCvvw
+id: margin_bottom_2
+label: 'Margin-Bottom - 2'
+classes: margin-bottom-2
+type: section
+group: section_margin
+weight: 0
+block_restrictions: {  }
+layout_restrictions: {  }

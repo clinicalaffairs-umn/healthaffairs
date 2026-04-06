@@ -1,0 +1,12 @@
+uuid: 894ed71a-ed44-4b29-893b-d7e4741abde1
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: SnFXtjRf1PdoD4gJ3RhtTLX7O2j9MB1DzwzZryI5FXU
+id: fa_table
+label: Table
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

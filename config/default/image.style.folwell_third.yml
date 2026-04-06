@@ -1,0 +1,23 @@
+uuid: c3b46664-da72-4410-9a57-7401e7d06f99
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: rlUvlri8s9KbZLWuGnA6Kjd5sVuuyHlppE6uShCoCpE
+name: folwell_third
+label: 'Folwell Third Page'
+effects:
+  e5eecde0-71f7-4b6d-9b56-9230d78cbf5c:
+    uuid: e5eecde0-71f7-4b6d-9b56-9230d78cbf5c
+    id: image_scale
+    weight: 1
+    data:
+      width: 368
+      height: null
+      upscale: false
+  239178e9-b03d-44dd-9e40-91517473141c:
+    uuid: 239178e9-b03d-44dd-9e40-91517473141c
+    id: image_convert_avif
+    weight: 2
+    data:
+      extension: webp

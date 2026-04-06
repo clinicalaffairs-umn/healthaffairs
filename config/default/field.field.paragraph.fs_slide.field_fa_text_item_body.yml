@@ -1,0 +1,24 @@
+uuid: 29d6a86b-fa2c-4683-8af2-c8a20e2374f9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_fa_text_item_body
+    - paragraphs.paragraphs_type.fs_slide
+  module:
+    - text
+_core:
+  default_config_hash: bXADUuBy51LzEB2LOIZ1QCINZb4ZRJwEKTRKhJgWGAY
+id: paragraph.fs_slide.field_fa_text_item_body
+field_name: field_fa_text_item_body
+entity_type: paragraph
+bundle: fs_slide
+label: 'Slide Content'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

@@ -1,0 +1,14 @@
+uuid: 96782dc8-6985-42bb-b46d-787fc76baa6f
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 3i0Yy12juOYlgnLGg8174Y7wTZcCILyJRjTg3nfToWM
+id: gold_light
+label: 'Gold - light'
+classes: "background-color\r\nbg-gold-light"
+type: section
+group: section_background
+weight: 0
+block_restrictions: {  }
+layout_restrictions: {  }

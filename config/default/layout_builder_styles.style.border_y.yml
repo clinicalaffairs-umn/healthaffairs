@@ -1,0 +1,14 @@
+uuid: 42405fba-d99c-44cf-9c54-5da1f034fc34
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: faaBi2Yi9osKwbGuhWVEg_4U-Swqa5gcQ94r6KHPxVY
+id: border_y
+label: 'Border - y'
+classes: border-y
+type: section
+group: section_border
+weight: 0
+block_restrictions: {  }
+layout_restrictions: {  }

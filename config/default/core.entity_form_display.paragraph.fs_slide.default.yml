@@ -1,0 +1,50 @@
+uuid: c576bd84-c527-48af-9692-878aa0da1c7e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.fs_slide.field_fa_text_item_body
+    - field.field.paragraph.fs_slide.field_fs_slide_bg
+    - field.field.paragraph.fs_slide.field_fw_callout_image
+    - paragraphs.paragraphs_type.fs_slide
+  module:
+    - media_library
+    - text
+_core:
+  default_config_hash: 66d_oZAwZdNPnnUbCwSJYVPRWAgsBkiAqTXFg_6qFLQ
+id: paragraph.fs_slide.default
+targetEntityType: paragraph
+bundle: fs_slide
+mode: default
+content:
+  field_fa_text_item_body:
+    type: text_textarea
+    weight: 3
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_fs_slide_bg:
+    type: options_select
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_fw_callout_image:
+    type: media_library_widget
+    weight: 1
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  moderation_state:
+    type: moderation_state_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true
+  uid: true

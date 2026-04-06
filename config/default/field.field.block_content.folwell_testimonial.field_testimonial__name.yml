@@ -1,0 +1,21 @@
+uuid: 83faddfd-0696-4ff3-8e4c-bf035547da3b
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.folwell_testimonial
+    - field.storage.block_content.field_testimonial__name
+_core:
+  default_config_hash: l4ZXnJ_XIe2Lo7s7rbHLdvg2MFGnBwoak3RxOMZhHjY
+id: block_content.folwell_testimonial.field_testimonial__name
+field_name: field_testimonial__name
+entity_type: block_content
+bundle: folwell_testimonial
+label: Name
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,21 @@
+uuid: 0d280c8a-27fb-4127-8d3b-4e1e5b19846e
+langcode: en
+status: false
+dependencies: {  }
+id: local
+label: Local
+description: 'Config split for local development. Enables dev modules, disables caching/aggregation.'
+weight: 0
+stackable: false
+no_patching: false
+storage: folder
+folder: ../docroot/sites/default/config/envs/local
+module:
+  devel: 0
+  stage_file_proxy: 0
+  dblog: 0
+  update: 0
+theme: {  }
+complete_list: {  }
+partial_list:
+  - system.performance

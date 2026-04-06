@@ -1,0 +1,25 @@
+uuid: a566c630-7245-4845-adac-3d4187c9e655
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_carousel_title_format
+    - paragraphs.paragraphs_type.video_carousel
+  module:
+    - options
+_core:
+  default_config_hash: zfrgrpRUbFUcEI7d9dtBlOV6CqK-sXYozGBSTQN9-AY
+id: paragraph.video_carousel.field_carousel_title_format
+field_name: field_carousel_title_format
+entity_type: paragraph
+bundle: video_carousel
+label: 'Carousel Title Format'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: h2
+default_value_callback: ''
+settings: {  }
+field_type: list_string

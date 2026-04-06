@@ -1,0 +1,17 @@
+uuid: ed1befb0-b04f-4f62-8932-05586114dfee
+langcode: en
+status: true
+dependencies:
+  module:
+    - lightning_core
+    - media
+third_party_settings:
+  lightning_core:
+    description: ''
+_core:
+  default_config_hash: xPWFjExbhKoLqaghlrb3IgiJBeZG1lph8CoFopOJMuU
+id: media.folwell_half
+label: 'Folwell Half Page Image'
+description: null
+targetEntityType: media
+cache: true

@@ -1,0 +1,62 @@
+uuid: ee8e0fd9-dc38-4b75-8fae-aaa7b9d62a13
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.folwell_directional_link.field_fdl_next_page_image
+    - field.field.paragraph.folwell_directional_link.field_fdl_next_page_title
+    - field.field.paragraph.folwell_directional_link.field_fdl_previous_page_image
+    - field.field.paragraph.folwell_directional_link.field_fdl_previous_page_title
+    - paragraphs.paragraphs_type.folwell_directional_link
+  module:
+    - link
+_core:
+  default_config_hash: zK8YI8X0fJz41KFMOOZhCb75UHAdx4wvzWJP1nIuE7w
+id: paragraph.folwell_directional_link.default
+targetEntityType: paragraph
+bundle: folwell_directional_link
+mode: default
+content:
+  field_fdl_next_page_image:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_fdl_next_page_title:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_fdl_previous_page_image:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_fdl_previous_page_title:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

@@ -1,0 +1,31 @@
+uuid: 285caf4f-d67b-48c6-86e0-27aa8c24e775
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.folwell_testimonial
+    - field.storage.block_content.field_testimonial__image
+    - media.type.image
+_core:
+  default_config_hash: '--4W2Cz10Sy211efW0CRxztGSkGfIGh6bPj--W3b66I'
+id: block_content.folwell_testimonial.field_testimonial__image
+field_name: field_testimonial__image
+entity_type: block_content
+bundle: folwell_testimonial
+label: 'Feature image'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,17 @@
+uuid: 8cea18dd-0b0c-425d-828e-56ce96339d8b
+langcode: en
+status: false
+dependencies: {  }
+id: stage
+label: Stage
+description: 'Config split for the Stage environment.'
+weight: 0
+stackable: false
+no_patching: false
+storage: folder
+folder: ../docroot/sites/default/config/envs/stage
+module: {  }
+theme: {  }
+complete_list: {  }
+partial_list:
+  - system.performance

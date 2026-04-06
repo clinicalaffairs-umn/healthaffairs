@@ -1,0 +1,23 @@
+uuid: a62fc0de-762c-417d-99e2-470ad3eeb926
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+_core:
+  default_config_hash: 7gk2lRxU70LomMM2DK7tcH20tzQcmltXtPJfMnkDnWc
+id: paragraph.field_fi_infographic_text
+field_name: field_fi_infographic_text
+entity_type: paragraph
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

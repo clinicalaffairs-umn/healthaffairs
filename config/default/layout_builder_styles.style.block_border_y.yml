@@ -1,0 +1,14 @@
+uuid: 2560ce4f-1f8e-4957-8c66-38b13ba661bd
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: RC02aUyhpW3U2Q0hHGx6RFbtLXVig-_yyjfltzJsLbo
+id: block_border_y
+label: 'Border - y'
+classes: border-y
+type: component
+group: block_border
+weight: 0
+block_restrictions: {  }
+layout_restrictions: {  }

@@ -1,0 +1,14 @@
+uuid: db55cad3-e6c9-455a-9b76-5de91c4e0479
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: zKpQAdZ4WMIKM75iw6_yNBZLDE_sBZz_5MzX7UAdYJ4
+id: block_border_bottom
+label: 'Border - bottom'
+classes: border-bottom
+type: component
+group: block_border
+weight: 0
+block_restrictions: {  }
+layout_restrictions: {  }

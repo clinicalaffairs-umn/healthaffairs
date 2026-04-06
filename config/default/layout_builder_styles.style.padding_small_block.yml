@@ -1,0 +1,14 @@
+uuid: 1bc33253-f066-44ca-9e35-846ff3683ecb
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: CBZRRwf76Rz_ddCnr5ALfKMk0ckuxXnMgOcFx873XIg
+id: padding_small_block
+label: 'Padding - small'
+classes: padding_small
+type: component
+group: block_padding
+weight: 0
+block_restrictions: {  }
+layout_restrictions: {  }

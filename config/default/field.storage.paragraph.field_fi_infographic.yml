@@ -1,0 +1,22 @@
+uuid: db7e15d3-e86c-41d2-a771-e5e287486004
+langcode: en
+status: true
+dependencies:
+  module:
+    - entity_reference_revisions
+    - paragraphs
+_core:
+  default_config_hash: TSB-DQcEmdDmeaeyY5FuR7pNKSCOzDueKFDBlD_bDn0
+id: paragraph.field_fi_infographic
+field_name: field_fi_infographic
+entity_type: paragraph
+type: entity_reference_revisions
+settings:
+  target_type: paragraph
+module: entity_reference_revisions
+locked: false
+cardinality: 3
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

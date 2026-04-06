@@ -1,0 +1,12 @@
+uuid: 21316ed4-6442-453d-8576-497d9c3e0684
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: ZJwIIA7vRDFgJa68gDWeppm-x0kX8ELWVnlRkmOJHBU
+id: section_padding
+label: 'Section padding'
+multiselect: single
+form_type: checkboxes
+required: false
+weight: 0

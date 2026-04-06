@@ -1,0 +1,43 @@
+{
+    "minimum-stability": "alpha",
+    "prefer-stable": true,
+    "repositories": {
+        "drupal": {
+            "type": "composer",
+            "url": "https://packages.drupal.org/8"
+        }
+    },
+    "require": {
+        "composer/installers": "~2.0",
+        "cweagans/composer-patches": "^1.7",
+        "mnsami/composer-custom-directory-installer": "^2.0"
+    },
+    "replace": {
+        "drupal/ckeditor": "*",
+        "drupal/crop": "*",
+        "drupal/libraries": "4.*",
+        "drupal/core": "11.*"
+    },
+    "extra": {
+        "installer-paths": {
+            "libraries/{$name}": ["type:drupal-library"],
+            "modules/contrib/{$name}": ["type:drupal-module"],
+            "themes/contrib/{$name}": ["type:drupal-theme"],
+            "drush/{$name}": ["type:drupal-drush"],
+            "modules/custom/{$name}": ["type:drupal-custom-module"],
+            "themes/custom/{$name}": ["type:drupal-custom-theme"]
+        },
+        "patches": {},
+        "enable-patching": true
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "allow-plugins": {
+            "composer/installers": true,
+            "cweagans/composer-patches": true,
+            "mnsami/composer-custom-directory-installer": true
+        }
+    }
+}

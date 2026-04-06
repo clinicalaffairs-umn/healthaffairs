@@ -1,0 +1,111 @@
+uuid: 920b01d1-b758-4cd7-b9bf-62f706280c77
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_fw_equal_height_callouts
+    - paragraphs.paragraphs_type.folwell_callout
+    - paragraphs.paragraphs_type.folwell_equal_height_callouts
+  module:
+    - entity_reference_revisions
+_core:
+  default_config_hash: RokKFoveI2PG1BUmt49LU2waLMOQ4Y3kA2HF9WmO6WQ
+id: paragraph.folwell_equal_height_callouts.field_fw_equal_height_callouts
+field_name: field_fw_equal_height_callouts
+entity_type: paragraph
+bundle: folwell_equal_height_callouts
+label: 'Equal Height Callouts'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      folwell_callout: folwell_callout
+    negate: 0
+    target_bundles_drag_drop:
+      a11y_paragraphs_tab_content:
+        weight: 29
+        enabled: false
+      a11y_paragraphs_tabs_panel:
+        weight: 27
+        enabled: false
+      a11y_paragraphs_tabs_wrapper:
+        weight: 28
+        enabled: false
+      fa_accordion_item:
+        weight: 30
+        enabled: false
+      fa_table:
+        weight: 31
+        enabled: false
+      fa_text_with_optional_header:
+        weight: 32
+        enabled: false
+      folwell_100_image:
+        weight: 33
+        enabled: false
+      folwell_20_image:
+        weight: 34
+        enabled: false
+      folwell_33_image:
+        weight: 35
+        enabled: false
+      folwell_50_image:
+        weight: 36
+        enabled: false
+      folwell_75_image:
+        weight: 37
+        enabled: false
+      folwell_accordion:
+        weight: 38
+        enabled: false
+      folwell_button_group:
+        weight: 39
+        enabled: false
+      folwell_button_item:
+        weight: 40
+        enabled: false
+      folwell_callout:
+        weight: 41
+        enabled: true
+      folwell_directional_link:
+        weight: 42
+        enabled: false
+      folwell_equal_height_callout:
+        weight: 44
+        enabled: true
+      folwell_equal_height_callouts:
+        weight: 43
+        enabled: false
+      folwell_image:
+        weight: 44
+        enabled: false
+      folwell_infographic_group:
+        weight: 45
+        enabled: false
+      folwell_infographic_item:
+        weight: 46
+        enabled: false
+      folwell_link_list:
+        weight: 47
+        enabled: false
+      folwell_overlay_slideshow:
+        weight: 48
+        enabled: false
+      folwell_slideshow:
+        weight: 49
+        enabled: false
+      folwell_transparent_overlay_call:
+        weight: 50
+        enabled: false
+      fs_overlay_slide:
+        weight: 51
+        enabled: false
+      fs_slide:
+        weight: 52
+        enabled: false
+field_type: entity_reference_revisions

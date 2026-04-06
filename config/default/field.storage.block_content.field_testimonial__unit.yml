@@ -1,0 +1,23 @@
+uuid: 886adab3-298f-4437-a813-752eab330ac7
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+_core:
+  default_config_hash: YsGZQVdLR-yD6vX-RaJ6gkeYfiH2H18JaBoXFJn92CA
+id: block_content.field_testimonial__unit
+field_name: field_testimonial__unit
+entity_type: block_content
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

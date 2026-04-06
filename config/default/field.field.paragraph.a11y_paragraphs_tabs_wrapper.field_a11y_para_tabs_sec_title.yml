@@ -1,0 +1,22 @@
+uuid: bab005b3-bcac-4901-b574-994af21974f5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_a11y_para_tabs_sec_title
+    - paragraphs.paragraphs_type.a11y_paragraphs_tabs_wrapper
+  module:
+    - text
+id: paragraph.a11y_paragraphs_tabs_wrapper.field_a11y_para_tabs_sec_title
+field_name: field_a11y_para_tabs_sec_title
+entity_type: paragraph
+bundle: a11y_paragraphs_tabs_wrapper
+label: 'Tabs Section Title'
+description: 'Add a section title if needed.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text

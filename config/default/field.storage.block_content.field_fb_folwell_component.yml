@@ -1,0 +1,23 @@
+uuid: 57cd325c-98b1-45cb-a9e4-48a20a1f053c
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - entity_reference_revisions
+    - paragraphs
+_core:
+  default_config_hash: Bqi77mAxXfbVSGIyk2NPjk4oNw_QKXW4A4xUIE-iJEo
+id: block_content.field_fb_folwell_component
+field_name: field_fb_folwell_component
+entity_type: block_content
+type: entity_reference_revisions
+settings:
+  target_type: paragraph
+module: entity_reference_revisions
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

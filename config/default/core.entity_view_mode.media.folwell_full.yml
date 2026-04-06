@@ -1,0 +1,17 @@
+uuid: c79e7d91-726d-4e52-9604-184e2bbd530b
+langcode: en
+status: true
+dependencies:
+  module:
+    - lightning_core
+    - media
+third_party_settings:
+  lightning_core:
+    description: ''
+_core:
+  default_config_hash: en7j41v7HF4ru4HxnBH75mCzP356_72BLcMr4h8EcZQ
+id: media.folwell_full
+label: 'Folwell Full Page Image'
+description: null
+targetEntityType: media
+cache: true

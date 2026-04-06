@@ -1,0 +1,12 @@
+uuid: e477a5a0-14e8-460b-8113-74c3d4127507
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: ydToR58TIdRhngIUU6JPGrpfX8sEinXpnEPoqloZSa4
+id: folwell_button_group
+label: 'Folwell Button Group'
+icon_uuid: null
+icon_default: null
+description: 'The Button Group component allows the user to create several buttons that will adjust their layout depending on the number of buttons.'
+behavior_plugins: {  }

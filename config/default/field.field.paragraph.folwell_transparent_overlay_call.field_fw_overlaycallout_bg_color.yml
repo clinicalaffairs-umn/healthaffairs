@@ -1,0 +1,23 @@
+uuid: 2f7b6919-991e-4e6e-8f12-3333cebc6c02
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_fw_overlaycallout_bg_color
+    - paragraphs.paragraphs_type.folwell_transparent_overlay_call
+  module:
+    - options
+_core:
+  default_config_hash: End3FTl9wWMG99ykiFEix4ifdlTFQhmkqeMabnGFjIM
+id: paragraph.folwell_transparent_overlay_call.field_fw_overlaycallout_bg_color
+field_name: field_fw_overlaycallout_bg_color
+entity_type: paragraph
+bundle: folwell_transparent_overlay_call
+label: 'Background Color'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

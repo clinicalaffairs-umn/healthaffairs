@@ -1,0 +1,14 @@
+uuid: ad3adbd2-cde8-4e76-9158-231efc9c1b27
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: jayJZ9UJ9JYfuX3IXrL5G5VjBxpSaQdtWcqsVsCA6sE
+id: gray_light
+label: 'Gray - light'
+classes: "background-color\r\nbg-gray-light"
+type: section
+group: section_background
+weight: 0
+block_restrictions: {  }
+layout_restrictions: {  }

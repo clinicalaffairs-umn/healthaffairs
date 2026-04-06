@@ -1,0 +1,21 @@
+uuid: e60dc06f-2343-4722-8faa-ac3cb2ea24aa
+langcode: en
+status: true
+dependencies:
+  module:
+    - link
+    - paragraphs
+_core:
+  default_config_hash: FIbX9PMWvnnFU96E3jMESko-BXWNrp6X5HUZuTwezgE
+id: paragraph.field_fdl_next_page_title
+field_name: field_fdl_next_page_title
+entity_type: paragraph
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

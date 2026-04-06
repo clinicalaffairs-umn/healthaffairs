@@ -1,0 +1,14 @@
+uuid: f7003b07-8166-4faa-aa15-85b97b594093
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: HBCUYBM-kx3p0FQqod59BftL6EQeXLuwwwc82Y6zpX0
+id: gold_light_block
+label: 'Gold - light'
+classes: "bg-gold-light\r\npadding-1"
+type: component
+group: block_background
+weight: 0
+block_restrictions: {  }
+layout_restrictions: {  }

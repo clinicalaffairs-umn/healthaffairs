@@ -1,0 +1,40 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.a11y_paragraphs_tabs_wrapper.field_a11y_para_tabs_sec_title
+    - field.field.paragraph.a11y_paragraphs_tabs_wrapper.field_a11y_para_tabs_tabs_panel
+    - field.field.paragraph.a11y_paragraphs_tabs_wrapper.field_fw_tab_sect_title_format
+    - paragraphs.paragraphs_type.a11y_paragraphs_tabs_wrapper
+  module:
+    - entity_reference_revisions
+    - text
+id: paragraph.a11y_paragraphs_tabs_wrapper.default
+targetEntityType: paragraph
+bundle: a11y_paragraphs_tabs_wrapper
+mode: default
+content:
+  field_a11y_para_tabs_sec_title:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_a11y_para_tabs_tabs_panel:
+    type: entity_reference_revisions_entity_view
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_fw_tab_sect_title_format:
+    type: list_key
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden: {  }

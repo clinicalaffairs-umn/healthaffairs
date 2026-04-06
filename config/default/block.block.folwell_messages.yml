@@ -1,0 +1,22 @@
+uuid: ed644635-2af9-44ab-b64d-f7ac9b26cd0f
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - folwell
+_core:
+  default_config_hash: Cm5NuMBNaYZdrvGRLDkHqBGwC-EOFyFCOWmZ0sFecfo
+id: folwell_messages
+theme: folwell
+region: featured
+weight: -5
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  label_display: '0'
+  provider: system
+visibility: {  }

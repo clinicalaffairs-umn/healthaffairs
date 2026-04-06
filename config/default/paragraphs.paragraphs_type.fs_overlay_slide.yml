@@ -1,0 +1,12 @@
+uuid: ee5c56a7-9a08-43df-812c-7daeb1d572d7
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 7yoHlC7t6aHcPpeXzn_ylxr7W2QHdCCfyAda47rkH_c
+id: fs_overlay_slide
+label: 'Overlay Slide'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

@@ -1,0 +1,23 @@
+uuid: 04eabc0c-053f-4b2b-b90b-e9b56d47d980
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: JPg77guJP25V7YySfN-XaFoL_60XL5rQmRLf5jw1y04
+name: folwell_three_quarter
+label: 'Folwell Three Quarter Page'
+effects:
+  fdefa614-c14f-4557-87c7-7d696051d358:
+    uuid: fdefa614-c14f-4557-87c7-7d696051d358
+    id: image_scale
+    weight: 1
+    data:
+      width: 900
+      height: null
+      upscale: false
+  5c2f9eef-379e-4d90-8f0c-bcd215df7bbd:
+    uuid: 5c2f9eef-379e-4d90-8f0c-bcd215df7bbd
+    id: image_convert_avif
+    weight: 2
+    data:
+      extension: webp

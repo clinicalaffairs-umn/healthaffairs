@@ -1,0 +1,25 @@
+uuid: b4ca11e0-66ae-4161-99ba-bff8c984e260
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_fs_position
+    - paragraphs.paragraphs_type.fs_overlay_slide
+  module:
+    - options
+_core:
+  default_config_hash: S5Mq8svmWgI-wWCJ66YZr4ap83Arjcb58_ERM6dz7c0
+id: paragraph.fs_overlay_slide.field_fs_position
+field_name: field_fs_position
+entity_type: paragraph
+bundle: fs_overlay_slide
+label: 'Overlay Position'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: left
+default_value_callback: ''
+settings: {  }
+field_type: list_string

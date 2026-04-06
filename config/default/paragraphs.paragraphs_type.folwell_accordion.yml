@@ -1,0 +1,12 @@
+uuid: 5b4812f2-4f41-4fd6-bd3a-762789d2a002
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: '-inuBCXY3vIN_dunqwdr_sD0XSz0S-MoeUEO8zVQh9I'
+id: folwell_accordion
+label: 'Folwell Accordion'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

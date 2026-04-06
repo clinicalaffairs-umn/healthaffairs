@@ -1,0 +1,51 @@
+uuid: 523e920d-ccc6-4b10-bbfb-e4c6968e248d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.fs_overlay_slide.field_fa_text_item_body
+    - field.field.paragraph.fs_overlay_slide.field_fs_overlay_slide_bg_color
+    - field.field.paragraph.fs_overlay_slide.field_fs_position
+    - field.field.paragraph.fs_overlay_slide.field_fw_callout_image
+    - paragraphs.paragraphs_type.fs_overlay_slide
+  module:
+    - options
+    - text
+_core:
+  default_config_hash: oMg24MRrPHMtilBpqSWerPvA1GOyVvVr_YtomEfG_V4
+id: paragraph.fs_overlay_slide.default
+targetEntityType: paragraph
+bundle: fs_overlay_slide
+mode: default
+content:
+  field_fa_text_item_body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_fs_overlay_slide_bg_color:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_fs_position:
+    type: list_key
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_fw_callout_image:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: folwell_full
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

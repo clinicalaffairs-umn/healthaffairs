@@ -1,0 +1,17 @@
+uuid: 620f2656-7442-44fb-9050-90d819f00e3b
+langcode: en
+status: false
+dependencies: {  }
+id: prod
+label: Prod
+description: 'Config split for the Production environment.'
+weight: 0
+stackable: false
+no_patching: false
+storage: folder
+folder: ../docroot/sites/default/config/envs/prod
+module: {  }
+theme: {  }
+complete_list: {  }
+partial_list:
+  - system.performance

@@ -1,0 +1,14 @@
+uuid: 201fa405-d8a2-4959-a231-c6fad31414db
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: T004mMbMJjwjIMbAZNyK0rurbog3q_ogov3tY_twVRA
+id: gold
+label: Gold
+classes: "background-color\r\nbg-gold"
+type: section
+group: section_background
+weight: 0
+block_restrictions: {  }
+layout_restrictions: {  }

@@ -1,0 +1,24 @@
+uuid: 5d1311b7-cb31-441e-bb0b-fba8fc37356d
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.folwell_testimonial
+    - field.storage.block_content.field_testimonial__quote
+  module:
+    - text
+_core:
+  default_config_hash: S_fKEg1ED5-BDNkWm8cXCt3dHOiRZb7E6cA2ztI3rVg
+id: block_content.folwell_testimonial.field_testimonial__quote
+field_name: field_testimonial__quote
+entity_type: block_content
+bundle: folwell_testimonial
+label: Quote
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

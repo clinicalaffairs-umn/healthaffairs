@@ -1,0 +1,25 @@
+uuid: b6507436-d788-41a2-bb2d-1e5f21e8d847
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_fl_link_list_item
+    - paragraphs.paragraphs_type.folwell_link_list
+  module:
+    - link
+_core:
+  default_config_hash: pRhEiUUVtnDVt8HWZUUvNclKxKx3ffazvozEEAdIbwc
+id: paragraph.folwell_link_list.field_fl_link_list_item
+field_name: field_fl_link_list_item
+entity_type: paragraph
+bundle: folwell_link_list
+label: 'Link List Items'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 2
+field_type: link

@@ -1,0 +1,17 @@
+uuid: 60ddbd9f-3ec3-4377-ad95-12594553cfd7
+langcode: en
+status: true
+dependencies:
+  module:
+    - lightning_core
+    - media
+third_party_settings:
+  lightning_core:
+    description: 'Displayed with Button Items. 3:2 Aspect ratio.'
+_core:
+  default_config_hash: WcynSAE3fJhkqeGJ3lpFBe3mOQVFUZ_W-_6U2xA57bY
+id: media.folwell_button_image
+label: 'Folwell Button Image'
+description: null
+targetEntityType: media
+cache: true

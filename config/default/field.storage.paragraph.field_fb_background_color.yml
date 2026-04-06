@@ -1,0 +1,35 @@
+uuid: 5b6faae9-7f20-43d4-a3a2-fc479b385a41
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+_core:
+  default_config_hash: 6XSq4yMijXNnX2LQURY9s-V35masUZ0tq55v8exz23M
+id: paragraph.field_fb_background_color
+field_name: field_fb_background_color
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: bg-white
+      label: White
+    -
+      value: bg-gray-lighter
+      label: Gray
+    -
+      value: bg-gold-light
+      label: Gold
+    -
+      value: bg-maroon
+      label: Maroon
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

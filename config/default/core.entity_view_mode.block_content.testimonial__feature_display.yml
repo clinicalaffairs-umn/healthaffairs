@@ -1,0 +1,17 @@
+uuid: efafd5e1-0812-4b03-bf29-baaf36dc5d54
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - lightning_core
+third_party_settings:
+  lightning_core:
+    description: ''
+_core:
+  default_config_hash: mxlOdX-TyjO6TsM3GIIgRsSIJ2IlbbwvkqUFjYIKsV4
+id: block_content.testimonial__feature_display
+label: 'Feature display'
+description: null
+targetEntityType: block_content
+cache: true

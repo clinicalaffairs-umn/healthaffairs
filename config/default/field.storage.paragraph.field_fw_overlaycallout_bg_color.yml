@@ -1,0 +1,35 @@
+uuid: 82cc6c83-4a3d-4170-9ca3-5bc461a5e8d0
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+_core:
+  default_config_hash: 6Vr_KUwhYkkr8X2UeW0-Im0WN6PBrGUObJEzSFQeJCA
+id: paragraph.field_fw_overlaycallout_bg_color
+field_name: field_fw_overlaycallout_bg_color
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: overlay-gold
+      label: Gold
+    -
+      value: overlay-gray
+      label: Gray
+    -
+      value: overlay-maroon
+      label: Maroon
+    -
+      value: overlay-white
+      label: White
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

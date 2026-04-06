@@ -1,0 +1,14 @@
+uuid: 12ed979c-fb00-4c78-a077-7d1bd391de9a
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 9QoZHgxGpQm6KMXWlJDwioUiqPDeEQHzhlxV-CHul6g
+id: margin_top_2em
+label: 'Margin-top - 2em'
+classes: margin-top-2
+type: component
+group: block_margin
+weight: 0
+block_restrictions: {  }
+layout_restrictions: {  }

@@ -1,0 +1,24 @@
+uuid: e62f736c-a827-4b42-8e18-82e091ce2116
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_fa_text_item_body
+    - paragraphs.paragraphs_type.fa_text_with_optional_header
+  module:
+    - text
+_core:
+  default_config_hash: IaGjnoIFwaecmaK7EMAVltW6L-fC_9QeL0YL38HopKA
+id: paragraph.fa_text_with_optional_header.field_fa_text_item_body
+field_name: field_fa_text_item_body
+entity_type: paragraph
+bundle: fa_text_with_optional_header
+label: 'Text Item Body'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

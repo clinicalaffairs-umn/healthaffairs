@@ -1,0 +1,10 @@
+uuid: 2ae21d0c-a3e5-4c67-b1fe-f3db5cfb1330
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: UWZBAiuLg112bcNP_fZOW8XYF30OP1PjBq3MhGqC6xk
+id: folwell_component
+label: 'Folwell Component'
+revision: 1
+description: 'Use this block type for adding Folwell theme components to your page'

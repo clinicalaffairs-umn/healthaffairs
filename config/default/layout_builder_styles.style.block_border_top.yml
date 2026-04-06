@@ -1,0 +1,14 @@
+uuid: 715096f7-e44d-4036-a74b-a603f7dde384
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: UdzcxeRN3Ga5JTuvEgIDUoKuyPeOBVqc_bhj74MO2KY
+id: block_border_top
+label: 'Border - top'
+classes: border-top
+type: component
+group: block_border
+weight: 0
+block_restrictions: {  }
+layout_restrictions: {  }

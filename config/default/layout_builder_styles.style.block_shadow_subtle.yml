@@ -1,0 +1,14 @@
+uuid: 629c345a-5a88-4120-bad6-84a24caf482a
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: xsTIsv_AXs6K18wzil8o2eFATtM2HcQhQAjKhgYfJe4
+id: block_shadow_subtle
+label: 'Shadow - subtle'
+classes: shadow-subtle
+type: component
+group: block_shadow
+weight: 0
+block_restrictions: {  }
+layout_restrictions: {  }

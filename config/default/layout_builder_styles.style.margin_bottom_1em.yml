@@ -1,0 +1,14 @@
+uuid: 9633cc6d-da67-4715-92db-1955995ddc7a
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: wIEqZ33oxB12iT52PU10ND8R4e2PhjKjWNttJS_SelM
+id: margin_bottom_1em
+label: 'Margin-bottom - 1em'
+classes: margin-bottom-1
+type: component
+group: block_margin
+weight: 0
+block_restrictions: {  }
+layout_restrictions: {  }

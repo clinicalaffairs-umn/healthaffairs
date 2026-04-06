@@ -1,0 +1,20 @@
+_core:
+  default_config_hash: zA2SjkhN42_Kq5gXm_4lBpTo-jgqOVfBgo6Gm6322g4
+favicon:
+  use_default: true
+page_width: fixed-width
+vertical_navigation: 0
+campus_select: umnhf-campus-tc
+dtd_select: dtd
+myu_text: sfs
+campus_links: no-links
+header_color: umnhf-background-maroon
+mobile_search: dropdown
+privacy_link: 'https://privacy.umn.edu'
+footer_date: 0
+first_line: ''
+site_name: ''
+parent_unit: ''
+parent_url: ''
+enable_full_width_caption: 0
+display_search_box: 'yes'

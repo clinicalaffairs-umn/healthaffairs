@@ -1,0 +1,9 @@
+_core:
+  default_config_hash: oNtgm16cwAKlyvZNJRtjutQvBW4OLB68VkdDVwUc5Ao
+cse_selection: All
+cse_site_search_urls:
+  - ''
+cse_site_search_options: Default
+cse_results_page: /search/results
+cse_placeholder_text: 'Search UMN'
+people_search_display: true

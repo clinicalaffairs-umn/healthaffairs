@@ -1,0 +1,15 @@
+uuid: 2c7568cb-7907-48ca-8faa-95dc5f7a6485
+langcode: en
+status: true
+dependencies:
+  module:
+    - lightning_core
+    - media_bulk_upload
+third_party_settings:
+  lightning_core:
+    internal: true
+id: media_bulk_config.token
+label: Token
+description: null
+targetEntityType: media_bulk_config
+cache: true

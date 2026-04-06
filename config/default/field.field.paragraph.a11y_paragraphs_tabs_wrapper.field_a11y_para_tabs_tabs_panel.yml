@@ -1,0 +1,34 @@
+uuid: c684929b-93f4-44b3-8559-16219dc505f2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_a11y_para_tabs_tabs_panel
+    - paragraphs.paragraphs_type.a11y_paragraphs_tabs_panel
+    - paragraphs.paragraphs_type.a11y_paragraphs_tabs_wrapper
+  module:
+    - entity_reference_revisions
+id: paragraph.a11y_paragraphs_tabs_wrapper.field_a11y_para_tabs_tabs_panel
+field_name: field_a11y_para_tabs_tabs_panel
+entity_type: paragraph
+bundle: a11y_paragraphs_tabs_wrapper
+label: 'Tabs Panel'
+description: 'Add Tabs Panel.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      a11y_paragraphs_tabs_panel: a11y_paragraphs_tabs_panel
+    negate: 0
+    target_bundles_drag_drop:
+      a11y_paragraphs_tabs_panel:
+        weight: 3
+        enabled: true
+      a11y_paragraphs_tabs_wrapper:
+        weight: 4
+        enabled: false
+field_type: entity_reference_revisions

@@ -1,0 +1,32 @@
+uuid: 6f088cb0-f9b7-4e6d-9dd4-16b8ed508f42
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_fw_callout_image
+    - media.type.image
+    - media.type.instagram
+    - paragraphs.paragraphs_type.fs_slide
+_core:
+  default_config_hash: 7x9_rrcy7zWGt1_XkLouHsicdEfzMMebpb4N6D-iB80
+id: paragraph.fs_slide.field_fw_callout_image
+field_name: field_fw_callout_image
+entity_type: paragraph
+bundle: fs_slide
+label: 'Slide Media'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+      instagram: instagram
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: image
+field_type: entity_reference

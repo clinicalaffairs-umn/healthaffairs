@@ -1,0 +1,26 @@
+uuid: e53ca1b7-0877-4f71-94b0-8479078f85ad
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.video_carousel_block
+    - field.field.block_content.video_carousel_block.field_video_carousel_component
+  module:
+    - entity_reference_revisions
+_core:
+  default_config_hash: psixGkJ2DYhS0W48BDOLovmr-S8mPfrrNTMaTvhkv_Y
+id: block_content.video_carousel_block.default
+targetEntityType: block_content
+bundle: video_carousel_block
+mode: default
+content:
+  field_video_carousel_component:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

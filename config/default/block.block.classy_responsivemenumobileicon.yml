@@ -1,0 +1,22 @@
+uuid: dba98d5f-84c0-45bb-8b69-09fb38331fe8
+langcode: en
+status: true
+dependencies:
+  module:
+    - responsive_menu
+  theme:
+    - classy
+_core:
+  default_config_hash: jOlzCZSH3-xMGnDOym0wgk_obbIt8dbViNwwpXMZOjQ
+id: classy_responsivemenumobileicon
+theme: classy
+region: header
+weight: -6
+provider: null
+plugin: responsive_menu_toggle
+settings:
+  id: responsive_menu_toggle
+  label: 'Responsive menu mobile icon'
+  label_display: '0'
+  provider: responsive_menu
+visibility: {  }

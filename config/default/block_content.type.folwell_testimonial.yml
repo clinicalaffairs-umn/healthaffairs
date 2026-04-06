@@ -1,0 +1,10 @@
+uuid: 558a52a0-bc08-4a49-8090-608d0760e552
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: zjyeoI8-efdJi_iK_9kNEMlVT_yP_bmz_Z0oVXigd9s
+id: folwell_testimonial
+label: 'Folwell Testimonial'
+revision: false
+description: 'Testimonial custom block type'

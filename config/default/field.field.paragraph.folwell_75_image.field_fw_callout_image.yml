@@ -1,0 +1,31 @@
+uuid: 5bcbd014-2be4-4be6-b977-7221b0506cb5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_fw_callout_image
+    - media.type.image
+    - paragraphs.paragraphs_type.folwell_75_image
+_core:
+  default_config_hash: gcyYO1K_D2bpuqO4IIFT9oVENHF2YkOP8HmSH_l3ebk
+id: paragraph.folwell_75_image.field_fw_callout_image
+field_name: field_fw_callout_image
+entity_type: paragraph
+bundle: folwell_75_image
+label: Image
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference
