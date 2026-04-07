@@ -1,0 +1,27 @@
+uuid: 72b4153e-0970-4355-8e49-8147e0c47be4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.portal_grid.field_alternate_styling
+    - field.field.paragraph.portal_grid.field_portals
+    - paragraphs.paragraphs_type.portal_grid
+  module:
+    - entity_reference_revisions
+id: paragraph.portal_grid.default
+targetEntityType: paragraph
+bundle: portal_grid
+mode: default
+content:
+  field_portals:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_alternate_styling: true
+  search_api_excerpt: true

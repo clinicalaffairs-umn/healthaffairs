@@ -1,0 +1,10 @@
+uuid: 3b162719-e060-45bd-9620-c1a342e12b32
+langcode: en
+status: true
+dependencies: {  }
+id: portal
+label: Portal
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

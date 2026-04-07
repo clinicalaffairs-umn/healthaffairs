@@ -1,0 +1,10 @@
+uuid: b10fe0b2-86b1-4b47-854a-36f6bb6b493f
+langcode: en
+status: true
+dependencies: {  }
+id: portal_grid
+label: 'Portal Grid'
+icon_uuid: null
+icon_default: null
+description: 'Display a collection of Portal content'
+behavior_plugins: {  }

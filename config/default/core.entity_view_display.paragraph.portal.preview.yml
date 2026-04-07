@@ -1,0 +1,47 @@
+uuid: 8b4e77f6-d542-4866-be36-882e4e0e72fd
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.portal.field_headline
+    - field.field.paragraph.portal.field_image
+    - field.field.paragraph.portal.field_link
+    - field.field.paragraph.portal.field_text
+    - paragraphs.paragraphs_type.portal
+  module:
+    - layout_builder
+    - link
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: paragraph.portal.preview
+targetEntityType: paragraph
+bundle: portal
+mode: preview
+content:
+  field_headline:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_link:
+    type: link
+    label: visually_hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  field_image: true
+  field_text: true
+  search_api_excerpt: true

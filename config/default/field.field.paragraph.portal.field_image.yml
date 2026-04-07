@@ -1,0 +1,28 @@
+uuid: a6b73af2-e28a-436c-9d2c-ca74d9225c07
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_image
+    - media.type.image
+    - paragraphs.paragraphs_type.portal
+id: paragraph.portal.field_image
+field_name: field_image
+entity_type: paragraph
+bundle: portal
+label: Image
+description: 'For best results, select an image no smaller than 730x480px'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,36 @@
+uuid: b4039984-605c-48f1-ac37-9a5547f41830
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.portal_grid.field_alternate_styling
+    - field.field.paragraph.portal_grid.field_portals
+    - paragraphs.paragraphs_type.portal_grid
+  module:
+    - entity_reference_revisions
+    - field_delimiter
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: paragraph.portal_grid.preview
+targetEntityType: paragraph
+bundle: portal_grid
+mode: preview
+content:
+  field_portals:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: preview
+      link: ''
+    third_party_settings:
+      field_delimiter:
+        delimiter: ''
+    weight: 0
+    region: content
+hidden:
+  field_alternate_styling: true
+  search_api_excerpt: true

@@ -1,0 +1,23 @@
+uuid: b2fbf436-2431-463b-b222-20c814a3c692
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_alternate_styling
+    - paragraphs.paragraphs_type.portal_grid
+id: paragraph.portal_grid.field_alternate_styling
+field_name: field_alternate_styling
+entity_type: paragraph
+bundle: portal_grid
+label: 'Alternate Styling'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean
