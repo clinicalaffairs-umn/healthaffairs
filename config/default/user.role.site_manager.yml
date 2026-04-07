@@ -7,6 +7,7 @@ dependencies:
     - taxonomy.vocabulary.title_position
   module:
     - lightning_core
+    - webform
 third_party_settings:
   lightning_core:
     description: ''
@@ -15,9 +16,22 @@ label: 'Site Manager'
 weight: 4
 is_admin: false
 permissions:
+  - 'access webform overview'
+  - 'access webform submission user'
   - 'create terms in staff_group'
   - 'create terms in title_position'
+  - 'create webform'
+  - 'delete any webform'
+  - 'delete any webform submission'
+  - 'delete own webform'
+  - 'delete own webform submission'
   - 'delete terms in staff_group'
   - 'delete terms in title_position'
+  - 'edit any webform'
+  - 'edit any webform submission'
+  - 'edit own webform'
+  - 'edit own webform submission'
   - 'edit terms in staff_group'
   - 'edit terms in title_position'
+  - 'view any webform submission'
+  - 'view own webform submission'

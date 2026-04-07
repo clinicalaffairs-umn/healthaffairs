@@ -1,0 +1,10 @@
+uuid: f167b00e-2a89-4e17-bb69-4b0b2fae65ba
+langcode: en
+status: true
+dependencies: {  }
+id: form_placer
+label: 'Form Placer'
+icon_uuid: null
+icon_default: null
+description: 'Add webform to other pages'
+behavior_plugins: {  }
