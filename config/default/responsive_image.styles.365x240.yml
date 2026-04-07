@@ -1,0 +1,30 @@
+uuid: 98a2cabe-6a3e-406f-abe6-d86fba249c62
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.365x240
+    - image.style.365x240_1_5x
+    - image.style.365x240_2x
+  theme:
+    - oaca_subtheme
+id: 365x240
+label: 365x240
+image_style_mappings:
+  -
+    image_mapping_type: image_style
+    image_mapping: 365x240
+    breakpoint_id: oaca_subtheme.mobile
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: 365x240_1_5x
+    breakpoint_id: oaca_subtheme.mobile
+    multiplier: 1.5x
+  -
+    image_mapping_type: image_style
+    image_mapping: 365x240_2x
+    breakpoint_id: oaca_subtheme.mobile
+    multiplier: 2x
+breakpoint_group: oaca_subtheme
+fallback_image_style: 365x240

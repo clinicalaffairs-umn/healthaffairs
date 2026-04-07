@@ -1,0 +1,17 @@
+uuid: 8da686f4-0e02-40d9-beff-324763afb8fc
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: 365x240
+label: 365x240
+effects:
+  cacc7519-296d-483d-b069-12e0abfd92ab:
+    uuid: cacc7519-296d-483d-b069-12e0abfd92ab
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 365
+      height: 240
+      crop_type: focal_point

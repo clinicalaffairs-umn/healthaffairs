@@ -1,0 +1,42 @@
+uuid: 3b2586a9-aafb-4d86-8344-869fa6592bf0
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.365x240
+    - field.field.media.image.field_media_image
+    - field.field.media.image.field_media_in_library
+    - media.type.image
+    - responsive_image.styles.365x240
+  module:
+    - responsive_image
+id: media.image.365x240
+targetEntityType: media
+bundle: image
+mode: 365x240
+content:
+  field_media_image:
+    type: responsive_image
+    label: hidden
+    settings:
+      responsive_image_style: 365x240
+      image_link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  image:
+    type: responsive_image
+    label: hidden
+    settings:
+      responsive_image_style: 365x240
+      image_link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  created: true
+  field_media_in_library: true
+  name: true
+  search_api_excerpt: true
+  thumbnail: true
+  uid: true

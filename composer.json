@@ -10,6 +10,13 @@
     "require": {
         "composer/installers": "~2.0",
         "cweagans/composer-patches": "^1.7",
+        "drupal/addanother": "^1.4",
+        "drupal/components": "^3.2",
+        "drupal/image_style_quality": "^1.7",
+        "drupal/role_delegation": "^1.6",
+        "drupal/scheduler": "^2.2",
+        "drupal/simple_sitemap": "^4.2",
+        "drupal/structure_sync": "^2.0",
         "mnsami/composer-custom-directory-installer": "^2.0"
     },
     "replace": {

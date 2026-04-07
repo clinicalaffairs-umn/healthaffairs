@@ -1,0 +1,24 @@
+uuid: c0efca81-3001-4a1b-8dec-ef3d62d2198a
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+    - image_style_quality
+name: 365x240_2x
+label: '365x240 2x'
+effects:
+  3f3b1263-62b1-49a0-9eb4-2c023c40aad5:
+    uuid: 3f3b1263-62b1-49a0-9eb4-2c023c40aad5
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 730
+      height: 480
+      crop_type: focal_point
+  60514b0f-390c-4b47-a9a8-8d44a4c47620:
+    uuid: 60514b0f-390c-4b47-a9a8-8d44a4c47620
+    id: image_style_quality
+    weight: 2
+    data:
+      quality: 35
