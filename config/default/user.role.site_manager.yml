@@ -1,0 +1,14 @@
+uuid: 02252d03-b75f-41b8-a84f-2a00b1ccc368
+langcode: en
+status: true
+dependencies:
+  module:
+    - lightning_core
+third_party_settings:
+  lightning_core:
+    description: ''
+id: site_manager
+label: 'Site Manager'
+weight: 4
+is_admin: false
+permissions: {  }

@@ -1,0 +1,14 @@
+uuid: d69604c9-9482-4e8e-a854-23c6e35ef597
+langcode: en
+status: true
+dependencies:
+  module:
+    - lightning_core
+third_party_settings:
+  lightning_core:
+    description: ''
+id: editor
+label: Editor
+weight: 3
+is_admin: false
+permissions: {  }
