@@ -8,7 +8,9 @@
 /**
  * Place the config directory inside the site repo.
  */
-$settings['config_sync_directory'] = dirname(DRUPAL_ROOT) . '/docroot/sites/default/config/default';
+$settings['config_sync_directory'] = dirname(DRUPAL_ROOT) . '/docroot/sites/healthaffairs.umn.edu/config/default';
+
+
 
 if (isset($_ENV['AH_SITE_ENVIRONMENT'])) {
   $config['config_split.config_split.acquia']['status'] = TRUE;
