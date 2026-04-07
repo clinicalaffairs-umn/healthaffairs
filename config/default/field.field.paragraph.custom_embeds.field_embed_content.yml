@@ -1,0 +1,19 @@
+uuid: 5ca295de-893f-4a77-a610-a0bce6a6387a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_embed_content
+    - paragraphs.paragraphs_type.custom_embeds
+id: paragraph.custom_embeds.field_embed_content
+field_name: field_embed_content
+entity_type: paragraph
+bundle: custom_embeds
+label: 'Embed content'
+description: 'Embed custom iframe and scripts.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

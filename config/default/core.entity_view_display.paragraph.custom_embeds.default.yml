@@ -1,0 +1,30 @@
+uuid: f2437fc4-f62d-49fa-845a-1a69c4b65982
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.custom_embeds.field_embed_content
+    - field.field.paragraph.custom_embeds.field_headline
+    - paragraphs.paragraphs_type.custom_embeds
+id: paragraph.custom_embeds.default
+targetEntityType: paragraph
+bundle: custom_embeds
+mode: default
+content:
+  field_embed_content:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_headline:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  search_api_excerpt: true

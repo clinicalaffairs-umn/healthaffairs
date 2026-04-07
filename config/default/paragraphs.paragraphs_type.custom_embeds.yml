@@ -1,0 +1,10 @@
+uuid: a9dfc564-2a66-450a-a1e1-4ba54bc2c315
+langcode: en
+status: true
+dependencies: {  }
+id: custom_embeds
+label: 'Custom Embeds'
+icon_uuid: null
+icon_default: null
+description: 'Add custom embedded js and iframes to the site.'
+behavior_plugins: {  }
