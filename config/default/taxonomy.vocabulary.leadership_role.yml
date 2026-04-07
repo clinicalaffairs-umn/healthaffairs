@@ -1,0 +1,9 @@
+uuid: fafbd9a4-77b0-432c-94f3-8267980bdd09
+langcode: en
+status: true
+dependencies: {  }
+name: 'Leadership Role'
+vid: leadership_role
+description: 'Assign leadership tag to content'
+weight: 0
+new_revision: false

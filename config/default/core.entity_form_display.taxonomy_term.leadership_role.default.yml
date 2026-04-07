@@ -1,0 +1,23 @@
+uuid: d17e1a24-7509-4df1-9956-0a81599feff6
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.leadership_role
+id: taxonomy_term.leadership_role.default
+targetEntityType: taxonomy_term
+bundle: leadership_role
+mode: default
+content:
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  description: true
+  path: true
+  status: true

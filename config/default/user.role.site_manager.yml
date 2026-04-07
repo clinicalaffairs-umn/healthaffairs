@@ -2,6 +2,9 @@ uuid: 02252d03-b75f-41b8-a84f-2a00b1ccc368
 langcode: en
 status: true
 dependencies:
+  config:
+    - taxonomy.vocabulary.staff_group
+    - taxonomy.vocabulary.title_position
   module:
     - lightning_core
 third_party_settings:
@@ -11,4 +14,10 @@ id: site_manager
 label: 'Site Manager'
 weight: 4
 is_admin: false
-permissions: {  }
+permissions:
+  - 'create terms in staff_group'
+  - 'create terms in title_position'
+  - 'delete terms in staff_group'
+  - 'delete terms in title_position'
+  - 'edit terms in staff_group'
+  - 'edit terms in title_position'

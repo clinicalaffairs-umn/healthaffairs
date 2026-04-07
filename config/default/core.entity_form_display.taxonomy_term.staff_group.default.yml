@@ -1,0 +1,23 @@
+uuid: eb523d3c-8980-46ef-a883-9dedeec70b20
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.staff_group
+id: taxonomy_term.staff_group.default
+targetEntityType: taxonomy_term
+bundle: staff_group
+mode: default
+content:
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  description: true
+  path: true
+  status: true

@@ -1,0 +1,9 @@
+uuid: fd9b6d25-d833-42f4-bf14-7c5081897a47
+langcode: en
+status: true
+dependencies: {  }
+name: 'Staff Group'
+vid: staff_group
+description: 'Used in Staff Content for the group they belong.'
+weight: 0
+new_revision: false

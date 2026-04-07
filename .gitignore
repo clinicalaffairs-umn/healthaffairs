@@ -26,5 +26,9 @@ themes/*/images/core/
 *.sql
 *.sql.gz
 
+# Source-site config reference (not for import)
+/ca-config.zip
+/ca-config-source/
+
 # OS
 .DS_Store

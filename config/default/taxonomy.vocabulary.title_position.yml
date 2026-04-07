@@ -1,0 +1,9 @@
+uuid: 310ab402-5b19-47d9-8a28-4531825c71cf
+langcode: en
+status: true
+dependencies: {  }
+name: Title/Position
+vid: title_position
+description: 'Designator for staff content type.'
+weight: 0
+new_revision: false
