@@ -9,7 +9,7 @@ weight: 0
 stackable: false
 no_patching: false
 storage: folder
-folder: ../docroot/sites/default/config/envs/stage
+folder: ../docroot/sites/healthaffairs.umn.edu/config/envs/stage
 module: {  }
 theme: {  }
 complete_list: {  }

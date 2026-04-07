@@ -9,7 +9,7 @@ weight: 0
 stackable: false
 no_patching: false
 storage: folder
-folder: ../docroot/sites/default/config/envs/prod
+folder: ../docroot/sites/healthaffairs.umn.edu/config/envs/prod
 module:
   simple_sitemap: 0
   simple_sitemap_engines: 0

@@ -9,7 +9,7 @@ weight: 0
 stackable: false
 no_patching: false
 storage: folder
-folder: ../docroot/sites/default/config/envs/acquia
+folder: ../docroot/sites/healthaffairs.umn.edu/config/envs/acquia
 module:
   acquia_connector: 0
   acquia_purge: 0
