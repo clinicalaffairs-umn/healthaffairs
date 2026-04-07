@@ -1,0 +1,23 @@
+uuid: 0f4e0f44-d99a-4fed-a081-98e113afc720
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_limit_items
+    - paragraphs.paragraphs_type.news_by_category
+id: paragraph.news_by_category.field_limit_items
+field_name: field_limit_items
+entity_type: paragraph
+bundle: news_by_category
+label: 'Limit Items'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 1
+  max: 24
+  prefix: ''
+  suffix: ''
+field_type: integer

@@ -1,0 +1,49 @@
+uuid: 4e37c369-f769-41cc-8a6d-3f7275c9fe66
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.news_by_category.field_category
+    - field.field.paragraph.news_by_category.field_headline
+    - field.field.paragraph.news_by_category.field_limit_items
+    - field.field.paragraph.news_by_category.field_more_link
+    - paragraphs.paragraphs_type.news_by_category
+  module:
+    - link
+id: paragraph.news_by_category.default
+targetEntityType: paragraph
+bundle: news_by_category
+mode: default
+content:
+  field_category:
+    type: options_select
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_headline:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_limit_items:
+    type: number
+    weight: 2
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_more_link:
+    type: link_default
+    weight: 4
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

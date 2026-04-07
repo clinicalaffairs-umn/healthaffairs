@@ -1,0 +1,19 @@
+uuid: c855b920-5619-4d2b-ad09-abed23dede3c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_headline
+    - paragraphs.paragraphs_type.news_by_category
+id: paragraph.news_by_category.field_headline
+field_name: field_headline
+entity_type: paragraph
+bundle: news_by_category
+label: Headline
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
