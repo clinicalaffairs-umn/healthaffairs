@@ -1,0 +1,12 @@
+uuid: d96c63ff-7898-4f8e-8cb7-d1ef6378aa26
+langcode: en
+status: true
+dependencies: {  }
+label: 'Focal point'
+id: focal_point
+description: 'Crop type used by Focal point module.'
+aspect_ratio: ''
+soft_limit_width: null
+soft_limit_height: null
+hard_limit_width: null
+hard_limit_height: null
