@@ -1,0 +1,10 @@
+uuid: f74ae13b-7e4f-42f6-817b-aea05aa806b6
+langcode: en
+status: true
+dependencies: {  }
+id: events_by_category
+label: 'Events by Category'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

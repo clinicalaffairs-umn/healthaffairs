@@ -1,0 +1,56 @@
+uuid: 018d2516-8292-406a-b653-7b52a7d0595f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.events_by_category.field_category
+    - field.field.paragraph.events_by_category.field_headline
+    - field.field.paragraph.events_by_category.field_limit_items
+    - field.field.paragraph.events_by_category.field_more_link
+    - paragraphs.paragraphs_type.events_by_category
+  module:
+    - link
+id: paragraph.events_by_category.default
+targetEntityType: paragraph
+bundle: events_by_category
+mode: default
+content:
+  field_category:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_headline:
+    type: string
+    label: visually_hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_limit_items:
+    type: number_integer
+    label: hidden
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_more_link:
+    type: link
+    label: hidden
+    settings:
+      trim_length: null
+      url_only: false
+      url_plain: false
+      rel: '0'
+      target: '0'
+    third_party_settings: {  }
+    weight: 3
+    region: content
+hidden:
+  search_api_excerpt: true

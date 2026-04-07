@@ -1,0 +1,19 @@
+uuid: c57bb0cd-2b7d-4b2e-a555-eba830088d3a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_headline
+    - paragraphs.paragraphs_type.events_by_category
+id: paragraph.events_by_category.field_headline
+field_name: field_headline
+entity_type: paragraph
+bundle: events_by_category
+label: Headline
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
