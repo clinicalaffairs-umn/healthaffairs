@@ -1,0 +1,24 @@
+{
+  "name": "oaca_subtheme",
+  "description": "Project template for the Drupal 8 UMN Law school theme",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "gulp",
+    "preinstall": "npx npm-force-resolutions"
+  },
+  "dependencies": {
+    "breakpoint-sass": "^2.7.1",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-sass-glob": "^1.1.0",
+    "gulp-sourcemaps": "^2.6.5"
+  },
+  "devDependencies": {
+    "gulp-watch": "^5.0.1"
+  },
+  "resolutions": {
+    "graceful-fs": "^4.2.4"
+  }
+}

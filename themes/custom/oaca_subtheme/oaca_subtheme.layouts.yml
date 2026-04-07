@@ -1,0 +1,58 @@
+two_column_sidebar_left:
+  label: Two Column Sidebar Left
+  category: OACA Layouts
+  path: templates/layout
+  template: layout--twocol-sideleft
+  default_region: content
+  icon_map:
+    - [first, content, content, content]
+  regions:
+    first:
+      label: First
+    content:
+      label: Content
+two_column_sidebar_right:
+  label: Two Column Sidebar Right
+  category: OACA Layouts
+  path: templates/layout
+  template: layout--twocol-sideright
+  default_region: content
+  icon_map:
+    - [content, content, content, second]
+  regions:
+    content:
+      label: Content
+    second:
+      label: Second
+two_column_sidebar_left_split:
+  label: Two Column Sidebar Left Split
+  category: OACA Layouts
+  path: templates/layout
+  template: layout--twocol-sideleft-split
+  default_region: content
+  icon_map:
+    - [sidebar, first, first, first]
+    - [sidebar, second, second, second]
+  regions:
+    first:
+      label: First
+    second:
+      label: Second
+    sidebar:
+      label: Sidebar
+two_column_sidebar_right_split:
+  label: Two Column Sidebar Right Split
+  category: OACA Layouts
+  path: templates/layout
+  template: layout--twocol-sideright-split
+  default_region: first
+  icon_map:
+    - [first, first, first, sidebar]
+    - [second, second, second, sidebar]
+  regions:
+    first:
+      label: First
+    second:
+      label: Second
+    sidebar:
+      label: Sidebar

@@ -1,0 +1,175 @@
+/* ====================
+  HEADER
+===================*/
+
+/* FIXES FOR DEFAULT U HEADER
+------------------------ */
+#mandatory-header-wrapper{
+	&.umnhf-campus-tc.dtd.umnhf-background-maroon{
+		@include uMobile{
+			padding-top: 30px;
+			padding-bottom: 40px;
+		}
+		@include midTab{
+			padding-left: 10px;
+			padding-right: 20px;
+		}
+		// U identity
+		#umnhf-h-wm{
+			@include uMobile{
+				float: none;
+				margin: 0 auto 40px;
+				height: 38px;
+			}
+		}
+		//my u
+		#umnhf-h-ql{
+			top: 4px;
+			right: 0;
+			@include onlyMobile{
+				display: none;
+			}
+			li{
+				font-size: 12px;
+				&#umnhf-h-myu{
+					span{
+						background-size: 18px 29px;
+						width: 10px;
+						height: 10px;
+						margin-left: 3px;
+					}
+				}
+			}
+		}
+
+		//search box
+		.gsc-control-searchbox-only{
+			display: block;
+			max-width: 230px;
+			@include auto;
+			@include tab{
+				top: 18px;
+			}
+			@include desk{
+				top: 30px;
+			}
+			.gsc-input{
+				font-size: 13px;
+			}
+			.gsc-input-box{
+				margin-right: 6px;
+				.gsib_a{
+					line-height: 24px;
+					input.gsc-input{
+						background: $white;
+						font-size: 13px;
+					}
+				}
+				.gsst_b{
+					font-size: 13px;
+				}
+				.gscb_a{
+					line-height: 22px;
+				}
+			}
+		}
+	}//end maroon
+}//end mandatory header wrapper
+
+/* SITE HEADER
+-------------------- */
+.site-identity{
+	position: relative;
+	z-index: 19;
+	@include oacaIndents;
+	padding-bottom: 0;
+	@include tab{
+		padding-bottom: $spaceMd;
+		&:after{
+			content: '';
+			display: block;
+			position: absolute;
+			left: -50vw;
+			bottom: 0;
+			width: 200vw;
+			height: 10px;
+			background: $darkGreen;
+		}
+	}
+	.folwell-identity{
+		width: 100%;
+		position: relative;
+		@include onlySmall{
+			padding-bottom: 2.5rem;
+			&:after{
+				content: '';
+				display: block;
+				position: absolute;
+				left: -50vw;
+				bottom: 0;
+				width: 200vw;
+				height: 10px;
+				background: $darkGreen;
+			}
+		}
+		@include tab{
+			@include safeFlexSize(0,0,360px);
+		}
+		@include contentStop{
+			@include safeFlexSize(1,0,650px);
+		}
+		//parent unit
+		.prefix-name{
+			display: none;
+			font-size: 1.6rem;
+			font-weight: $semi;
+			margin-bottom: 1.5rem;
+			@include tab{
+				margin-bottom: .25rem;
+			}
+			@include desk{
+				font-size: 21px;
+			}
+
+			.microsite & {
+				display: block;
+			}
+		}
+		//site name
+		.sitename{
+			font-family: $baseFont;
+			font-weight: $heavy;
+			a{
+				color: $lightRed;
+				font-size: 2.6rem;
+				&:hover{
+					color: $hoverLink;
+				}
+			}
+		}
+	}//end folwell identity
+	.block-header-buttons{
+		@include tab{
+			@include calc(width, "100% - 380px");
+			margin: 0;
+		}
+		@include contentStop{
+			@include calc(width, "100% - 670px");
+		}
+	}
+}//end site-identity
+
+/* SUPERFISH BLOCK
+------------------- */
+.block-responsive-menu-toggle{
+	display: block;
+	margin-bottom: $spaceSm;
+	#toggle-icon{
+		height: 52px;
+		span.label{
+			font-size: 1.8rem;
+			top: .6em;
+		}
+	}//end responsive menu toggle icon
+}//end responsive menu toggle
+

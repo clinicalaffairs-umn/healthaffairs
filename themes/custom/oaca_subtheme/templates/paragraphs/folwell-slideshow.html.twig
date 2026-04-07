@@ -1,0 +1,14 @@
+{% extends  "paragraph.html.twig" %}
+{% block paragraph %}
+    <section{{ attributes.addClass(classes) }}>
+        {% block content %}
+        		{% if content.field_fa_accordion_item_header.0 %}
+	            <header>
+	                <h2 class="folwell-slideshow-header">{{ content.field_fa_accordion_item_header }}</h2>
+	            </header>
+	          {% endif %}
+            {{ content.field_fs_slide_item }}
+        {% endblock content %}
+    </section>
+{% endblock paragraph %}
+

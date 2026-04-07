@@ -1,0 +1,24 @@
+oaca_subtheme.mobile:
+  label: Mobile
+  mediaQuery: ''
+  weight: 0
+  multipliers:
+    - 1x
+    - 1.5x
+    - 2x
+oaca_subtheme.tablet:
+  label: Tablet
+  mediaQuery: '(min-width:400px)'
+  weight: 1
+  multipliers:
+    - 1x
+    - 1.5x
+    - 2x
+oaca_subtheme.desk:
+  label: Desk
+  mediaQuery: '(min-width:760px)'
+  weight: 2
+  multipliers:
+    - 1x
+
+

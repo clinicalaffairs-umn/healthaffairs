@@ -1,0 +1,28 @@
+global-styling:
+  version: 1.0
+  header: true
+  css:
+    theme:
+      dist/style.css: {}
+  js:
+    js/global.js: {}
+  dependencies:
+    - core/drupal
+    - core/drupalSettings
+    - core/jquery
+    - core/once
+select:
+  version: 4.0.3
+  css:
+    theme:
+      js/select2/select2.min.css: { minified: true }
+  js:
+    js/select2/select2.min.js: { minified: true }
+    js/forms.js: {}
+views:
+  js:
+    js/views.js: {}
+fonts:
+  css:
+    theme:
+      https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400: { type: external, preprocess: false }

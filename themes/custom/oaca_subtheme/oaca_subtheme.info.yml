@@ -1,0 +1,24 @@
+name: OACA Subtheme
+type: theme
+description: Custom theme by Electric Citizen for use with OACA Sites
+package: EC
+core_version_requirement: ^9 || ^10
+# Defines libraries group in which we can add css/js.
+libraries:
+  - oaca_subtheme/global-styling
+  - oaca_subtheme/fonts
+ckeditor_stylesheets:
+  - https://fonts.googleapis.com/css?family=Open+Sans:ital,wght@0,400;;0,700;1,400
+  - dist/cke.css
+base theme: folwell
+hidden: false
+regions:
+  identity: Site Identity
+  header: Navigation
+  featured: Featured
+  breadcrumb: Breadcrumb
+  sidebar_first: 'Sidebar first'
+  content: Content
+  sidebar_second: 'Sidebar second'
+  footer_top: 'Footer Top'
+  footer_bottom: 'Footer Bottom'

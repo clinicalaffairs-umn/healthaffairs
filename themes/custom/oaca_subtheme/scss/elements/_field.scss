@@ -1,0 +1,141 @@
+/* =======================
+  FIELDS
+========================= */
+
+.field--label-inline{
+	.field__label{
+		float: none;
+		display: inline;
+	}
+	.field__item,.field__items{
+		display: inline-block;
+		float: none;
+	}
+}
+
+/* TITLE FIELD
+-------------- */
+.field--name-title{
+	margin-bottom: $spaceSm;
+	max-width: $textMax;
+	text-align: center;
+	@include oacaIndents;
+	
+	@include onlySmall {
+		margin-left: auto;
+		margin-right: auto;
+	}
+	@include tab {
+		text-align: left;
+	}
+}
+
+/* COMPONENTS FIELD (widgets)
+----------------- */
+.field--name-field-components > .field__item {
+	margin-bottom:$spaceXs;
+}
+
+/* HEADLINE FIELD
+----------------- */
+.field--name-field-headline{
+	@include oacaIndents;
+
+	@include desk {
+		text-align: left;
+		padding:0;
+	}
+}
+
+/* SUBTITLE FIELD
+------------------ */
+.field--name-field-subtitle {
+	@include heading2;
+	@include oacaIndents;
+}
+
+/* BODY FIELD
+----------------- */
+.block-layout-builder{
+	.field--name-body{
+		margin: 0 auto $elementSpace;
+		position: relative;
+		max-width: $textMax;
+		@include oacaIndents;
+	}
+}
+
+/* SOCIAL MEDIA LINKS FIELD
+-------------------- */
+.field--name-field-social-media-links{
+	margin-bottom: -$spaceXxs;
+	.platform-links{
+		@include listReset;
+		@include safeFlex(row,wrap,start,start);
+		@include bleed(padding,10px);
+		li{
+			margin-bottom: $spaceXxs;
+		}
+		a{
+			font-size: $socialIcons;
+			.page-node-type-landing-page .field--name-field-block & {
+				font-size: 5.28rem;
+			}
+			border-bottom: none;
+			line-height: 1;
+			&:hover{
+				background-color: transparent;
+			}
+			&:focus{
+				background-color: transparent;
+				outline: none;
+			}
+			&.facebook{
+				color: #4465a1;
+				&:hover,&:focus{
+					color: $hoverLink;
+				}
+			}
+			&.twitter{
+				color: #4eb1dc;
+				&:hover,&:focus{
+					color: $hoverLink;
+				}
+			}
+			&.linkedin{
+				color: #0072b1;
+				&:hover,&:focus{
+					color: $hoverLink;
+				}
+			}
+			&.instagram{
+				color: #dd3175;
+				&:hover,&:focus{
+					color: $hoverLink;
+				}
+			}
+			&.youtube{
+				color: #FF0000;
+				&:hover,&:focus{
+					color: $hoverLink;
+				}
+			}
+			&.has-back{
+				color: $white;
+				background: $lightRed;
+				@include safeFlex(column,nowrap,center,center);
+				width: 28px;
+				height: 28px;
+				border-radius: 3px;
+				position: relative;
+				top: 2px;
+				svg{
+					font-size: $socialIcons * .65;
+				}
+				&:hover,&:focus{
+					background: $hoverLink;
+				}
+			}
+		}
+	}//end platform links
+}//end field platforms
