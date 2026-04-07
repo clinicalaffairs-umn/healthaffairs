@@ -1,0 +1,32 @@
+uuid: 895daf06-a7a3-49d4-8855-7702680ac6da
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.custom_embeds.field_embed_content
+    - field.field.paragraph.custom_embeds.field_headline
+    - paragraphs.paragraphs_type.custom_embeds
+id: paragraph.custom_embeds.default
+targetEntityType: paragraph
+bundle: custom_embeds
+mode: default
+content:
+  field_embed_content:
+    type: string_textarea
+    weight: 1
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_headline:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true
