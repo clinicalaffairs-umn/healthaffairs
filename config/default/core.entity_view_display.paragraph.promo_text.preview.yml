@@ -1,0 +1,32 @@
+uuid: f2259b19-94a3-4308-bdaa-2d7c63d056c3
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.promo_text.field_background_color
+    - field.field.paragraph.promo_text.field_text
+    - paragraphs.paragraphs_type.promo_text
+  module:
+    - layout_builder
+    - text
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: paragraph.promo_text.preview
+targetEntityType: paragraph
+bundle: promo_text
+mode: preview
+content:
+  field_text:
+    type: text_trimmed
+    label: hidden
+    settings:
+      trim_length: 100
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_background_color: true
+  search_api_excerpt: true

@@ -1,16 +1,16 @@
-uuid: 37a0cc10-085d-46e7-8fb2-911150e7683f
+uuid: 66f62a5e-4288-42a8-8752-b95cdb332730
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.paragraph.field_text
-    - paragraphs.paragraphs_type.portal
+    - paragraphs.paragraphs_type.promo_text
   module:
     - text
-id: paragraph.portal.field_text
+id: paragraph.promo_text.field_text
 field_name: field_text
 entity_type: paragraph
-bundle: portal
+bundle: promo_text
 label: Text
 description: ''
 required: false

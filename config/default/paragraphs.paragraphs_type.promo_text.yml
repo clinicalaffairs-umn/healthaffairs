@@ -1,0 +1,10 @@
+uuid: ed826a9a-a13d-4472-851f-572b8c080773
+langcode: en
+status: true
+dependencies: {  }
+id: promo_text
+label: 'Promo Text'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }
