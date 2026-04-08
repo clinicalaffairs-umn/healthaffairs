@@ -1,0 +1,27 @@
+/**
+ * @file
+ * Visual styles for a resizable textarea.
+ */
+
+/* style media image fields inside admin widgets */
+.field--widget-paragraphs  img{
+  max-width: 100%;
+  height: auto;
+}
+
+.field--widget-paragraphs  .item-container.rendered-entity{
+  width: 100%;
+}
+.field--widget-paragraphs  .item-container > input{
+  display: inline-block;
+}
+.field--widget-paragraphs  .view-mode-media-thumbnail{
+  width: 100%;
+
+}
+.field--widget-paragraphs  .field-multiple-table .js-filter-wrapper,.field--widget-paragraphs  .field-multiple-table .filter-guidelines,.field--widget-paragraphs  .field-multiple-table input.form-text{
+  width: 100%;
+}
+.field--widget-paragraphs  .field-multiple-table .js-filter-wrapper{
+  box-sizing: border-box;
+}

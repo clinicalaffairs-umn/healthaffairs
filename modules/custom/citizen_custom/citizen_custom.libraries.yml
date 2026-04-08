@@ -1,0 +1,22 @@
+custom:
+  version: 1.0
+  css:
+    theme:
+      css/custom-node.css: {}
+  js:
+    js/custom-node.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/drupal.ajax
+    - core/drupalSettings
+    - core/once
+global:
+  version: 1.x
+  js:
+    js/global.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/drupalSettings
+    - core/once

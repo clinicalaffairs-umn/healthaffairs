@@ -1,0 +1,239 @@
+<?php
+
+/**
+ * @file
+ * Contains citizen_custom.module.
+ */
+
+use Drupal\Core\Cache\Cache;
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function citizen_custom_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the citizen custom module.
+    case 'help.page.citizen_custom':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Custom glue module for Electric Citizen sites') . '</p>';
+      return $output;
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function citizen_custom_theme() {
+  return [
+    'citizen_custom' => [
+      'template' => 'citizen_custom',
+      'render element' => 'children',
+    ],
+    'site_search' => [
+      'variables' => [
+        'title' => 'Site Search',
+      ],
+    ],
+  ];
+}
+
+
+/* ADD USER ROLE CLASSES
+------------------------*/
+function citizen_custom_preprocess_html(&$variables){
+  /* Find the current user */
+  $user = \Drupal::currentUser();
+  $userRole = $user->getRoles();
+  foreach($userRole as $role ){
+    if($role != 'authenticated'){
+      $variables['attributes']['class'][] = 'role-' . $role;
+    }
+  }
+}
+
+/*
+ * set promotion text on node forms
+ */
+function citizen_custom_form_node_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+  $form['#attached']['library'][] = 'citizen_custom/custom';
+  $node = $form_state->getFormObject()->getEntity();
+  if ($node->getType() == 'news') {
+    $form['promote']['widget']['value']['#title'] = 'Add to home page news';
+    $form['promote']['widget']['value']['#description'] = 'Should have a banner image.';
+  }
+  if ($node->getType() == 'event') {
+    $form['promote']['widget']['value']['#title'] = 'Add to home page events';
+    $form['promote']['widget']['value']['#description'] = 'Should have a banner image.';
+  }
+  if ($node->getType() == 'blog') {
+    $form['promote']['widget']['value']['#title'] = 'Add to Featured Posts';
+  }
+}
+
+/**
+ * Attach js globally.
+ */
+function citizen_custom_page_attachments(array &$attachments) {
+  $attachments['#attached']['library'][] = 'citizen_custom/global';
+}
+
+/*
+ * general form alter
+ */
+function citizen_custom_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+  $formId = $form['#id'];
+  $user = \Drupal::currentUser();
+  $userRole = $user->getRoles();
+  //remove layout builder revision info access (to hide revision field)
+  if (strpos($form_id, 'layout_builder_form') > 0) {
+    $form['advanced']['#access'] = FALSE;
+    $form['revision_information']['#access'] = FALSE;
+    $form['revision']['#access'] = FALSE;
+  }
+  // fix webform filter insanely long placeholder
+  if($formId == 'webform-filter-form'){
+    $form['filter']['search']['#placeholder'] = t('Search keywords');
+  }
+}
+
+/**
+ * Implements hook_preprocess_HOOK() for block templates.
+ */
+function citizen_custom_preprocess_block(&$variables) {
+  if ($variables['plugin_id'] == 'site_search') {
+    $variables['attributes']['role'] = 'search';
+  }
+  /* SET CUSTOM HELP TEXT */
+  if ($variables['plugin_id'] == 'help_block') {
+    $route_name = \Drupal::routeMatch()->getRouteName();
+    $parameters = \Drupal::routeMatch()->getCurrentRouteMatch()->getParameters();
+    if (isset($variables['content'][0]['#markup'])){
+      switch ($route_name) {
+        case 'layout_builder.defaults.node.view':
+          if($parameters->get('node_type')){
+            $nodeType = $parameters->get('node_type');
+            $cleanType = ucwords(str_replace("_"," ",$nodeType)) . ' ';
+          }
+          $output = '';
+          $output .= '<h2>' . $cleanType . t('Layout Builder') . '</h2>';
+          $output .= '<p><strong>' . t('WARNING: ') . '</strong>'. t('Changes to this layout will affect all non-customized ') . str_replace("_"," ",$nodeType) . t(' nodes.') . '</p>';
+          $output .= '<p><small>' . t('Forms and links inside the content of the layout builder tool have been disabled.') . '</small></p>';
+          $variables['content'][0]['#markup'] = $output;
+          break;
+        case 'layout_builder.overrides.node.view':
+          $output = '';
+          $output .= '<h2>' . t('Customize This Layout') . '</h2>';
+          $output .= '<p><strong>' . t('WARNING: ') . '</strong>'. t('Saving this layout (even without making changes) will turn this into a custom node. Custom nodes will not reflect any future global changes to the content type. If you are here in error, click "View" or "Edit" above to exit.') . '</p>';
+          $output .= '<p><small>' . t('Forms and links inside the content of the layout builder tool have been disabled.') . '</small></p>';
+          $variables['content'][0]['#markup'] = $output;
+          break;
+        case 'layout_builder.overrides.node.discard_changes':
+          $output = '';
+          $output .= '<h2>' . t('Discard Changes') . '</h2>';
+          $output .= '<p>' . t('Remove any non-saved changes made in layout customization.') . '</p>';
+          $variables['content'][0]['#markup'] = $output;
+          break;
+        case 'layout_builder.overrides.node.revert':
+          $output = '';
+          $output .= '<h2>' . t('Revert Custom Layout') . '</h2>';
+          $output .= '<p>' . t('Revert this layout to the default layout for this content type.') . '</p>';
+          $variables['content'][0]['#markup'] = $output;
+          break;
+      }
+
+    }
+  }
+}
+
+/**
+ * Implements hook_local_tasks_alter().
+ */
+function citizen_custom_local_tasks_alter(&$local_tasks) {
+  if(isset($local_tasks['entity.paragraphs_library_item.collection'])){
+    unset($local_tasks['entity.paragraphs_library_item.collection']);
+  }
+  //hide redirects settings from non admins
+  $user = \Drupal::currentUser();
+  $userRole = $user->getRoles();
+  if(!in_array('administrator', $userRole)){
+    if(isset($local_tasks['redirect.list'])){
+      unset($local_tasks['redirect.list']);
+    }
+    if(isset($local_tasks['redirect.settings'])){
+      unset($local_tasks['redirect.settings']);
+    }
+  }
+}
+
+/**
+ * Implements switching the responsive mobile menu based on the microsite
+ */
+function citizen_custom_responsive_menu_off_canvas_menu_names_alter(&$menus){
+  $current_path = \Drupal::service('path.current')->getPath();
+  $path = \Drupal::service('path_alias.manager')->getAliasByPath($current_path);
+  Cache::invalidateTags(['offcanvas_render']);
+  switch (true) {
+    case (substr($path, 0, 4 ) == "/mhi"):
+      $menus = 'mobile-health-initiative';
+      break;
+  }
+}
+
+/**
+ * Implements views_pre_view to paragraphs X by category items on page change.
+ */
+function citizen_custom_views_pre_view($view, $display_id, &$args) {
+  if (!isset($view->element['#name'])) {
+    return;
+  }
+  // Paragraphs 'X by Category' Views.
+  if (($view->element['#name'] === 'news' && $view->current_display === 'news_category') || ($view->element['#name'] === 'events' && $view->current_display === 'events_category')) {
+    $paragraph_id = $view->args[0];
+    if ($paragraph_id){
+      $paragraph = \Drupal\paragraphs\Entity\Paragraph::load($paragraph_id);
+      if(isset($paragraph->field_limit_items[0])){
+        $per_page = $paragraph->field_limit_items[0]->value;
+        $pager = $view->display_handler->getOption('pager');
+        $pager['type'] = 'some';
+        $view->setItemsPerPage($per_page);
+      } else {
+        $pager['type'] = 'none';
+      }
+
+      $view->display_handler->setOption('pager', $pager);
+    }//end if paragraph_id
+  } // End Paragraphs 'X by Category' Views.
+
+  //limit other news to the section of the site it belongs to
+  if (($view->element['#name'] == 'news') && ($view->current_display === 'recent_news_by_node')) {
+    //get the filters
+    $filters = $view->display_handler->getOption('filters');
+    //grab the site section if available from the current node
+    $node = \Drupal::routeMatch()->getParameter('node');
+    if ((!$node instanceof NodeInterface) && ($node_revision = \Drupal::routeMatch()->getParameter('node_revision'))) {
+      $node = \Drupal::entityTypeManager()->getStorage('node')->loadRevision($node_revision);
+    }
+    if ($node){
+      if (isset($node->field_microsite[0])) {
+        $siteSection = $node->field_microsite[0];
+        $siteTarget = $siteSection->target_id;
+      }
+    }
+    //if the node has a site section
+    if (isset($siteSection)){
+      //set the section filter to that but need it as array
+      $sections = [];
+      foreach ($siteSection as $delta => $sectionItem) {
+        $sections[] = $siteTarget;
+      }
+      $filters['field_microsite_target_id']['operator'] = 'or';
+    }
+    //reup the filters
+    $view->display_handler->setOption('filters', $filters);
+  } // view placer for section events
+
+} // End views_pre_view.
