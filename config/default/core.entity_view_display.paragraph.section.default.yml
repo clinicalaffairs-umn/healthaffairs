@@ -1,0 +1,69 @@
+uuid: b5be7ee6-a23d-4fb9-bdc6-05fb372cf1a1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.section.field_background_image
+    - field.field.paragraph.section.field_layout
+    - field.field.paragraph.section.field_section_background
+    - field.field.paragraph.section.field_section_items
+    - field.field.paragraph.section.field_section_title
+    - field.field.paragraph.section.field_section_width
+    - paragraphs.paragraphs_type.section
+  module:
+    - entity_reference_revisions
+    - options
+id: paragraph.section.default
+targetEntityType: paragraph
+bundle: section
+mode: default
+content:
+  field_background_image:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_layout:
+    type: list_key
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_section_background:
+    type: list_key
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_section_items:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_section_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_section_width:
+    type: list_key
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  search_api_excerpt: true

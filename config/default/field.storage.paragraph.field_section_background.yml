@@ -1,0 +1,39 @@
+uuid: fca7f185-d28a-4f20-a69d-a19ea4979610
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_section_background
+field_name: field_section_background
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: offwhite
+      label: 'Off White'
+    -
+      value: grey
+      label: Grey
+    -
+      value: gold
+      label: Gold
+    -
+      value: red
+      label: Maroon
+    -
+      value: navy
+      label: Navy
+    -
+      value: image
+      label: Image
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

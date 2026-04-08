@@ -1,0 +1,10 @@
+uuid: f0072119-258a-459b-b7ae-c2091ac9ff4c
+langcode: en
+status: true
+dependencies: {  }
+id: section
+label: Section
+icon_uuid: null
+icon_default: null
+description: 'Add a section of limited paragraphs in a structured layout.'
+behavior_plugins: {  }

@@ -1,0 +1,57 @@
+uuid: f7da998f-b220-4443-ae0b-78341fba7c4f
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.section.field_background_image
+    - field.field.paragraph.section.field_layout
+    - field.field.paragraph.section.field_section_background
+    - field.field.paragraph.section.field_section_items
+    - field.field.paragraph.section.field_section_title
+    - field.field.paragraph.section.field_section_width
+    - paragraphs.paragraphs_type.section
+  module:
+    - entity_reference_revisions
+    - field_delimiter
+    - layout_builder
+    - options
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: paragraph.section.preview
+targetEntityType: paragraph
+bundle: section
+mode: preview
+content:
+  field_layout:
+    type: list_default
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_section_background:
+    type: list_default
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_section_items:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: preview
+      link: ''
+    third_party_settings:
+      field_delimiter:
+        delimiter: ''
+    weight: 2
+    region: content
+hidden:
+  field_background_image: true
+  field_section_title: true
+  field_section_width: true
+  search_api_excerpt: true

@@ -1,0 +1,23 @@
+uuid: 9e4c4094-1dab-48f7-9eea-0dc1ff92dcdc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_layout
+    - paragraphs.paragraphs_type.section
+  module:
+    - options
+id: paragraph.section.field_layout
+field_name: field_layout
+entity_type: paragraph
+bundle: section
+label: Layout
+description: 'NOTE: Only use sections if you need a multi-column layout. Horizontal versions of paragraphs should not used in sections.'
+required: true
+translatable: false
+default_value:
+  -
+    value: single
+default_value_callback: ''
+settings: {  }
+field_type: list_string
