@@ -4,6 +4,7 @@ module:
   a11y_paragraphs_tabs: 0
   addanother: 0
   address: 0
+  addtoany: 0
   admin_toolbar: 0
   admin_toolbar_tools: 0
   aggregator: 0
@@ -11,6 +12,7 @@ module:
   antibot: 0
   auditfiles: 0
   auto_entitylabel: 0
+  automated_cron: 0
   autosave_form: 0
   bg_image_formatter: 0
   big_pipe: 0
@@ -21,8 +23,11 @@ module:
   breakpoint: 0
   ckeditor5: 0
   ckeditor_link_styles: 0
+  citizen_custom: 0
   config: 0
+  config_ignore: 0
   config_split: 0
+  config_update: 0
   conflict: 0
   contact: 0
   contact_storage: 0
@@ -144,6 +149,7 @@ module:
   slick_views: 0
   smart_date: 0
   smart_date_recur: 0
+  structure_sync: 0
   superfish: 0
   syslog: 0
   system: 0
@@ -159,6 +165,7 @@ module:
   umn_superfish: 0
   user: 0
   views_block_placement_exposed_form_defaults: 0
+  views_infinite_scroll: 0
   views_ui: 0
   webform: 0
   webform_ui: 0
