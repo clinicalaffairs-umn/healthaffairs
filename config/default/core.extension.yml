@@ -2,11 +2,14 @@ _core:
   default_config_hash: 4GIX5Esnc_umpXUBj4IIocRX7Mt5fPhm4AgXfE3E56E
 module:
   a11y_paragraphs_tabs: 0
+  addanother: 0
   address: 0
   admin_toolbar: 0
   admin_toolbar_tools: 0
   aggregator: 0
   anchor_link: 0
+  antibot: 0
+  auto_entitylabel: 0
   autosave_form: 0
   bg_image_formatter: 0
   big_pipe: 0
@@ -40,6 +43,7 @@ module:
   entity_embed: 0
   entity_reference_revisions: 0
   environment_indicator: 0
+  extlink: 0
   field: 0
   field_delimiter: 0
   field_group: 0
@@ -109,6 +113,8 @@ module:
   menu_link_content: 0
   menu_ui: 0
   metatag: 0
+  metatag_open_graph: 0
+  metatag_twitter_cards: 0
   moderation_dashboard: 0
   moderation_sidebar: 0
   mysql: 0
@@ -126,12 +132,15 @@ module:
   responsive_image: 0
   responsive_menu: 0
   robotstxt: 0
+  scheduler: 0
   select_or_other: 0
   shortcut: 0
   simple_gmap: 0
   slick: 0
   slick_paragraphs: 0
   slick_views: 0
+  smart_date: 0
+  smart_date_recur: 0
   superfish: 0
   syslog: 0
   system: 0

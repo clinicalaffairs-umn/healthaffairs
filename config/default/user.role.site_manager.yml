@@ -8,6 +8,7 @@ dependencies:
   module:
     - lightning_core
     - paragraphs_type_permissions
+    - scheduler
     - webform
 third_party_settings:
   lightning_core:
@@ -97,6 +98,7 @@ permissions:
   - 'edit own webform submission'
   - 'edit terms in staff_group'
   - 'edit terms in title_position'
+  - 'schedule publishing of nodes'
   - 'update paragraph content a11y_paragraphs_tab_content'
   - 'update paragraph content a11y_paragraphs_tabs_panel'
   - 'update paragraph content a11y_paragraphs_tabs_wrapper'
@@ -162,3 +164,4 @@ permissions:
   - 'view paragraph content video'
   - 'view paragraph content video_banner'
   - 'view paragraph content view_placer'
+  - 'view scheduled content'

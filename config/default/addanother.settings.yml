@@ -1,0 +1,28 @@
+default_button: true
+default_message: true
+default_tab: true
+default_tab_edit: true
+button:
+  landing_page: false
+  page: false
+  staff: false
+  news: false
+  events: false
+message:
+  landing_page: false
+  page: false
+  staff: false
+  news: false
+  events: false
+tab:
+  landing_page: true
+  page: true
+  staff: true
+  news: true
+  events: true
+tab_edit:
+  landing_page: false
+  page: false
+  staff: false
+  news: false
+  events: false
