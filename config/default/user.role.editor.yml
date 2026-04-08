@@ -6,6 +6,8 @@ dependencies:
     - taxonomy.vocabulary.staff_group
     - taxonomy.vocabulary.title_position
   module:
+    - addanother
+    - auditfiles
     - lightning_core
     - paragraphs_type_permissions
     - scheduler
@@ -17,6 +19,7 @@ label: Editor
 weight: 3
 is_admin: false
 permissions:
+  - 'access audit files reports'
   - 'create paragraph content a11y_paragraphs_tab_content'
   - 'create paragraph content a11y_paragraphs_tabs_panel'
   - 'create paragraph content a11y_paragraphs_tabs_wrapper'
@@ -117,6 +120,7 @@ permissions:
   - 'update paragraph content text_image'
   - 'update paragraph content video'
   - 'update paragraph content video_banner'
+  - 'use add another'
   - 'view paragraph content a11y_paragraphs_tab_content'
   - 'view paragraph content a11y_paragraphs_tabs_panel'
   - 'view paragraph content a11y_paragraphs_tabs_wrapper'
