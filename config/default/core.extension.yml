@@ -49,6 +49,7 @@ module:
   focal_point: 0
   folwell_blocks: 0
   folwell_components: 0
+  folwell_emergency_banner: 0
   folwell_layout_builder_styles: 0
   folwell_media: 0
   folwell_media_audio: 0
