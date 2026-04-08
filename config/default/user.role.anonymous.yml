@@ -5,6 +5,7 @@ dependencies:
   module:
     - contact
     - media
+    - paragraphs_type_permissions
     - system
 _core:
   default_config_hash: j5zLMOdJBqC0bMvSdth5UebkprJB8g_2FXHqhfpJzow
@@ -16,3 +17,35 @@ permissions:
   - 'access content'
   - 'access site-wide contact form'
   - 'view media'
+  - 'view paragraph content a11y_paragraphs_tab_content'
+  - 'view paragraph content a11y_paragraphs_tabs_panel'
+  - 'view paragraph content a11y_paragraphs_tabs_wrapper'
+  - 'view paragraph content block_placer'
+  - 'view paragraph content buttons'
+  - 'view paragraph content custom_embeds'
+  - 'view paragraph content events_by_category'
+  - 'view paragraph content fa_accordion_item'
+  - 'view paragraph content fa_text_with_optional_header'
+  - 'view paragraph content folwell_100_image'
+  - 'view paragraph content folwell_20_image'
+  - 'view paragraph content folwell_33_image'
+  - 'view paragraph content folwell_50_image'
+  - 'view paragraph content folwell_accordion'
+  - 'view paragraph content folwell_callout'
+  - 'view paragraph content folwell_image'
+  - 'view paragraph content folwell_link_list'
+  - 'view paragraph content folwell_overlay_slideshow'
+  - 'view paragraph content folwell_slideshow'
+  - 'view paragraph content folwell_transparent_overlay_call'
+  - 'view paragraph content form_placer'
+  - 'view paragraph content fs_overlay_slide'
+  - 'view paragraph content fs_slide'
+  - 'view paragraph content news_by_category'
+  - 'view paragraph content portal'
+  - 'view paragraph content portal_grid'
+  - 'view paragraph content promo_text'
+  - 'view paragraph content section'
+  - 'view paragraph content text_image'
+  - 'view paragraph content video'
+  - 'view paragraph content video_banner'
+  - 'view paragraph content view_placer'
