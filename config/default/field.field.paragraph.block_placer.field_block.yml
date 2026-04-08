@@ -1,0 +1,39 @@
+uuid: d1762cd6-f7b0-4fe6-8db2-0862036797e5
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.custom_breadcrumbs
+    - block_content.type.folwell_component
+    - block_content.type.folwell_emergency_banner
+    - block_content.type.header_buttons
+    - block_content.type.social_media
+    - block_content.type.text
+    - field.storage.paragraph.field_block
+    - paragraphs.paragraphs_type.block_placer
+id: paragraph.block_placer.field_block
+field_name: field_block
+entity_type: paragraph
+bundle: block_placer
+label: Block
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:block_content'
+  handler_settings:
+    target_bundles:
+      custom_breadcrumbs: custom_breadcrumbs
+      folwell_emergency_banner: folwell_emergency_banner
+      folwell_component: folwell_component
+      header_buttons: header_buttons
+      social_media: social_media
+      text: text
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: custom_breadcrumbs
+field_type: entity_reference

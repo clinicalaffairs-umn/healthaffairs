@@ -1,0 +1,19 @@
+uuid: 3f6a276b-93a0-49e8-931c-e1f8dd66d70d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_headline
+    - paragraphs.paragraphs_type.block_placer
+id: paragraph.block_placer.field_headline
+field_name: field_headline
+entity_type: paragraph
+bundle: block_placer
+label: Headline
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,10 @@
+uuid: 0af01afb-3aff-4f03-b2e3-1cc05faabd2b
+langcode: en
+status: true
+dependencies: {  }
+id: block_placer
+label: 'Block Placer'
+icon_uuid: null
+icon_default: null
+description: 'Add block display to a page'
+behavior_plugins: {  }
