@@ -1,0 +1,26 @@
+uuid: 995ce626-18be-4f3a-a3d6-174c251b4ced
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.folwell_emergency_banner
+    - field.storage.block_content.field_folwell_message
+    - filter.format.folwell_ckeditor
+  module:
+    - text
+_core:
+  default_config_hash: JJvI3lJ35LlH_QVzwM5a8_Dy5IvmUVT1dQgtBec_04E
+id: block_content.folwell_emergency_banner.field_folwell_message
+field_name: field_folwell_message
+entity_type: block_content
+bundle: folwell_emergency_banner
+label: Message
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - folwell_ckeditor
+field_type: text_long

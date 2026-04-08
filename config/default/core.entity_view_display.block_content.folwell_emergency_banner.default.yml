@@ -1,0 +1,33 @@
+uuid: c8ef4705-7570-4971-96a1-4003582b98d3
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.folwell_emergency_banner
+    - field.field.block_content.folwell_emergency_banner.field_folwell_banner_type
+    - field.field.block_content.folwell_emergency_banner.field_folwell_message
+  module:
+    - options
+    - text
+_core:
+  default_config_hash: qmYhLOOToXv_MnryPRoSs9uUdReit-MPiQC1sGA4gv4
+id: block_content.folwell_emergency_banner.default
+targetEntityType: block_content
+bundle: folwell_emergency_banner
+mode: default
+content:
+  field_folwell_banner_type:
+    type: list_key
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_folwell_message:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

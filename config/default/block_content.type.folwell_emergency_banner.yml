@@ -1,0 +1,10 @@
+uuid: 9599ea52-9a13-4066-8e46-ffd185838370
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: G_u1p5EOJYVDF2HXyRNn_sCyavJa66nyWl4s32iZkMY
+id: folwell_emergency_banner
+label: 'Emergency Banner'
+revision: false
+description: 'Display an emergency or notice banner on your page'

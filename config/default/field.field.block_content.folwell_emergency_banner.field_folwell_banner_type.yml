@@ -1,0 +1,23 @@
+uuid: 61f07110-3536-440f-a7b1-12f3136c3946
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.folwell_emergency_banner
+    - field.storage.block_content.field_folwell_banner_type
+  module:
+    - options
+_core:
+  default_config_hash: b4kydJCmUWObCDJxUfwJTmg4fbVQflxiuGkztf-ibIg
+id: block_content.folwell_emergency_banner.field_folwell_banner_type
+field_name: field_folwell_banner_type
+entity_type: block_content
+bundle: folwell_emergency_banner
+label: Options
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string
