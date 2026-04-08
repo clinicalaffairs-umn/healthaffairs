@@ -1,0 +1,24 @@
+uuid: ae5f4491-e28c-4b29-bb0a-3f439a75e768
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+    - image_style_quality
+name: banner_tablet_2x
+label: 'Banner tablet 2x'
+effects:
+  4a2427d0-24b5-4676-88c7-c0f4a051c01c:
+    uuid: 4a2427d0-24b5-4676-88c7-c0f4a051c01c
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 1400
+      height: 600
+      crop_type: focal_point
+  1fc16fe7-99f6-4119-8bd9-137c31a1067c:
+    uuid: 1fc16fe7-99f6-4119-8bd9-137c31a1067c
+    id: image_style_quality
+    weight: 2
+    data:
+      quality: 25

@@ -1,0 +1,15 @@
+uuid: 15ae09c8-fb5c-4238-a6e1-56d49ce49ff4
+langcode: en
+status: true
+dependencies:
+  module:
+    - lightning_core
+    - media
+third_party_settings:
+  lightning_core:
+    description: 'General Staff profile image.'
+id: media.profile
+label: Profile
+description: ''
+targetEntityType: media
+cache: true

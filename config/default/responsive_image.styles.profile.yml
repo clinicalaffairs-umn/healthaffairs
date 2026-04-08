@@ -1,0 +1,30 @@
+uuid: c251f43a-3bba-4c04-859c-73a8b6a0bbc6
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.profile
+    - image.style.profile_1_5x
+    - image.style.profile_2x
+  theme:
+    - oaca_subtheme
+id: profile
+label: Profile
+image_style_mappings:
+  -
+    image_mapping_type: image_style
+    image_mapping: profile
+    breakpoint_id: oaca_subtheme.mobile
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: profile_1_5x
+    breakpoint_id: oaca_subtheme.mobile
+    multiplier: 1.5x
+  -
+    image_mapping_type: image_style
+    image_mapping: profile_2x
+    breakpoint_id: oaca_subtheme.mobile
+    multiplier: 2x
+breakpoint_group: oaca_subtheme
+fallback_image_style: profile

@@ -1,0 +1,24 @@
+uuid: 8f41326c-9fb1-421b-ba49-4fd0b121a999
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+    - image_style_quality
+name: banner_tablet_1_5x
+label: 'Banner tablet 1.5x'
+effects:
+  ee4a3591-065e-4c21-8290-3a2658289bae:
+    uuid: ee4a3591-065e-4c21-8290-3a2658289bae
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 1050
+      height: 450
+      crop_type: focal_point
+  6391eb28-588c-4dfd-9859-ae8d0e4610a8:
+    uuid: 6391eb28-588c-4dfd-9859-ae8d0e4610a8
+    id: image_style_quality
+    weight: 2
+    data:
+      quality: 30

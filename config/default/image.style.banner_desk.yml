@@ -1,0 +1,17 @@
+uuid: c9080af3-c590-4fb5-972a-8317d1750fae
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: banner_desk
+label: 'Banner Desktop'
+effects:
+  fc9fda2b-74c3-4937-bc95-cd02f88925d0:
+    uuid: fc9fda2b-74c3-4937-bc95-cd02f88925d0
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 1200
+      height: 500
+      crop_type: focal_point

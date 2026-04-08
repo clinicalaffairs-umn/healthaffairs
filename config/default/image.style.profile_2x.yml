@@ -1,0 +1,24 @@
+uuid: 673d7260-0458-4a87-921e-993609d9697d
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+    - image_style_quality
+name: profile_2x
+label: 'Profile 2x'
+effects:
+  82a890ee-b17b-4e12-ba23-b096e69d02c3:
+    uuid: 82a890ee-b17b-4e12-ba23-b096e69d02c3
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 440
+      height: 510
+      crop_type: focal_point
+  fa6411ec-e893-47f0-93fb-12f672ee2d06:
+    uuid: fa6411ec-e893-47f0-93fb-12f672ee2d06
+    id: image_style_quality
+    weight: 2
+    data:
+      quality: 50

@@ -1,0 +1,24 @@
+uuid: bd4ab52d-f453-4192-9f61-a3994c12a7fd
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+    - image_style_quality
+name: banner_mobile_1_5x
+label: 'Banner mobile 1.5x'
+effects:
+  d7116a3d-b8ad-4527-9a07-187d188032c0:
+    uuid: d7116a3d-b8ad-4527-9a07-187d188032c0
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 548
+      height: 225
+      crop_type: focal_point
+  3412d489-a37e-4fc6-aad3-d119b2124219:
+    uuid: 3412d489-a37e-4fc6-aad3-d119b2124219
+    id: image_style_quality
+    weight: 2
+    data:
+      quality: 40
