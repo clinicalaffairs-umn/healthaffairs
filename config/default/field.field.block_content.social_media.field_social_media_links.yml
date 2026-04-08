@@ -1,0 +1,23 @@
+uuid: 6ad1f23e-3f5f-4232-8e00-504499f3d0d9
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.social_media
+    - field.storage.block_content.field_social_media_links
+  module:
+    - link
+id: block_content.social_media.field_social_media_links
+field_name: field_social_media_links
+entity_type: block_content
+bundle: social_media
+label: 'Social Media Links'
+description: 'Icons will be automatically generated. Supported platforms: Facebook, Twitter, LinkedIn, Instagram, YouTube, mailto: links'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 0
+  link_type: 16
+field_type: link

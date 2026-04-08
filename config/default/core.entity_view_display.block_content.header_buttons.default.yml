@@ -1,0 +1,28 @@
+uuid: f5626761-44df-4c20-80ce-ce4ce065620f
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.header_buttons
+    - field.field.block_content.header_buttons.field_buttons
+  module:
+    - link
+id: block_content.header_buttons.default
+targetEntityType: block_content
+bundle: header_buttons
+mode: default
+content:
+  field_buttons:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  search_api_excerpt: true

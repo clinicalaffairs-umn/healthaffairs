@@ -1,0 +1,8 @@
+uuid: 57da852d-6110-41e3-af3c-c09d0ac22422
+langcode: en
+status: true
+dependencies: {  }
+id: custom_breadcrumbs
+label: 'Custom Breadcrumbs'
+revision: true
+description: 'Custom breadcrumbs for non-menu content types.'

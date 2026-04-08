@@ -1,0 +1,23 @@
+uuid: c1187386-fb43-4755-ba32-080f688deed2
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.header_buttons
+    - field.storage.block_content.field_buttons
+  module:
+    - link
+id: block_content.header_buttons.field_buttons
+field_name: field_buttons
+entity_type: block_content
+bundle: header_buttons
+label: Buttons
+description: 'Due to limited space, it is not recommended to use more than two buttons. Shorter text will work better than longer.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 2
+  link_type: 17
+field_type: link

@@ -1,0 +1,8 @@
+uuid: 50924970-5787-46bc-b922-fde59afea027
+langcode: en
+status: true
+dependencies: {  }
+id: social_media
+label: 'Social Media'
+revision: true
+description: 'Add social media icon links'

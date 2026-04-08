@@ -1,0 +1,23 @@
+uuid: 7df94cf1-eb3c-44c0-9335-6889fbeb07f6
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.custom_breadcrumbs
+    - field.field.block_content.custom_breadcrumbs.body
+  module:
+    - text
+id: block_content.custom_breadcrumbs.default
+targetEntityType: block_content
+bundle: custom_breadcrumbs
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  search_api_excerpt: true

@@ -1,0 +1,33 @@
+uuid: 2c28d5cc-bc29-4933-9cec-e8da777b4589
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.custom_breadcrumbs
+    - field.field.block_content.custom_breadcrumbs.body
+  module:
+    - text
+id: block_content.custom_breadcrumbs.default
+targetEntityType: block_content
+bundle: custom_breadcrumbs
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 26
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }
