@@ -1,0 +1,23 @@
+uuid: 953a5574-b568-4c2a-a7d1-5702adf33bcb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_image_alignment
+    - paragraphs.paragraphs_type.text_image
+  module:
+    - options
+id: paragraph.text_image.field_image_alignment
+field_name: field_image_alignment
+entity_type: paragraph
+bundle: text_image
+label: 'Image Alignment'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: left
+default_value_callback: ''
+settings: {  }
+field_type: list_string

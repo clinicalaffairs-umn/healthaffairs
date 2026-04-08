@@ -1,0 +1,27 @@
+uuid: ea5546bd-8ab7-46ba-bb4b-b69b4d5b06cb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_video_upload
+    - paragraphs.paragraphs_type.video_banner
+  module:
+    - file
+id: paragraph.video_banner.field_video_upload
+field_name: field_video_upload
+entity_type: paragraph
+bundle: video_banner
+label: 'Video Upload'
+description: 'Upload a video file for the banner'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'mp4 webm ogg'
+  max_filesize: '20 MB'
+  description_field: false
+field_type: file

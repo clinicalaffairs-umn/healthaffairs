@@ -1,0 +1,10 @@
+uuid: 6d4dc516-eae2-49bd-9874-b978cf11b05b
+langcode: en
+status: true
+dependencies: {  }
+id: text_image
+label: 'Text & Image'
+icon_uuid: null
+icon_default: null
+description: 'Add text with an image aligned left or right.'
+behavior_plugins: {  }

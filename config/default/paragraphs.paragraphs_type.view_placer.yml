@@ -1,0 +1,10 @@
+uuid: d2959c2e-f31e-4bb3-816a-4bab33705199
+langcode: en
+status: true
+dependencies: {  }
+id: view_placer
+label: 'View Placer'
+icon_uuid: null
+icon_default: null
+description: 'Add a view embed display to a page.'
+behavior_plugins: {  }

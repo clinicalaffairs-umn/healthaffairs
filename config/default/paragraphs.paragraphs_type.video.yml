@@ -1,0 +1,10 @@
+uuid: 73a05f94-8742-4fd3-b54e-89d29c4d058b
+langcode: en
+status: true
+dependencies: {  }
+id: video
+label: Video
+icon_uuid: null
+icon_default: null
+description: 'Add videos to your content'
+behavior_plugins: {  }

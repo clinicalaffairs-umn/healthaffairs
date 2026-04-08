@@ -1,0 +1,10 @@
+uuid: 54a5086f-da19-4de6-bc63-2eb1912b754b
+langcode: en
+status: true
+dependencies: {  }
+id: video_banner
+label: 'Video Banner'
+icon_uuid: null
+icon_default: null
+description: 'Upload a video to be displayed on a banner, along with text below'
+behavior_plugins: {  }

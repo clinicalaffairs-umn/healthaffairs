@@ -1,0 +1,23 @@
+uuid: 28e486d2-0538-4c27-b269-c77730ac43a5
+langcode: en
+status: true
+dependencies:
+  module:
+    - file
+    - paragraphs
+id: paragraph.field_video_upload
+field_name: field_video_upload
+entity_type: paragraph
+type: file
+settings:
+  target_type: file
+  display_field: true
+  display_default: true
+  uri_scheme: public
+module: file
+locked: false
+cardinality: 3
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
