@@ -1,0 +1,34 @@
+/* ==================
+  COMPONENT COLORS
+===================== */
+@use 'colors' as *;
+
+/* COMPONENT COLORS
+-------------------- */
+$unpub      : $adminPink;
+$borderRule : $lightGrey;
+
+$baseText     : $darkerGrey;
+$hoverLink    : $darkGrey;
+$hoverLinkBack: $hoverGrey;
+$focusLinkBack: $gold;
+
+$buttonBack         : $red;
+$buttonText         : $gold;
+$buttonBackHover    : $lightRed;
+$buttonTextHover    : $white;
+$buttonTextFocus    : $red;
+$buttonBackActive   : $darkRed;
+$buttonTextActive   : $gold;
+$buttonBackAlt      : $gold;
+$buttonTextAlt      : $lightRed;
+$buttonBackAltHover : $lightGold;
+$buttonTextAltHover : $lightRed;
+$buttonTextAltFocus : $darkRed;
+$buttonBackAltActive: $darkGold;
+$buttonTextAltActive: $darkRed;
+
+$placeColor         : $mediumGrey;
+$placeFocusColor    : $placeColor;
+$selectArrow        : $mediumGrey;
+$selectHighlight    : $red;

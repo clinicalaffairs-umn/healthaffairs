@@ -98,9 +98,6 @@ function oaca_subtheme_preprocess_block(&$variables) {
   $current_path = \Drupal::service('path.current')->getPath();
   $path = \Drupal::service('path_alias.manager')->getAliasByPath($current_path);
   switch (true) {
-    case (substr($path, 0, 17 ) == "/covid-19-updates"):
-      $variables['microsite'] = 'covid-19-updates';
-      break;
     case (substr($path, 0, 4 ) == "/mhi"):
       $variables['microsite'] = 'mhi';
       break;
@@ -132,7 +129,6 @@ function oaca_subtheme_preprocess_block(&$variables) {
     // set variables for microsite checking and alteration
       switch (true) {
         case (substr($path, 0, 4 ) == "/mhi"):
-        case (substr($path, 0, 17 ) == "/covid-19-updates"):
           $variables['attributes']['class'][] = 'microsite';
           break;
       }

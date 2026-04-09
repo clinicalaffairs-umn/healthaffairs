@@ -1,0 +1,768 @@
+/* ==================
+  PARAGRAPHS
+====================== */
+@use '../../00-base/' as *;
+
+.field--name-field-paragraphs{
+	& > .field__item:last-child{
+		.field--name-field-section-items{
+			& > .field__item:last-child{
+				margin-bottom: 0;
+			}
+		}
+	}
+}
+
+
+/* ACCORDION
+--------------- */
+.accordion-expand-holder{
+	margin-bottom: $spaceXs;
+	&:not(:last-child){
+		margin-bottom: $spaceXs;
+	}
+}
+.paragraph--type--fa-accordion-item {
+	margin-bottom:$spaceXxs;
+	.ui-accordion-content{
+		padding: 1.25em 20px;
+	}
+	.accordion &{
+		h3{
+			color: $black;
+			.arrow{
+				font-size: 2.5rem;
+				top: 50%;
+				left: .5em;
+				@include translateY(-50%);
+			}
+		}
+	}
+	.field--name-field-fa-accordion-item-header{
+		max-width: $textMax;
+	}
+	.field--name-field-fa-text-item-body{
+		max-width: $textMax;
+		@include auto;
+	}
+}//end accordion item
+
+
+/* BUTTONS
+----------------- */
+.paragraph--type--buttons {
+	.field--name-field-links{
+		@include safeFlex(row,wrap,center,start);
+		@include bleed(padding,20px);
+		& > div{
+			margin-bottom: $spaceXs;
+			max-width: 365px;
+			.layout__region--first &,.layout__region--second &{
+				@include tab{
+					width: 100%;
+				}
+			}
+		}
+	}
+	a{
+		@include buttonAlt;
+
+		.layout__region--first &,.layout__region--second &{
+			@include tab{
+				width: 100%;
+			}
+		}
+	}
+}//end buttons paragraph
+
+
+/* FOLWELL CALLOUT
+----------------- */
+.paragraph--type--folwell-callout{
+	.callout{
+		&:first-child{
+			@include tab{
+				margin-top: 0;
+			}
+		}
+	}
+	&.callout-image{
+		article {
+			// margin-bottom: $spaceSm;
+		}
+		.embedded-entity{
+			img{
+				width: auto;
+			}
+		}
+	}
+
+	h3 {
+		// text-transform: uppercase;
+		// color: $lightRed;
+		font-size: 20px;
+	}
+
+	.callout-background{
+		background-color: $offWhite;
+	}
+	.callout-grey {
+		@extend .callout-background;
+		background-color: $offWhite;
+	}
+	.callout-gold{
+		@extend .callout-background;
+		background-color: $lightGold;
+	}
+	.callout-border-top{
+		padding: 1.5em 20px 0;
+	}
+	.callout-border-left{
+		padding: 0 20px 0 1.5em;
+	}
+	.field--name-field-fa-text-item-body{
+		max-width: $textMax;
+		@include auto;
+	}
+}//end callout
+
+/* EVENTS BY CATEGORY
+--------------------- */
+.paragraph--type--events-by-category{
+	.events-category-wrapper{
+		max-width: $textMax;
+	}
+	.field--name-field-headline{
+		@include oacaIndents;
+	}
+	.field--name-field-more-link{
+		@include moreLink;
+	}
+}
+
+/* NEWS BY CATEGORY
+----------------------- */
+.paragraph--type--news-by-category{
+	.field--name-field-headline{
+		@include oacaIndents;
+	}
+	.field--name-field-more-link{
+		@include moreLink;
+	}
+}
+
+/* OVERLAY SLIDE
+--------------------- */
+.paragraph--type--fs-overlay-slide{
+	margin-bottom: 0;
+	img{
+		width: 100%;
+	}
+	.media--type-image{
+		margin-bottom: 0;
+	}
+	aside.display-33{
+		@include tab{
+			@include calc(width, "50% - 2em");
+		}
+		@include desk{
+			@include calc(width, "33.3% - 2em");
+		}
+	}
+	.field--name-field-fa-text-item-body{
+		p{
+			margin-bottom: 1rem;
+		}
+		h2:first-child{
+			margin-bottom: 1rem;
+		}
+	}
+}//end overlay slide
+
+/* SLIDER
+------------------ */
+.paragraph--type--folwell-slideshow{
+	padding-bottom: 2rem;
+	.layout__region--right{
+		@include onlyMobile{
+			padding: 2em 20px;
+		}
+	}
+
+	img{
+		width: 100%;
+	}
+	.slick__slide {
+	background:$darkRed;
+	color: $white;
+	h1 {
+		color: $white;
+	}
+	.overlay-gold,.overlay-gray{
+		color: $baseText;
+		h1 {
+			color: $baseText;
+		}
+	}
+}
+}
+
+/* SPEAKER GROUP
+------------------ */
+.paragraph--type--speaker-group{
+	@include oacaIndents;
+	.field--name-field-headline {
+		font-weight: $heavy;
+		margin-bottom: $spaceSm;
+		padding: 0;
+	}
+}
+
+/* SPEAKER
+------------------ */
+.paragraph--type--speaker{
+	.speaker-wrapper {
+		margin-bottom: 1.5rem;
+		@include safeFlex(row,nowrap,start,start);
+		& > .field--name-field-image {
+			width: 75px;
+			margin-right: 10px;
+			article {
+				margin-bottom: 0;
+			}
+		}
+		.speaker-text-wrapper {
+			@include calc(width,"100% - 75px");
+			.field--name-field-name {
+				font-weight: $heavy;
+			}
+			p {
+				margin-bottom: 0;
+			}
+		}
+	}
+}
+
+
+/* FOLWELL LINKS LIST
+---------------- */
+.paragraph--type--folwell-link-list{
+	ul.link-list{
+		padding: 0;
+		margin-top:0;
+		@include desk {
+			@include cssColumns(2, 40px, 0);
+		}
+
+		a{
+			padding: .75em 20px;
+		}
+	}
+}
+
+//link list
+	.paragraph--type--folwell-link-list {
+		ul.field--name-field-fl-link-list-item {
+
+		}
+	}
+
+/* FOLWELL IMAGE
+------------------- */
+.paragraph--type--folwell-image{
+	.paragraph{
+		margin-bottom: $spaceSm;
+	}
+	figcaption{
+		margin: 0 1.2em 0 0;
+	}
+}
+
+/* SECTION PARAGRAPH
+---------------- */
+.paragraph--type--section{
+	margin-bottom: 0;
+	.field--name-title{
+		text-align: center;
+
+		@include tab {
+			text-align: left;
+		}
+	}
+	.section-wrapper{
+		position: relative;
+		z-index: 2;
+		&.text-max{
+			max-width: $textMax;
+			@include auto;
+		}
+		&.single.full-content{
+			.field--name-field-section-items{
+				& > .field__item:only-child{
+					& > .paragraph{
+						margin-left: 0;
+					}
+				}
+			}
+		}
+		&.offwhite{
+			padding: $elementSpace 20px 0;
+			margin-bottom: $elementSpace;
+			background:$offWhite;
+			&:after{
+				@include fullBack($offWhite);
+			}
+		}
+		&.grey{
+			padding: $elementSpace 20px 0;
+			margin-bottom: $elementSpace;
+			background:$lighterGrey;
+			&:after{
+			@include fullBack($lighterGrey);
+
+			}
+		}
+		&.gold{
+			padding: $elementSpace 20px 0;
+			margin-bottom: $elementSpace;
+			background:$lightGold;
+			&:after{
+				@include fullBack($lightGold);
+			}
+		}
+		&.red{
+			padding: $elementSpace 20px 0;
+			margin-bottom: $elementSpace;
+			background:$red;
+			@include darkBack;
+			&:after{
+				@include fullBack($red);
+			}
+		}
+		&.navy{
+			padding: $elementSpace 20px 0;
+			margin-bottom: $elementSpace;
+			background:$stormy;
+			@include darkBack;
+			&:after{
+				@include fullBack($stormy);
+			}
+		}
+		&.image{
+			padding: $elementSpace 20px 0;
+			margin-bottom: $elementSpace;
+			@include darkBack;
+		}
+		@include desk{
+			&.two-even{
+				.field--name-field-section-items > div{
+					width: 50%;
+				}
+			}
+			&.two-left{
+				.field--name-field-section-items > div{
+					&:nth-child(odd){
+						width: 66.67%;
+						.paragraph--type--fa-text-with-optional-header{
+							padding-left: 20px;
+						}
+					}
+					&:nth-child(even){
+						width: 33.33%;
+						.paragraph--type--fa-text-with-optional-header{
+							padding-right: 20px;
+						}
+					}
+				}
+			}
+			&.two-right{
+				.field--name-field-section-items > div{
+					&:nth-child(odd){
+						width: 33.33%;
+						.paragraph--type--fa-text-with-optional-header{
+							padding-left: 20px;
+						}
+					}
+					&:nth-child(even){
+						width: 66.67%;
+						.paragraph--type--fa-text-with-optional-header{
+							padding-right: 20px;
+						}
+					}
+				}
+			}
+			&.three-even{
+				.field--name-field-section-items > div{
+					width: 33.3%;
+				}
+			}
+		}
+		.link-list{
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}//end section wrapper
+	.field--name-field-background-image{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: -1;
+		overflow: hidden;
+		&:before{
+			content: '';
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: 1;
+			width: 100%;
+			height: 100%;
+			background: rgba(35,35,35,0.4);
+		}
+		*{
+			height: 100%;
+		}
+		img{
+			object-fit: cover;
+		}
+	}
+	.field--name-field-section-items{
+		@include safeFlex(row,wrap,start,stretch);
+		@include bleed(padding,40px);
+		& > div{
+			width: 100%;
+			margin-bottom: $elementSpace;
+			.paragraph{
+				margin-bottom: 0;
+			}
+			& > .paragraph--type--folwell-callout{
+				@include desk{
+					height: 100%;
+					& > .callout{
+						// height: 100%;
+						padding:20px;
+						& > .callout:only-child{
+							margin-top: 0;
+						}
+					}
+				}
+			}
+		}
+	}	//end section item
+}//end section paragraph
+
+/* TABS
+-------------- */
+.a11y-paragraphs-tabs__wrapper{
+	.field--name-field-a11y-para-tabs-sec-title{
+		@include heading2;
+		&{
+			text-align: center;
+			max-width: $textMax;
+			@include auto;
+		}
+	}
+	.accordion-tabs.js-tabs .tabs-panel .content{
+		padding: 1.25em 20px;
+	}
+	.tabs-panel{
+		.paragraph{
+			margin-bottom: 0;
+		}
+	}
+}
+
+/* TEXT
+-------------- */
+.paragraph--type--fa-text-with-optional-header{
+	max-width: $textMax + 40px;
+	@include oacaIndents;
+	&{
+		@include auto;
+	}
+	.section-wrapper.background &{
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.field--name-field-fa-accordion-item-header{
+		@include heading2;
+		&{
+			margin-bottom: $spaceSm;
+		}
+	}
+}//end text
+
+
+/* TEXT & IMAGE
+------------------  */
+.paragraph--type--text-image{
+	.ti-wrapper{
+		@include safeFlex(row,wrap,start,start);
+		@include bleed(padding, 40px);
+		@include desk{
+			&.left{
+				.ti-text-wrapper{
+					padding-left: 20px;
+				}
+			}
+			&.right{
+				.field--name-field-image{
+					@include safeFlexOrder(2);
+				}
+				.ti-text-wrapper{
+					padding-right: 20px;
+				}
+			}
+		}
+	}
+	.field--name-field-image{
+		width: 100%;
+		@include desk{
+			width: 365px;
+		}
+		img{
+			display: block;
+			width: 100%;
+		}
+	}
+	.ti-text-wrapper{
+		width: 100%;
+		padding-left: 40px;
+		padding-right: 40px;
+		.section-wrapper.background &{
+			padding-left: 20px;
+			padding-right: 20px;
+		}
+		@include desk{
+			width: calc(100% - 365px);
+			max-width: 800px;
+		}
+	}
+}//end text & image
+
+/* PROMO TEXT
+---------------- */
+.paragraph--type--promo-text {
+	.promo-text-wrapper {
+		padding: $elementSpace 20px;
+		margin-bottom: $elementSpace;
+		@include defaultShadow;
+
+		h2 {
+			font-weight: $regular;
+		}
+	}
+
+	.offwhite{
+		background:$offWhite;
+	}
+	.lightgrey{
+		background:$lightPink;
+	}
+	.grey{
+		background:$lighterGrey;
+	}
+}
+
+/*PORTAL GRID AND PORTALS
+------------------------ */
+
+.paragraph--type--portal-grid {
+
+	.field--name-field-portals {
+		@include safeFlex(row, wrap, flex-start, stretch);
+		@include bleed(padding,20px);
+
+
+		> .field__item {
+
+			@include cardStyle($offWhite);
+			@include defaultShadow;
+			margin-right: 20px;
+
+			@include tab {
+				width:48%;
+
+				&:nth-child(2n+2) {
+					margin-right: 0;
+				}
+			}
+
+			@include desk {
+				width: 32%;
+
+				&:nth-child(2n+2) {
+					margin-right:20px;
+				}
+
+				&:nth-child(3n+3) {
+					margin-right: 0;
+				}
+			}
+
+		}
+
+		.portal-title h3 {
+			margin-bottom: $spaceSm;
+		}
+
+		@supports (display:grid) {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+			gap:32px;
+
+			.field__item {
+				width:100%;
+			}
+
+		}
+	}
+
+
+	//alternate style
+
+
+	.portal-grid-wrapper.alternate {
+
+		.section-wrapper.red & {
+			@include lightBack;
+
+			a {
+				color: $lightRed;
+				border-bottom: 1px solid $lightRed;
+			}
+		}
+
+		.field--name-field-portals {
+
+			> .field__item {
+
+				background:$white;
+				box-shadow:none;
+
+				@include tab {
+					width:48%;
+				}
+			}
+
+			//switch to 2 col grid
+			@supports (display:grid) {
+				width:100%;
+				margin:0;
+
+				.field__item {
+					width:100%;
+				}
+			}
+
+
+			.field--name-field-headline {
+				text-transform: uppercase;
+				color: $lightRed;
+				font-size: 18px;
+				margin-bottom: $spaceSm;
+			}
+
+		}
+	}
+
+} //eof portals
+
+/* VIDEO
+----------------*/
+
+.paragraph--type--video {
+    max-width: $textMax;
+    margin-left: auto;
+    margin-right: auto;
+
+	.field--name-field-headline {
+		text-transform: uppercase;
+		font-size: 18px;
+		font-weight:$regular;
+	}
+}
+
+/* VIDEO BANNER
+----------------*/
+
+.paragraph--type--video-banner {
+	margin-bottom:$spaceLg;
+
+	@include contentStop {
+		margin-left: -o-calc(-50vw + 580px);
+		margin-left: calc(-50vw + 580px);
+		margin-right: -o-calc(-50vw + 580px);
+		margin-right: calc(-50vw + 580px);
+	}
+
+  .field--name-field-video-upload  {
+  	display: none;
+  	max-height: 480px;
+  	overflow: hidden;
+
+  	video{
+  		display: block;
+  		max-width: 100%;
+  	}
+  	@include contentStop {
+  		@include auto;
+  		max-width: 2200px;
+  	}
+  }
+  //only show for mobile users
+  & > .field--name-field-image {
+  	display: none;
+  	article{
+  		margin-bottom: 0;
+  		img {
+  			width: 100%;
+  			display: block;
+  		}
+  	}
+  }
+  .banner-text-wrapper {
+		background: $darkRed;
+		padding: 20px;
+		@include contentStop {
+  		@include auto;
+  		max-width: 2200px;
+  	}
+
+		.field--name-field-headline {
+			max-width: $textMax;
+			@include auto;
+			h2 {
+				font-size: 26px;
+				font-weight: $heavy;
+				margin-bottom: $spaceSm;
+				text-transform: uppercase;
+				color: $gold;
+				text-align: center;
+			}
+		}
+		.field--name-field-lead-in{
+			max-width: $textMax;
+			@include auto;
+			color: $white;
+			line-height: 1.45;
+			color: $white;
+			text-align: center;
+		}
+  }//end banner text wrapper
+}//end video banner
+
+/* VIEW PLACER PARAGRAPH
+-------------------------- */
+.paragraph--type--view-placer{
+	.field--name-field-headline{
+		@include oacaIndents;
+	}
+	.view-widget.homepage_events{
+		.field--name-field-headline h2{
+			padding-top: 20px;
+		}
+	}
+}//end view placer

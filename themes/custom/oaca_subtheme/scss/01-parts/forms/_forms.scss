@@ -1,0 +1,314 @@
+/* ===================
+  FORM ELEMENTS
+===================== */
+@use '../../00-base/' as *;
+
+/* SELECT 2
+----------------- */
+//hide optgroup safari bug fix
+optgroup:empty{
+	display: none;
+}
+
+//hide custom optgroup labels (ios10 bug fix)
+.select2-results__group{
+	display: none !important;
+}
+
+//override script set width
+.select2-container--default{
+	width: 250px !important;
+	max-width: 100%;
+}
+
+/* IN BODY AND OFF CANVAS */
+body,.ui-dialog{
+	select{
+		background: none;
+		&:hover,&:focus{
+			background: none;
+		}
+	}
+	.select2-container{
+		margin-bottom: 0;
+	}
+	.select2-container--default{
+
+		/* SELECT 2 SINGLE */
+		.select2-selection--single{
+			@include inputSelect;
+			&:hover{
+				box-shadow: inset 0 0 0 1px $red;
+			}
+			&:focus{
+				outline: none;
+				box-shadow: inset 0 0 0 1px $black;
+			}
+			&[aria-expanded="true"]{
+				box-shadow: inset 0 0 0 1px $black;
+				border-color: $black;
+			}
+			.select2-selection__choice__remove{
+				position: relative;
+				z-index: 999;
+			}
+			//rendered selection
+			.select2-selection__rendered{
+				padding: 6px 32px 6px 10px;
+				color: $darkGrey;
+				text-align: left;
+				background: $white;
+			}
+			.select2-selection__arrow{
+				background-image: url('../images/caret-down-dkgrey.svg');
+				background-repeat: no-repeat;
+				background-size: 16px;
+				background-position: center;
+				top: 9px;
+				right: 10px;
+				@include transFormAnimate;
+				//hide default select2 arrow
+				b{
+					display: none;
+				}
+			}
+		}//end single
+
+		/* SELECT 2 MULTI */
+		.select2-selection--multiple{
+			@include inputSelect;
+			padding: 3px 0;
+			&:hover{
+				box-shadow: inset 0 0 0 1px $red;
+			}
+			&:focus{
+				outline: none;
+				box-shadow: inset 0 0 0 1px $black;
+			}
+			&[aria-expanded="true"]{
+				box-shadow: inset 0 0 0 1px $black;
+				border-color: $black;
+			}
+			.select2-selection__choice__remove{
+				position: relative;
+				z-index: 999;
+			}
+			//selection input
+			.select2-search--inline{
+				position: relative;
+				float: none;
+				padding: 2px 3px;
+				&:after{
+					content: '';
+					display: block;
+					height: 20px;
+					width: 20px;
+					position: absolute;
+					background-image: url('../images/caret-down-dkgrey.svg');
+					background-repeat: no-repeat;
+					background-size: 16px;
+					background-position: center;
+					top: 9px;
+					right: 5px;
+					@include transFormAnimate;
+				}
+				input.select2-search__field{
+					color: $darkGrey;
+					@include placeholder;
+					padding: 0 5px;
+					margin: 5px 0;
+					&:focus{
+						@include placeholderFocus;
+					}
+				}
+			}//end search inline
+
+			.select2-selection__rendered{
+				white-space: normal;
+				display: block;
+				li{
+					width: 100%;
+				}
+			}
+
+			//selected item
+			.select2-selection__choice{
+				border-radius: 0;
+				background-color: $offWhite;
+			}
+		}//end multi
+
+
+		/* ACTIVE SELECT 2 */
+		&.select2-container--open,&.select2-container--focus{
+			//single
+			.select2-selection--single{
+				.select2-selection__arrow{
+					@include rotate(180);
+				}
+			}//end single
+
+			//multiple
+			.select2-selection--multiple{
+				border-width: 2px;
+				.select2-search--inline{
+					&:after{
+						@include rotate(180);
+					}
+					input.select2-search__field{
+						@include placeholder;
+						&:focus{
+							@include placeholderFocus;
+						}
+					}
+				}
+			}//end multiple
+		}//end active
+
+	}// end select2 default
+}//end body / off canvas
+
+/* SELECT 2 DROPDOWNS
+---------------- */
+.select2-container{
+	.select2-dropdown{
+		border: 1px solid $black;
+		border-radius: 0;
+		border-top: 0;
+		padding: 0;
+		font-size: 1.4rem;
+		.select2-search__field{
+			outline: none;
+			border-color: $black;
+		}
+	}
+}
+.select2-container--default.select2-container--open{
+	z-index: 1260;
+}
+.select2-container--default .select2-results__option[aria-selected="true"]{
+	background-color: $offWhite;
+}
+.select2-container--default .select2-results__option--highlighted[aria-selected]{
+	background-color: $selectHighlight !important;
+}
+
+
+/* MAILCHIMP
+--------------- */
+.paragraph{
+	#mc_embed_signup{
+		font: $baseSize $baseFont;
+		background: transparent;
+	}
+	#mc-embedded-subscribe-form{
+		margin: 0;
+		padding: 0;
+	}
+	#mc_embed_signup_scroll{
+		text-align: left;
+		.clear{
+			display: block;
+		}
+		label{
+			font-size: 18px;
+			font-weight: $semi;
+			text-align: left;
+			#block-footernewsletter &{
+				font-size: 20px;
+				font-weight: $heavy;
+			}
+		}
+		input#mce-EMAIL{
+			@include textInput;
+			background: transparent;
+			border-color: $red;
+			max-width: 464px;
+			margin-bottom: $spaceSm;
+			display: block;
+			#block-footernewsletter &{
+				max-width: 328px;
+			}
+		}
+		input#mc-embedded-subscribe{
+			@include submitButton;
+			width: 100%;
+			max-width: 464px;
+			min-height: 44px;
+			#block-footernewsletter &{
+				max-width: 90px;
+				display: block;
+			}
+		}
+	}//end signup scroll
+}//end paragraph
+
+/* VIEWS FILTERS
+--------------- */
+.views-exposed-form{
+	margin: 0 0 $elementSpace;
+	padding: $spaceLg 20px;
+	position: relative;
+	&:after{
+		@include fullBack($lighterGrey);
+	}
+	.form--inline{
+		@include safeFlex(row,wrap,start,start);
+		@include bleed(padding, 10px);
+		.form-item{
+			float: none;
+			margin-right: 0;
+			margin-top: 0;
+		}
+		.js-form-type-textfield{
+			input{
+				@include textInput;
+				margin-bottom: 0;
+			}
+		}
+		.form-actions{
+			width: 100%;
+			margin-top: 0;
+			@include safeFlex(row,wrap,start,start);
+			@include tab{
+				width: 200px;
+				margin-top: 3.35rem;
+			}
+			input{
+				margin-bottom: 0;
+				width: 90px;
+				margin-right: 0;
+				&:not(:first-child){
+					margin-left: 10px;
+				}
+			}
+		}
+	}//end inline form
+}//end views exposed filters
+
+/* WEBFORMS
+-------------- */
+.webform-submission-form{
+	max-width: $textMax;
+	width: 100%;
+	@include auto;
+	@include safeFlex(row,wrap,start,start);
+	@include bleed(padding,20px);
+	.js-form-item,.form-actions{
+		width: 100%;
+		margin-top: 0;
+	}
+	.js-form-type-textfield,.js-form-type-email,.js-form-type-tel,.js-form-type-textarea{
+		input,textarea{
+			@include textInput;
+			max-width: 100%;
+		}
+	}
+	&.webform-submission-join-the-ihi-form,&.webform-submission-collaboration-form,&.webform-submission-contact-form{
+		@include smallTab{
+			.js-form-item-name,.js-form-item-email{
+				width: 50%;
+			}
+		}
+	}
+}//end webform

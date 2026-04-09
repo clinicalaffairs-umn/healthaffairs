@@ -1,0 +1,175 @@
+/* ==============
+  MEDIA
+ ================ */
+ @use '../../00-base/' as *;
+
+ /* EMBEDDED MEDIA
+ ---------------- */
+ figcaption{
+	.field + .photo-credit{
+		margin: 0 0 2.1em;
+	}
+}
+
+.embedded-entity{
+	margin-bottom: $spaceSm;
+	& > a{
+		border-bottom: 0;
+		&:hover,&:focus{
+			img{
+				opacity: .7;
+			}
+		}
+		img{
+			display: block;
+		}
+	}
+}
+
+//floated video
+.media--type-video{
+	.align-left &,.align-right &{
+		@include midMidTab{
+			width: 300px;
+		}
+		@include desk{
+			width: 450px;
+		}
+	}
+}
+
+
+//fix caption widths to make then width of the image
+.caption-drupal-entity{
+	div[data-entity-embed-display-settings="folwell_fifth"]{
+		& + figcaption{
+			max-width: 206px;
+		}
+	}
+	div[data-entity-embed-display-settings="folwell_third"]{
+		& + figcaption{
+			max-width: 368px;
+		}
+	}
+	div[data-entity-embed-display-settings="folwell_half"]{
+		& + figcaption{
+			max-width: 568px;
+		}
+	}
+	div[data-entity-embed-display-settings="300x300"]{
+		& + figcaption{
+			max-width: 300px;
+		}
+	}
+	div[data-entity-embed-display-settings="365x240"]{
+		& + figcaption{
+			max-width: 365px;
+		}
+	}
+	div[data-entity-embed-display-settings="medium"]{
+		& + figcaption{
+			max-width: 220px;
+		}
+	}
+	div[data-entity-embed-display-settings="large"]{
+		& + figcaption{
+			max-width: 480px;
+		}
+	}
+	div[data-entity-embed-display-settings="profile_image"]{
+		& + figcaption{
+			max-width: 220px;
+		}
+	}
+}
+
+ /* EMBEDDED VIDEO
+------------------ */
+.field--name-field-media-oembed-video{
+	position: relative;
+	padding-top: 56.25%;
+	iframe{
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		width: 100%;
+		height: 100%;
+	}
+}
+
+.field--type-text-with-summary,.field--type-text-long{
+	// set float props and max-widths for floated items
+	.align-left{
+		float: none;
+		@include smallTab{
+			&:not(.media--type-document){
+				max-width: 50% !important;
+				float: left;
+				margin: 0 $spaceMd $spaceMd 0;
+			}
+			&.media--type-document{
+				text-align: left;
+				width: 100%;
+			}
+		}
+		//floated video
+		.field--name-field-media-oembed-video{
+			width: 1200px;
+			max-width: 100%;
+		}
+	}
+	.align-right{
+		float: none;
+		@include smallTab{
+			&:not(.media--type-document){
+				max-width: 50%;
+				float: right;
+				margin: 0 0 $spaceMd $spaceMd;
+			}
+			&.media--type-document{
+				text-align: right;
+				width: 100%;
+			}
+		}
+		//floated video
+		.field--name-field-media-oembed-video{
+			width: 1200px;
+			max-width: 100%;
+		}
+	}
+	.align-center{
+		&.media--type-document{
+			text-align: center;
+		}
+	}
+	// control sizes for images and video
+	.media--view-mode-folwell-fifth{
+		width: 206px;
+		max-width: 100%;
+		& + figcaption{
+			width: 206px;
+			max-width: 100%;
+		}
+	}
+	.media--view-mode-folwell-third{
+		width: 368px;
+		max-width: 100%;
+		& + figcaption{
+			width: 368px;
+			max-width: 100%;
+		}
+	}
+	.media--view-mode-folwell-half{
+		width: 568px;
+		max-width: 100%;
+		& + figcaption{
+			width: 568px;
+			max-width: 100%;
+		}
+	}
+	.media--view-mode-folwell-full{
+		width: 100%;
+	}
+}//end article

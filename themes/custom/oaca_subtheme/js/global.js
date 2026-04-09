@@ -112,9 +112,6 @@
 	      $('.prefix-name a', this).attr('href','/').text('Office of Academic Clinical Affairs');
 	      var urlCurrent = window.location.pathname;
         switch(true) {
-          case urlCurrent.startsWith('/covid-19-updates',0):
-            $('.sitename a', this).attr('href','/covid-19-updates').text('Covid-19 Updates');
-            break;
           case urlCurrent.startsWith('/mhi',0):
             $('.sitename a', this).attr('href','/mhi').text('Mobile Health Initiative');
             break;
@@ -147,6 +144,13 @@
 						if ($undisclosed) {
 							$dateOnly.css('display', 'block');
 							$dateTime.empty();
+							let = dateStr = $dateOnly[0].children[0].innerText;
+							let splitStr = dateStr.substring(dateStr.indexOf(',') + 6);
+							if (splitStr.length > 0 && !dateStr.includes(' - ')){
+								dateStr = dateStr.replace(splitStr, ' - ' + splitStr);
+								let $date = $('.page-node-type-events .block-field-blocknodeeventsfield-smart-date:nth-of-type(4) > div');
+								$date.text(dateStr);
+							}
 						} else {
 							$dateTime.css('display', 'block');
 							$dateOnly.empty();
@@ -156,7 +160,14 @@
 		  }
 		}
 
-
-
+	/* REMOVE target="_blank" FROM ADDTOANY BUTTONS
+		------------------------------ */
+		Drupal.behaviors.fixAddToAnyTargets = {
+		  attach(context) {
+		    once('addtoany-target-fix', '.a2a_kit a', context).forEach((link) => {
+		      link.setAttribute('title', '(opens in a new window)');
+		    });
+		  }
+		};
 
 })(jQuery, Drupal);

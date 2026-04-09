@@ -1,0 +1,38 @@
+/* ======================
+  BUTTONS
+========================= */
+@use '../../00-base/' as *;
+@use 'sass:color';
+
+/* FOLWELL OVERRIDES
+------------------ */
+.btn{
+	font-weight: $semi;
+	font-size: $button;
+
+	&.btn.ext + svg {
+		margin-left: -16px;
+	}
+}
+
+.button {
+	@include button;
+}
+
+.button-wrapper {
+	display:inline-block;
+	max-width:365px;
+}
+
+/* SUBMIT BUTTONS
+------------------ */
+input[type="submit"]{
+	@include submitButton;
+	font-weight: $semi;
+	&#edit-reset{
+		background: $darkGrey;
+		&:hover{
+			background-color: color.adjust($darkGrey, $lightness: 5%) !important;
+		}
+	}
+}

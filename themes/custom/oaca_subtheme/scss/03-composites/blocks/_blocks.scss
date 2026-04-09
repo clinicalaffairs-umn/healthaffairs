@@ -1,0 +1,136 @@
+/* ===================
+  CUSTOM BLOCKS AND BLOCK TYPES
+========================= */
+@use '../../00-base/' as *;
+
+%largeText{
+	font-size: 2rem;
+	line-height: 1.75;
+	font-weight: $semi;
+}
+
+/* HEADER BUTTON BLOCKS
+---------------------- */
+.block-header-buttons, #block-headerbuttonsmhisite, #block-headerbuttonsprimarysite{
+	@include onlySmall{
+		width: 100%;
+		padding: $spaceSm 1em;
+		margin: 0 !important;
+	}
+	.field--name-field-buttons{
+		margin-bottom: -$spaceSm;
+		@include safeFlex(row,wrap,center,start);
+		@include bleed(padding,20px);
+		@include tab{
+			@include safeFlex(row,wrap,end,start);
+		}
+		.field__item{
+			margin-bottom: $spaceSm;
+			@include onlySmall{
+				width: 100%;
+				text-align: center;
+			}
+		}
+	}
+	a{
+		@include buttonAlt;
+		&{
+			font-size: 1.4rem;
+			padding: .85rem .5rem;
+			width: 220px;
+			text-transform: uppercase;
+		}
+	}
+}//end block header buttons
+
+/* FOOTER BLOCKS
+------------------ */
+#block-about{
+	padding-bottom: 2em;
+	h2{
+		margin-bottom: .5rem;
+	}
+	p{
+		@extend %largeText;
+	}
+}//end about
+
+#block-footernewsletter{
+	margin-bottom: -$spaceXs;
+	.paragraph--type--form-placer{
+		.field--name-field-headline{
+	    font-weight: $heavy;
+	    margin: 0 0 .5rem;
+	    letter-spacing: -1px;
+	    font-size: 20px;
+	    margin-bottom: .5rem;
+		}
+		.webform-submission-form{
+			margin-top: 10px;
+			.form-item{
+				max-width: 328px;
+				margin-bottom: 0;
+				@include desk{
+					max-width: 268px;
+				}
+				input{
+					margin-bottom: 2rem;
+				}
+			}//end form item
+			.form-actions{
+				margin-bottom: 0;
+			}
+		}//end webform submission form
+	}//end form placer
+}//end footer newsletter
+
+#block-contactus{
+	padding-bottom: 2em;
+	h2{
+		margin-bottom: .5rem;
+	}
+	p{
+		@extend %largeText;
+	}
+}//end contact
+
+#block-connectwithus{
+	padding-bottom: 1.5em;
+	h2{
+		margin-bottom: .5rem;
+	}
+	a{
+		font-size: $socialIcons * 1.65;
+		&.has-back{
+			width: 45px;
+			height: 45px;
+			position: relative;
+			top: 5px;
+			svg{
+				font-size: $socialIcons;
+			}
+		}
+	}
+	svg.ext {
+		display: none;
+	}
+}//end connect
+
+#block-feedback{
+	p{
+		@extend %largeText;
+	}
+}//end feedback
+
+
+.block-field-blocknodelanding-pagefield-subtitle {
+	margin-bottom:$spaceSm;
+}
+
+.block-field-blocknodelanding-pagebody {
+	// @include oacaIndents;
+}
+
+.crt-logo .crt-tag + svg.ext {
+	display: none;
+}

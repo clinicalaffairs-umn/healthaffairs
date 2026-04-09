@@ -1,0 +1,66 @@
+/* ================
+   FOOTER
+================ */
+@use '../../../00-base/' as *;
+
+#site-footer{
+	padding: 1.5em 20px 2em;
+	position: relative;
+	&:before{
+		content: '';
+		display: block;
+		position: absolute;
+		top: 0;
+		left: -50vw;
+		width: 200vw;
+		height: 4px;
+		background: $red;
+	}
+	@include tab{
+		@include safeFlex(row,wrap,start,start);
+		padding-bottom: 0;
+	}
+
+	h2 {
+		@include heading3;
+		margin-bottom: $spaceXxs;
+	}
+}
+.footer-top{
+	padding-bottom: 2em;
+	@include tab{
+		width: 68%;
+	}
+}
+.footer-bottom{
+	border-top: 4px solid $lightGrey;
+	padding: 2em 0 0;
+	@include tab{
+		width: 32%;
+		border-top: 0;
+		padding: 0 0 0 2em;
+		border-left: 4px solid $lightGrey;
+	}
+}
+
+#umnhf-f.umnhf{
+	border-top: 0;
+	#umnhf-f-myu{
+		display: none;
+	}
+	small{
+		font-size: 1.2rem;
+		font-weight: $regular;
+		color: $mediumGrey;
+		text-align: left;
+		@include desk{
+			text-align: center;
+		}
+
+		&.center{
+			@include desk{
+				text-align: center;
+			}
+		}
+	}
+}

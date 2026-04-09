@@ -40,19 +40,14 @@
     <h2{{ title_attributes }}>{{ label }}</h2>
   {% endif %}
   {{ title_suffix }}
-    <nav class="breadcrumb" aria-labelledby="system-breadcrumb">
+    <nav class="breadcrumb" aria-label="{{ 'Breadcrumb'|t }}">
       <h2 class="visually-hidden">{{ 'Breadcrumb'|t }}</h2>
       <ol class="breadcrumb-list">
         <li>
           <a href="/">Home</a>
         </li>
         <li>
-          {% if microsite == 'covid-19-updates' %}
-            <a href="{{ path('entity.node.canonical', {'node': '1046'}) }}">COVID-19 Updates</a></li>
-            <li><a href="{{ path('entity.node.canonical', {'node': '1106'}) }}">Events</a>
-          {% else %}
-            <a href="{{ path('entity.node.canonical', {'node': '146'}) }}">Events</a>
-          {% endif %}
+          <a href="{{ path('entity.node.canonical', {'node': '146'}) }}">Events</a>
         </li>
         <li>
           {{- nodeTitle -}}

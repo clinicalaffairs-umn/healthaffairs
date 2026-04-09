@@ -1,0 +1,113 @@
+/* ==================
+	UNITS
+=================== */
+
+$em-base: 10px;
+
+/* BREAKPOINT VARIABLES
+------------------------ */
+$smallTab: 500px;
+$midTab: 610px;
+$midMidTab: 640px;
+$tab: 800px;
+$deskMenu: 960px;
+$desk: 980px;
+$contentStop: 1200px;
+$textMax: 900px;
+$uMobile: max-width $midTab - 1px;
+$onlyTab: $tab $desk - 1px;
+$onlySmall: max-width $tab - 1px;
+$onlyPhone: max-width $smallTab - 1px;
+$onlyMobile: max-width $desk - 1px;
+
+
+/* SPACING & LAYOUT VARIABLES
+----------------------------- */
+$spaceXxs: .5rem;
+$spaceXs : 1rem;
+$spaceSm : 2rem;
+$spaceMd : 3rem;
+$spaceLg : 4rem;
+$spaceXl : 6rem;
+
+$siteMarginMobile: 2rem;
+$siteMarginDesk: 6rem;
+
+$formElementSpace: $spaceMd;
+$elementSpace: $spaceLg;
+$siteBottomSpace: 4rem;
+
+$sideBar: 320px;
+$sectionGutter: 40px;
+
+@mixin smallTab {
+  @media screen and (min-width: $smallTab) {
+    @content;
+  }
+}
+
+@mixin midTab {
+  @media screen and (min-width: $midTab) {
+    @content;
+  }
+}
+
+@mixin midMidTab {
+  @media screen and (min-width: $midMidTab) {
+    @content;
+  }
+}
+
+@mixin tab {
+  @media screen and (min-width: $tab) {
+    @content;
+  }
+}
+
+@mixin deskMenu {
+  @media screen and (min-width: $deskMenu) {
+    @content;
+  }
+}
+
+@mixin desk {
+  @media screen and (min-width: $desk) {
+    @content;
+  }
+}
+
+@mixin contentStop {
+  @media screen and (min-width: $contentStop) {
+    @content;
+  }
+}
+
+@mixin uMobile {
+  @media screen and (max-width: $midTab - 1px) {
+    @content;
+  }
+}
+
+@mixin onlyTab {
+  @media screen and (min-width: $tab) and (max-width: $desk - 1px) {
+    @content;
+  }
+}
+
+@mixin onlySmall {
+  @media screen and (max-width: $tab - 1px) {
+    @content;
+  }
+}
+
+@mixin onlyPhone {
+  @media screen and (max-width: $smallTab - 1px) {
+    @content;
+  }
+}
+
+@mixin onlyMobile {
+  @media screen and (max-width: $desk - 1px) {
+    @content;
+  }
+}

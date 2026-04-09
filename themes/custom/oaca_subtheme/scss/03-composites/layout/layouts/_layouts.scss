@@ -1,0 +1,245 @@
+/* ================
+ LAYOUT
+=================== */
+@use '../../../00-base/' as *;
+
+#block-oaca-subtheme-content{
+	padding-bottom: $siteBottomSpace;
+	@media screen and (max-width: 479px) {
+		padding-left: $siteMarginMobile;
+		padding-right: $siteMarginMobile;
+	}
+}
+
+.block-layout-builder{
+	& > h2{
+		margin-bottom: $spaceXs;
+	}
+}
+
+.layout__region{
+	& > *{
+		margin-bottom: $elementSpace;
+	}
+}
+
+
+
+
+/* TWO COLUMN SIDEBAR LEFT */
+.layout--twocol-sideleft{
+	width: 100%;
+	@include safeFlex(row,wrap,start,start);
+	.layout__region--first{
+		width: 100%;
+		@include tab{
+			width: $sideBar;
+		}
+	}//end layout region second
+	.layout__region--content{
+		width: 100%;
+		@include tab{
+			&:not(:only-child){
+				@include calc(width, "100% - "$sideBar);
+				&:not(.ui-sortable){
+					padding-left: $sectionGutter;
+				}
+			}
+			&:only-child{
+				max-width: $textMax;
+				@include auto;
+			}
+		}
+	}
+}//end layout-twocol-sideleft
+
+/* TWO COLUMN SIDEBAR RIGHT */
+.layout--twocol-sideright{
+	width: 100%;
+	@include safeFlex(row,wrap,start,start);
+	.layout__region--content{
+		width: 100%;
+		@include desk{
+			&:not(:only-child){
+				@include calc(width, "100% - "$sideBar);
+				&:not(.ui-sortable){
+					padding-right: $sectionGutter;
+				}
+			}
+			&:only-child{
+				max-width: $textMax;
+				@include auto;
+			}
+		}
+	}
+	.layout__region--second{
+		width: 100%;
+		@include desk{
+			width: $sideBar;
+		}
+	}//end layout region second
+}//end layout-twocol-sideright
+
+/* TWO COLUMN SIDELEFT SPLIT */
+.layout--twocol-sideleft-split{
+	width: 100%;
+	&.no-sidebar{
+		max-width: $textMax;
+		@include auto;
+		@include tab{
+			@supports(display: grid){
+				display: block;
+			}
+		}
+	}
+	@include tab{
+		@supports(display: grid){
+			display: grid;
+			grid-template-columns: $sideBar 1fr;
+			grid-template-rows: auto;
+			grid-template-areas:
+				"sidebar header"
+				"sidebar middle"
+				"sidebar bottom";
+		}
+	}
+	.layout__region--first{
+		width: 100%;
+		@include tab{
+			.field--name-title{
+				margin-left: 0;
+			}
+			@supports(display: grid){
+				grid-area: header;
+				grid-column: 2 / span 1;
+				padding-left: $sectionGutter;
+				.field--name-title{
+					margin-left: auto;
+				}
+			}
+		}
+	}//end layout region second
+	.layout__region--sidebar{
+		width: 100%;
+		@include tab{
+			float: left;
+			width: $sideBar;
+			margin-right: $sectionGutter;
+			& + .layout__region--second{
+				@include calc(width, "100% - "$sideBar);
+			}
+			@supports(display: grid){
+				grid-area: sidebar;
+				grid-column: 1 / span 1;
+				float: none;
+				width: 100%;
+				margin-right: 0;
+				& + .layout__region--second{
+					width: 100%;
+				}
+			}
+		}
+	}//end sidebar
+	.layout__region--second{
+		width: 100%;
+		@include tab{
+			padding-left: $sectionGutter;
+			@supports(display: grid){
+				grid-area: middle;
+				grid-column: 2 / span 1;
+			}
+		}
+	}//end second region
+}//end layout-twocol-sideleft
+
+/* TWO COLUMN SIDERIGHT SPLIT */
+.layout--twocol-sideright-split{
+	width: 100%;
+	@include tab{
+		@supports(display: grid){
+			display: grid;
+			grid-template-columns: 1fr $sideBar;
+			grid-template-rows: auto;
+			grid-template-areas:
+				"header sidebar"
+				"middle sidebar"
+				"bottom sidebar";
+		}
+	}
+	.layout__region--first{
+		width: 100%;
+		.field--name-title{
+			@include edgeReset;
+		}
+		@include tab{
+			@supports(display: grid){
+				grid-area: header;
+				grid-column: 1 / span 1;
+				padding-right: $sectionGutter;
+			}
+		}
+	}//end layout region second
+	.layout__region--sidebar{
+		width: 100%;
+		@include tab{
+			float: right;
+			width: $sideBar;
+			margin-left: $sectionGutter;
+			& + .layout__region--second{
+				@include calc(width, "100% - "$sideBar);
+			}
+			@supports(display: grid){
+				grid-area: sidebar;
+				grid-column: 2 / span 1;
+				float: none;
+				width: 100%;
+				margin-left: 0;
+				& + .layout__region--second{
+					width: 100%;
+				}
+			}
+		}
+	}//end sidebar
+	.layout__region--second{
+		width: 100%;
+		@include tab{
+			padding-right: $sectionGutter;
+			@supports(display: grid){
+				grid-area: middle;
+				grid-column: 1 / span 1;
+			}
+		}
+	}//end second region
+}//end layout-twocol-sideleft
+
+/* TWO COLUMN SIDELEFT SPLIT */
+.layout--twocol-splitboth-right{
+	width: 100%;
+	@include tab{
+		@include safeFlex(column,wrap,start,start);
+	}
+	.layout__region--first{
+		width: 100%;
+		@include tab{
+			@include calc(width, "100% - "$sideBar);
+		}
+	}//end first
+	.layout__region--second{
+		width: 100%;
+		@include tab{
+			width: $sideBar;
+		}
+	}//end second
+	.layout__region--third{
+		width: 100%;
+		@include tab{
+			@include calc(width, "100% - "$sideBar);
+		}
+	}//end third
+	.layout__region--fourth{
+		width: 100%;
+		@include tab{
+			width: $sideBar;
+		}
+	}//end fourth
+}//end layout-twocol-sideleft

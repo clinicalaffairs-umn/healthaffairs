@@ -40,7 +40,7 @@
     'block-' ~ plugin_id|clean_class,
   ]
 %}
-{% set nid = content['#object'].id() %}
+{% set nid = content[0]['#object'].id() %}
 <div{{ attributes.addClass(classes) }}>
   {{ title_prefix }}
   {% if label %}
@@ -50,9 +50,11 @@
   {% block content %}
     {{ content }}
   {% endblock %}
-  {% if drupal_field('field_link', 'node', nid)|render|striptags|trim|length > 0%}
-  <div class="block-field-blocknodemini-medfield-link">
-  	{{ drupal_field('field_link', 'node', nid) }}
-  </div>
+  {% if nid %}
+    {% if drupal_field('field_link', 'node', nid, 'default')|render|striptags|trim|length > 0 %}
+    <div class="block-field-blocknodemini-medfield-link">
+    	{{ drupal_field('field_link', 'node', nid, 'default') }}
+    </div>
+    {% endif %}
   {% endif %}
 </div>

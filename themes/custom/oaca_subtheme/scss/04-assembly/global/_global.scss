@@ -1,0 +1,32 @@
+/* ==================
+ GLOBAL SITE STYLES
+====================*/
+@use '../../00-base/' as *;
+
+body {
+	width: 100%;
+}//end body
+
+.page-wrapper{
+	overflow-x: hidden;
+}
+
+.mm-page{
+	.unpublished &{
+		#block-oaca-subtheme-content{
+			background: $unpub;
+		}
+	}
+}
+
+/* RESET WIDTHS TO MAKE A FULL 1200
+----------------------- */
+.fixed-width .page > section,.fixed-width .page > main, .fixed-width .page > footer, .fixed-width .block-superfish, .fixed-width #site-header .navigation .block-superfish{
+	max-width: 1240px;
+}
+
+/* PRIMARY TABS
+-------------------- */
+ul.tabs.primary{
+	margin-top: 1em;
+}

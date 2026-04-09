@@ -1,0 +1,75 @@
+/* FORM MIXINS
+=========== */
+@use '../variables' as *;
+
+@mixin placeholder{
+	$placeTint: 1;
+	&::-webkit-placeholder{
+		opacity: $placeTint;
+		color: $placeColor;
+	}
+	&::-moz-placeholder{
+		opacity: $placeTint;
+		color: $placeColor;
+	}
+	&:-ms-input-placeholder{
+		opacity: $placeTint;
+		color: $placeColor;
+	}
+	&::-webkit-input-placeholder{
+		opacity: $placeTint;
+		color: $placeColor;
+	}
+}
+
+@mixin placeholderFocus{
+	$placeFocusTint: .2;
+	&::-webkit-placeholder{
+		opacity: $placeFocusTint;
+		color: $placeFocusColor;
+	}
+	&::-moz-placeholder{
+		opacity: $placeFocusTint;
+		color: $placeFocusColor;
+	}
+	&:-ms-input-placeholder{
+		opacity: $placeFocusTint;
+		color: $placeFocusColor;
+	}
+	&::-webkit-input-placeholder{
+		opacity: $placeFocusTint;
+		color: $placeFocusColor;
+	}
+}
+
+/* TEXT INPUT
+-----------------*/
+@mixin textInput{
+	font-size: 1.6rem;
+	border: 2px solid $black;
+	border-radius: 0;
+	width: 100%;
+	max-width: 250px;
+	height: auto;
+	background: $white;
+	min-height: 44px;
+	padding: 6px 10px;
+	&:focus{
+		outline: none;
+		box-shadow: 0 2px 2px rgba(35,35,35,0.3);
+	}
+}
+
+/* SELECT LISTS
+-------------- */
+@mixin inputSelect{
+	width: 100%;
+	font-size: 1.6rem;
+	border: 2px solid $black;
+	border-radius: 0;
+	height: auto;
+	background: $white;
+	&.select2--container--focus{
+		box-shadow: 0 2px 2px rgba(35,35,35,0.3);
+	}
+}

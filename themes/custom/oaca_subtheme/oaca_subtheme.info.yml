@@ -2,14 +2,15 @@ name: OACA Subtheme
 type: theme
 description: Custom theme by Electric Citizen for use with OACA Sites
 package: EC
-core_version_requirement: ^10 || ^11
+core_version_requirement: ^9 || ^10 || ^11
 # Defines libraries group in which we can add css/js.
 libraries:
   - oaca_subtheme/global-styling
   - oaca_subtheme/fonts
-ckeditor_stylesheets:
+ckeditor5_stylesheets:
   - https://fonts.googleapis.com/css?family=Open+Sans:ital,wght@0,400;;0,700;1,400
   - dist/cke.css
+  - dist/cke5.css
 base theme: folwell
 hidden: false
 regions:

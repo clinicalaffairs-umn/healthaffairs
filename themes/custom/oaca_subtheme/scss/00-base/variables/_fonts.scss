@@ -1,0 +1,102 @@
+/* ===============
+  FONTS
+=================== */
+@use 'units' as *;
+
+/*  FAMILIES
+-------------------- */
+$baseFont : "Open Sans", Helvetica, Arial, sans-serif;
+$header   : "Montserrat", Helvetica, Arial, sans-serif;
+
+/*  FAMILIES
+-------------------- */
+$light  : 300;
+$regular: 400;
+$semi   : 600;
+$heavy  : 700;
+
+/*  SIZES
+-------------------- */
+$baseSize: 1.8rem;
+$formLabelSize: 2rem;
+$formLabelWeight: 400;
+$button: 1.6rem;
+$socialIcons: 3.2rem;
+
+//h1 sizes
+$h1: 30px;
+$h1Mid: 42px;
+
+//h2 sizes
+$h2    : 26px;
+$h2Mid : 36px;
+
+//h3 sizes
+$h3: 26px;
+
+//h4 sizes
+$h4: 19px;
+
+//h5 sizes
+$h5: 17px;
+
+//h6 sizes
+$h6: 15px;
+
+/* HEADING MIXINS
+------------------ */
+@mixin headerGlobals{
+	line-height: 1.1;
+	font-weight: $heavy;
+	font-family: $baseFont;
+	margin: 0;
+	font-feature-settings: "liga", "dlig";
+	letter-spacing:-1px;
+	&:first-child{
+		margin-top: 0;
+	}
+	a{
+		&:after,&:link:after{
+			content: none;
+		}
+	}
+}
+
+@mixin heading1{
+	@include headerGlobals;
+	font-family: $header;
+	font-size: $h1;
+	font-weight: $semi;
+	@include tab{
+		font-size: $h1Mid;
+	}
+}
+
+@mixin heading2 {
+	@include headerGlobals;
+	font-weight:$regular;
+	font-size: $h2;
+	@include tab{
+		font-size: $h2Mid;
+	}
+}
+
+@mixin heading3{
+	@include headerGlobals;
+	font-size: $h3;
+}
+
+@mixin heading4{
+	@include headerGlobals;
+	font-size: $h4;
+}
+
+@mixin heading5{
+	@include headerGlobals;
+	font-size: $h5;
+}
+
+@mixin heading6{
+	@include headerGlobals;
+	font-size: $h6;
+}

@@ -92,8 +92,9 @@
         </ul>
     </nav>
     <small>© <span id="cdate">{{ copyright_year }}</span> Regents of the <a href="https://system.umn.edu">University of Minnesota</a>. All rights reserved. The University of Minnesota is an equal opportunity educator and employer. <a href="{{ privacy_link }}">Privacy Statement</a></small>
-      <!-- Optional last updated link-->
-      {% if last_updated %}<small>Current as of {{ last_updated }}</small>{% endif %} <!-- add time tag w datetime attr -->
+    <!-- Optional last updated link-->
+    {% if last_updated %}<small>Current as of {{ last_updated }}</small>{% endif %} <!-- add time tag w datetime attr -->
+    <small class="center"><a href="https://umn.qualtrics.com/jfe/form/SV_6wXAi4TqHgDXJ5Q">Report Web Accessibility Issues</a></small>  
   </footer>
   {% if page_bottom %}
     {{ page_bottom }}
