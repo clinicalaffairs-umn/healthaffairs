@@ -3,21 +3,42 @@ langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_display.node.landing_page.full
     - filter.format.folwell_ckeditor
     - media.type.document
     - media.type.image
     - media.type.remote_video
+    - node.type.events
+    - node.type.landing_page
+    - node.type.news
+    - node.type.page
+    - node.type.staff
     - taxonomy.vocabulary.staff_group
     - taxonomy.vocabulary.title_position
   module:
     - addanother
     - auditfiles
+    - block
+    - block_content
+    - contextual
+    - dropzonejs
+    - editoria11y
+    - file
     - filter
+    - google_tag
+    - help
+    - layout_builder
     - lightning_core
     - media
+    - node
     - paragraphs_type_permissions
+    - path
+    - redirect
     - role_delegation
     - scheduler
+    - shortcut
+    - system
+    - taxonomy
     - webform
 third_party_settings:
   lightning_core:
@@ -27,17 +48,40 @@ label: 'Site Manager'
 weight: 4
 is_admin: false
 permissions:
+  - 'access administration pages'
   - 'access audit files reports'
+  - 'access block library'
+  - 'access content overview'
+  - 'access contextual links'
+  - 'access help pages'
   - 'access media overview'
+  - 'access shortcuts'
+  - 'access site reports'
+  - 'access taxonomy overview'
+  - 'access user profiles'
   - 'access webform overview'
   - 'access webform submission user'
+  - 'administer block content'
+  - 'administer block types'
+  - 'administer blocks'
+  - 'administer google_tag_container'
   - 'administer media'
+  - 'administer menu'
+  - 'administer nodes'
+  - 'administer redirects'
+  - 'administer users'
   - 'assign editor role'
   - 'assign site_manager role'
+  - 'bypass node access'
   - 'configure audit files reports'
+  - 'configure editable landing_page node layout overrides'
   - 'create document media'
+  - 'create events content'
   - 'create image media'
+  - 'create landing_page content'
   - 'create media'
+  - 'create news content'
+  - 'create page content'
   - 'create paragraph content a11y_paragraphs_tab_content'
   - 'create paragraph content a11y_paragraphs_tabs_panel'
   - 'create paragraph content a11y_paragraphs_tabs_wrapper'
@@ -70,21 +114,39 @@ permissions:
   - 'create paragraph content video'
   - 'create paragraph content video_banner'
   - 'create remote_video media'
+  - 'create staff content'
   - 'create terms in staff_group'
   - 'create terms in title_position'
+  - 'create url aliases'
   - 'create webform'
+  - 'delete all revisions'
   - 'delete any document media'
+  - 'delete any events content'
   - 'delete any image media'
+  - 'delete any landing_page content'
   - 'delete any media'
+  - 'delete any news content'
+  - 'delete any page content'
   - 'delete any remote_video media'
+  - 'delete any staff content'
   - 'delete any webform'
   - 'delete any webform submission'
+  - 'delete events revisions'
+  - 'delete landing_page revisions'
   - 'delete media'
+  - 'delete news revisions'
   - 'delete own document media'
+  - 'delete own events content'
+  - 'delete own files'
   - 'delete own image media'
+  - 'delete own landing_page content'
+  - 'delete own news content'
+  - 'delete own page content'
   - 'delete own remote_video media'
+  - 'delete own staff content'
   - 'delete own webform'
   - 'delete own webform submission'
+  - 'delete page revisions'
   - 'delete paragraph content a11y_paragraphs_tab_content'
   - 'delete paragraph content a11y_paragraphs_tabs_panel'
   - 'delete paragraph content a11y_paragraphs_tabs_wrapper'
@@ -117,21 +179,43 @@ permissions:
   - 'delete paragraph content video'
   - 'delete paragraph content video_banner'
   - 'delete paragraph content view_placer'
+  - 'delete staff revisions'
   - 'delete terms in staff_group'
   - 'delete terms in title_position'
+  - 'dropzone upload files'
   - 'edit any document media'
+  - 'edit any events content'
   - 'edit any image media'
+  - 'edit any landing_page content'
+  - 'edit any news content'
+  - 'edit any page content'
   - 'edit any remote_video media'
+  - 'edit any staff content'
   - 'edit any webform'
   - 'edit any webform submission'
   - 'edit own document media'
+  - 'edit own events content'
   - 'edit own image media'
+  - 'edit own landing_page content'
+  - 'edit own news content'
+  - 'edit own page content'
   - 'edit own remote_video media'
+  - 'edit own staff content'
   - 'edit own webform'
   - 'edit own webform submission'
   - 'edit terms in staff_group'
   - 'edit terms in title_position'
+  - 'manage editoria11y results'
+  - 'mark as hidden in editoria11y'
+  - 'rebuild node access permissions'
+  - 'revert all revisions'
+  - 'revert events revisions'
+  - 'revert landing_page revisions'
+  - 'revert news revisions'
+  - 'revert page revisions'
+  - 'revert staff revisions'
   - 'schedule publishing of nodes'
+  - 'switch shortcut sets'
   - 'update any media'
   - 'update media'
   - 'update paragraph content a11y_paragraphs_tab_content'
@@ -168,9 +252,16 @@ permissions:
   - 'use add another'
   - 'use text format folwell_ckeditor'
   - 'view all media revisions'
+  - 'view all revisions'
   - 'view any webform submission'
+  - 'view editoria11y checker'
+  - 'view events revisions'
+  - 'view landing_page revisions'
+  - 'view news revisions'
+  - 'view own unpublished content'
   - 'view own unpublished media'
   - 'view own webform submission'
+  - 'view page revisions'
   - 'view paragraph content a11y_paragraphs_tab_content'
   - 'view paragraph content a11y_paragraphs_tabs_panel'
   - 'view paragraph content a11y_paragraphs_tabs_wrapper'
@@ -204,3 +295,5 @@ permissions:
   - 'view paragraph content video_banner'
   - 'view paragraph content view_placer'
   - 'view scheduled content'
+  - 'view staff revisions'
+  - 'view the administration theme'
