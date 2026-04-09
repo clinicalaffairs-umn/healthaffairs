@@ -5,7 +5,6 @@
  * Contains citizen_custom.module.
  */
 
-use Drupal\Core\Cache\Cache;
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\Routing\RouteMatchInterface;
 
@@ -65,12 +64,9 @@ function citizen_custom_form_node_form_alter(&$form, \Drupal\Core\Form\FormState
     $form['promote']['widget']['value']['#title'] = 'Add to home page news';
     $form['promote']['widget']['value']['#description'] = 'Should have a banner image.';
   }
-  if ($node->getType() == 'event') {
+  if ($node->getType() == 'events') {
     $form['promote']['widget']['value']['#title'] = 'Add to home page events';
     $form['promote']['widget']['value']['#description'] = 'Should have a banner image.';
-  }
-  if ($node->getType() == 'blog') {
-    $form['promote']['widget']['value']['#title'] = 'Add to Featured Posts';
   }
 }
 
@@ -170,20 +166,6 @@ function citizen_custom_local_tasks_alter(&$local_tasks) {
 }
 
 /**
- * Implements switching the responsive mobile menu based on the microsite
- */
-function citizen_custom_responsive_menu_off_canvas_menu_names_alter(&$menus){
-  $current_path = \Drupal::service('path.current')->getPath();
-  $path = \Drupal::service('path_alias.manager')->getAliasByPath($current_path);
-  Cache::invalidateTags(['offcanvas_render']);
-  switch (true) {
-    case (substr($path, 0, 4 ) == "/mhi"):
-      $menus = 'mobile-health-initiative';
-      break;
-  }
-}
-
-/**
  * Implements views_pre_view to paragraphs X by category items on page change.
  */
 function citizen_custom_views_pre_view($view, $display_id, &$args) {
@@ -207,33 +189,5 @@ function citizen_custom_views_pre_view($view, $display_id, &$args) {
       $view->display_handler->setOption('pager', $pager);
     }//end if paragraph_id
   } // End Paragraphs 'X by Category' Views.
-
-  //limit other news to the section of the site it belongs to
-  if (($view->element['#name'] == 'news') && ($view->current_display === 'recent_news_by_node')) {
-    //get the filters
-    $filters = $view->display_handler->getOption('filters');
-    //grab the site section if available from the current node
-    $node = \Drupal::routeMatch()->getParameter('node');
-    if ((!$node instanceof NodeInterface) && ($node_revision = \Drupal::routeMatch()->getParameter('node_revision'))) {
-      $node = \Drupal::entityTypeManager()->getStorage('node')->loadRevision($node_revision);
-    }
-    if ($node){
-      if (isset($node->field_microsite[0])) {
-        $siteSection = $node->field_microsite[0];
-        $siteTarget = $siteSection->target_id;
-      }
-    }
-    //if the node has a site section
-    if (isset($siteSection)){
-      //set the section filter to that but need it as array
-      $sections = [];
-      foreach ($siteSection as $delta => $sectionItem) {
-        $sections[] = $siteTarget;
-      }
-      $filters['field_microsite_target_id']['operator'] = 'or';
-    }
-    //reup the filters
-    $view->display_handler->setOption('filters', $filters);
-  } // view placer for section events
 
 } // End views_pre_view.
