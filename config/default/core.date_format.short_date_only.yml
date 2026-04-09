@@ -1,0 +1,8 @@
+uuid: 073b57b5-790a-4f97-a46d-e08161778169
+langcode: en
+status: true
+dependencies: {  }
+id: short_date_only
+label: 'Short Date Only'
+locked: false
+pattern: 'F j, Y'

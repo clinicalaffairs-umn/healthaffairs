@@ -1,0 +1,29 @@
+uuid: 50ec99a8-3bd7-435d-9f09-2beb782f39e6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_staff_group
+    - node.type.staff
+    - taxonomy.vocabulary.staff_group
+id: node.staff.field_staff_group
+field_name: field_staff_group
+entity_type: node
+bundle: staff
+label: 'Staff Group'
+description: 'If the group you wish to add does not exist, you can create it <a href="/admin/structure/taxonomy/manage/staff_group/add" target="_blank">here</a>. <strong>NOTE:</strong> You will need to save this page and refresh for your newly created position to appear in the list.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      staff_group: staff_group
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

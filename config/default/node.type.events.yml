@@ -1,0 +1,17 @@
+uuid: dd0aa7af-c477-45e3-8be9-b790261112c8
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Events
+type: events
+description: 'Add event items to be listed in upcoming events views.'
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: false

@@ -1,0 +1,23 @@
+uuid: 903ddab4-6b60-46d0-9577-3b4f4534e88e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_external_link
+    - node.type.staff
+  module:
+    - link
+id: node.staff.field_external_link
+field_name: field_external_link
+entity_type: node
+bundle: staff
+label: 'External Bio Link'
+description: 'This link will send users to an external bio, but the directory fields need to be entered to display properly.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 0
+  link_type: 16
+field_type: link

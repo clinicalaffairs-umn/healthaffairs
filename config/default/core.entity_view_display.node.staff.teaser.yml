@@ -1,0 +1,62 @@
+uuid: 928c37b6-9f48-42f8-9136-fac8fda9dc9b
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.staff.body
+    - field.field.node.staff.field_additional_information
+    - field.field.node.staff.field_address
+    - field.field.node.staff.field_banner
+    - field.field.node.staff.field_cv
+    - field.field.node.staff.field_do_not_list_bio
+    - field.field.node.staff.field_education
+    - field.field.node.staff.field_email
+    - field.field.node.staff.field_external_link
+    - field.field.node.staff.field_first_name
+    - field.field.node.staff.field_last_name
+    - field.field.node.staff.field_leadership_role
+    - field.field.node.staff.field_link
+    - field.field.node.staff.field_phone
+    - field.field.node.staff.field_position
+    - field.field.node.staff.field_post_nominal
+    - field.field.node.staff.field_social_media_links
+    - field.field.node.staff.field_staff_group
+    - node.type.staff
+  module:
+    - user
+id: node.staff.teaser
+targetEntityType: node
+bundle: staff
+mode: teaser
+content:
+  field_banner:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: profile
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  addtoany: true
+  body: true
+  field_additional_information: true
+  field_address: true
+  field_cv: true
+  field_do_not_list_bio: true
+  field_education: true
+  field_email: true
+  field_external_link: true
+  field_first_name: true
+  field_last_name: true
+  field_leadership_role: true
+  field_link: true
+  field_phone: true
+  field_position: true
+  field_post_nominal: true
+  field_social_media_links: true
+  field_staff_group: true
+  links: true
+  search_api_excerpt: true

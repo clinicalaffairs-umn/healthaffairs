@@ -1,0 +1,26 @@
+uuid: 36eb9e9b-e3a1-42c3-81d6-cd3b96087f89
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_smart_date
+    - node.type.events
+  module:
+    - smart_date
+id: node.events.field_smart_date
+field_name: field_smart_date
+entity_type: node
+bundle: events
+label: Date
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    default_duration: 60
+    default_duration_increments: "15\r\n30\r\n60|1 hour\r\n90\r\n120|2 hours\r\ncustom"
+    default_date_type: ''
+    default_date: ''
+default_value_callback: ''
+settings: {  }
+field_type: smartdate

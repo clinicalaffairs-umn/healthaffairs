@@ -1,0 +1,21 @@
+uuid: 633e86e6-3039-4277-85e7-e920caee90be
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_event_location
+field_name: field_event_location
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

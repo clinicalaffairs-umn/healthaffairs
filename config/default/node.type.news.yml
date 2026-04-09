@@ -1,4 +1,4 @@
-uuid: c9ccdbf9-07b8-4ba6-975d-68dd576e27bf
+uuid: b07921e9-6309-471a-8180-3c9f01226834
 langcode: en
 status: true
 dependencies:
@@ -7,26 +7,25 @@ dependencies:
     - scheduler
 third_party_settings:
   menu_ui:
-    available_menus:
-      - main
-    parent: 'main:'
+    available_menus: {  }
+    parent: ''
   scheduler:
     expand_fieldset: when_required
     fields_display_mode: vertical_tab
-    publish_enable: false
+    publish_enable: true
     publish_past_date: error
     publish_past_date_created: false
     publish_required: false
     publish_revision: false
-    publish_touch: false
+    publish_touch: true
     show_message_after_update: true
     unpublish_enable: false
     unpublish_required: false
     unpublish_revision: false
-name: 'Landing page'
-type: landing_page
-description: 'A special page with its own one-off layout and content.'
-help: ''
+name: News
+type: news
+description: 'Add news items to be listed on the home page and the main news view.'
+help: null
 new_revision: true
 preview_mode: 1
 display_submitted: false

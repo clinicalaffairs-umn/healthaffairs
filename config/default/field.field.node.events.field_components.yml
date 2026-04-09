@@ -1,0 +1,108 @@
+uuid: 7ab34f9d-ebf7-4e06-837e-2b5bdb2213a1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_components
+    - node.type.events
+    - paragraphs.paragraphs_type.fa_text_with_optional_header
+    - paragraphs.paragraphs_type.folwell_accordion
+    - paragraphs.paragraphs_type.folwell_callout
+    - paragraphs.paragraphs_type.folwell_image
+    - paragraphs.paragraphs_type.folwell_link_list
+  module:
+    - entity_reference_revisions
+id: node.events.field_components
+field_name: field_components
+entity_type: node
+bundle: events
+label: 'Event Components'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      fa_text_with_optional_header: fa_text_with_optional_header
+      folwell_accordion: folwell_accordion
+      folwell_callout: folwell_callout
+      folwell_image: folwell_image
+      folwell_link_list: folwell_link_list
+    negate: 0
+    target_bundles_drag_drop:
+      a11y_paragraphs_tab_content:
+        weight: 25
+        enabled: false
+      a11y_paragraphs_tabs_panel:
+        weight: 26
+        enabled: false
+      a11y_paragraphs_tabs_wrapper:
+        weight: 27
+        enabled: false
+      block_placer:
+        weight: 28
+        enabled: false
+      custom_embeds:
+        weight: 29
+        enabled: false
+      fa_accordion_item:
+        weight: 30
+        enabled: false
+      fa_text_with_optional_header:
+        weight: 31
+        enabled: true
+      folwell_100_image:
+        weight: 32
+        enabled: false
+      folwell_20_image:
+        weight: 33
+        enabled: false
+      folwell_33_image:
+        weight: 34
+        enabled: false
+      folwell_50_image:
+        weight: 35
+        enabled: false
+      folwell_accordion:
+        weight: 36
+        enabled: true
+      folwell_callout:
+        weight: 37
+        enabled: true
+      folwell_image:
+        weight: 38
+        enabled: true
+      folwell_link_list:
+        weight: 39
+        enabled: true
+      folwell_overlay_slideshow:
+        weight: 40
+        enabled: false
+      folwell_slideshow:
+        weight: 41
+        enabled: false
+      folwell_transparent_overlay_call:
+        weight: 42
+        enabled: false
+      form_placer:
+        weight: 43
+        enabled: false
+      fs_overlay_slide:
+        weight: 44
+        enabled: false
+      fs_slide:
+        weight: 45
+        enabled: false
+      section:
+        weight: 46
+        enabled: false
+      text_image:
+        weight: 47
+        enabled: false
+      view_placer:
+        weight: 48
+        enabled: false
+field_type: entity_reference_revisions

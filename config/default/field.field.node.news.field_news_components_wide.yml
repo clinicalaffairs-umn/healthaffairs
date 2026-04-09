@@ -1,0 +1,145 @@
+uuid: d57d933c-6c15-45e3-b00d-a7e60ddcc0d0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_news_components_wide
+    - node.type.news
+    - paragraphs.paragraphs_type.news_by_category
+  module:
+    - entity_reference_revisions
+id: node.news.field_news_components_wide
+field_name: field_news_components_wide
+entity_type: node
+bundle: news
+label: 'News Components Wide'
+description: 'Use this field for adding callouts with buttons, images, additional text and other items. This field is 1200px max-width. '
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      news_by_category: news_by_category
+    negate: 0
+    target_bundles_drag_drop:
+      a11y_paragraphs_tab_content:
+        weight: 40
+        enabled: false
+      a11y_paragraphs_tabs_panel:
+        weight: 41
+        enabled: false
+      a11y_paragraphs_tabs_wrapper:
+        weight: 42
+        enabled: false
+      block_placer:
+        weight: 43
+        enabled: false
+      buttons:
+        weight: 44
+        enabled: false
+      custom_embeds:
+        weight: 45
+        enabled: false
+      events_by_category:
+        weight: 46
+        enabled: false
+      fa_accordion_item:
+        weight: 47
+        enabled: false
+      fa_table:
+        weight: 48
+        enabled: false
+      fa_text_with_optional_header:
+        weight: 49
+        enabled: false
+      folwell_100_image:
+        weight: 50
+        enabled: false
+      folwell_20_image:
+        weight: 51
+        enabled: false
+      folwell_33_image:
+        weight: 52
+        enabled: false
+      folwell_50_image:
+        weight: 53
+        enabled: false
+      folwell_accordion:
+        weight: 54
+        enabled: false
+      folwell_button_group:
+        weight: 55
+        enabled: false
+      folwell_button_item:
+        weight: 56
+        enabled: false
+      folwell_callout:
+        weight: 57
+        enabled: false
+      folwell_image:
+        weight: 58
+        enabled: false
+      folwell_infographic_group:
+        weight: 59
+        enabled: false
+      folwell_infographic_item:
+        weight: 60
+        enabled: false
+      folwell_link_list:
+        weight: 61
+        enabled: false
+      folwell_overlay_slideshow:
+        weight: 62
+        enabled: false
+      folwell_slideshow:
+        weight: 63
+        enabled: false
+      folwell_transparent_overlay_call:
+        weight: 64
+        enabled: false
+      form_placer:
+        weight: 65
+        enabled: false
+      fs_overlay_slide:
+        weight: 66
+        enabled: false
+      fs_slide:
+        weight: 67
+        enabled: false
+      news_by_category:
+        weight: 68
+        enabled: true
+      portal:
+        weight: 69
+        enabled: false
+      portal_grid:
+        weight: 70
+        enabled: false
+      promo_text:
+        weight: 71
+        enabled: false
+      section:
+        weight: 72
+        enabled: false
+      speaker:
+        weight: 73
+        enabled: false
+      speaker_group:
+        weight: 74
+        enabled: false
+      text_image:
+        weight: 75
+        enabled: false
+      video:
+        weight: 76
+        enabled: false
+      video_banner:
+        weight: 77
+        enabled: false
+      view_placer:
+        weight: 78
+        enabled: false
+field_type: entity_reference_revisions

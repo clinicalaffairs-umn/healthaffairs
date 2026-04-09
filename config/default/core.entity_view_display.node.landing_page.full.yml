@@ -5,7 +5,11 @@ dependencies:
   config:
     - core.entity_view_mode.node.full
     - field.field.node.landing_page.body
+    - field.field.node.landing_page.field_banner
+    - field.field.node.landing_page.field_components
     - field.field.node.landing_page.field_meta_tags
+    - field.field.node.landing_page.field_sidebar_components
+    - field.field.node.landing_page.field_subtitle
     - field.field.node.landing_page.layout_builder__layout
     - field.field.node.landing_page.layout_selection
     - node.type.landing_page
@@ -15,7 +19,10 @@ dependencies:
     - layout_discovery
     - layout_library
     - metatag
+    - system
     - user
+  theme:
+    - oaca_subtheme
 third_party_settings:
   layout_builder:
     enabled: true
@@ -24,8 +31,148 @@ third_party_settings:
       -
         layout_id: layout_onecol
         layout_settings:
+          label: 'Section 1'
+        components:
+          f2cb6579-ffa6-44f6-b422-6127b2d4de40:
+            uuid: f2cb6579-ffa6-44f6-b422-6127b2d4de40
+            region: content
+            configuration:
+              id: 'field_block:node:landing_page:field_banner'
+              label: Banner
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_entity_view
+                label: hidden
+                settings:
+                  view_mode: banner
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+          caf04646-a694-43a8-9599-74542f3aff46:
+            uuid: caf04646-a694-43a8-9599-74542f3aff46
+            region: content
+            configuration:
+              id: system_breadcrumb_block
+              label: Breadcrumbs
+              label_display: '0'
+              provider: system
+              context_mapping: {  }
+            weight: 1
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: two_column_sidebar_right
+        layout_settings:
           label: ''
-        components: {  }
+        components:
+          bcb6731a-8172-45fd-821b-d4e241ccea8d:
+            uuid: bcb6731a-8172-45fd-821b-d4e241ccea8d
+            region: second
+            configuration:
+              id: 'field_block:node:landing_page:field_sidebar_components'
+              label: 'Sidebar Components'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_revisions_entity_view
+                label: hidden
+                settings:
+                  view_mode: default
+                third_party_settings:
+                  field_delimiter:
+                    delimiter: ''
+            weight: 0
+            additional: {  }
+          630f222b-9089-47b4-949d-afc61eef2fa4:
+            uuid: 630f222b-9089-47b4-949d-afc61eef2fa4
+            region: content
+            configuration:
+              id: 'field_block:node:landing_page:field_subtitle'
+              label: Subtitle
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 3
+            additional: {  }
+          4091effb-6052-4719-8c2d-7f08034827d3:
+            uuid: 4091effb-6052-4719-8c2d-7f08034827d3
+            region: content
+            configuration:
+              id: 'field_block:node:landing_page:body'
+              label: Description
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 4
+            additional: {  }
+          a83b3e11-0c49-4646-8d8e-36d5e7398707:
+            uuid: a83b3e11-0c49-4646-8d8e-36d5e7398707
+            region: content
+            configuration:
+              id: 'field_block:node:landing_page:title'
+              label: Title
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: 'Section 4'
+        components:
+          3e85ea20-7c12-4afc-b06a-1770f83c5d22:
+            uuid: 3e85ea20-7c12-4afc-b06a-1770f83c5d22
+            region: content
+            configuration:
+              id: 'field_block:node:landing_page:field_components'
+              label: Components
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_revisions_entity_view
+                label: hidden
+                settings:
+                  view_mode: default
+                third_party_settings:
+                  field_delimiter:
+                    delimiter: ''
+            weight: 0
+            additional: {  }
         third_party_settings: {  }
   layout_library:
     enable: true
@@ -34,9 +181,10 @@ third_party_settings:
       allowed_layouts:
         - layout_onecol
         - layout_twocol_section
-        - layout_threecol_section
-        - layout_fourcol_section
-      allowlisted_blocks:
+        - two_column_sidebar_right
+      denylisted_blocks: {  }
+      allowlisted_blocks: {  }
+      allowed_blocks:
         'Chaos tools': {  }
         Content: {  }
         'Content fields':
@@ -53,8 +201,7 @@ third_party_settings:
         User: {  }
         'User fields': {  }
         Views: {  }
-_core:
-  default_config_hash: C3t79Uhkus2LSFQ5axCYB5hGlk6tidA5i1t9QXLUXH8
+    allowed_block_categories: {  }
 id: node.landing_page.full
 targetEntityType: node
 bundle: landing_page
@@ -68,7 +215,13 @@ content:
     weight: 0
     region: content
 hidden:
+  addtoany: true
   body: true
+  field_banner: true
+  field_components: true
+  field_sidebar_components: true
+  field_subtitle: true
   layout_builder__layout: true
   layout_selection: true
   links: true
+  search_api_excerpt: true

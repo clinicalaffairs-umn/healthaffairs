@@ -1,0 +1,29 @@
+uuid: 4f761c7a-9df0-4da8-a5ae-eba9a5f9ebba
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_categories
+    - node.type.news
+    - taxonomy.vocabulary.category
+id: node.news.field_categories
+field_name: field_categories
+entity_type: node
+bundle: news
+label: Categories
+description: 'Select categories related to this article. If you do not see the category you wish to select, you may <a href="/admin/structure/taxonomy/manage/category/add" target="_blank">enter a new one here</a>. NOTE: You will have to save and reload this page for the new category to appear in the list.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      category: category
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

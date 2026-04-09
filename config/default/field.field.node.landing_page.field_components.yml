@@ -1,0 +1,198 @@
+uuid: ff6260e8-5feb-4ae5-952e-851673d80879
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_components
+    - node.type.landing_page
+    - paragraphs.paragraphs_type.a11y_paragraphs_tabs_wrapper
+    - paragraphs.paragraphs_type.block_placer
+    - paragraphs.paragraphs_type.buttons
+    - paragraphs.paragraphs_type.custom_embeds
+    - paragraphs.paragraphs_type.events_by_category
+    - paragraphs.paragraphs_type.fa_text_with_optional_header
+    - paragraphs.paragraphs_type.folwell_accordion
+    - paragraphs.paragraphs_type.folwell_button_group
+    - paragraphs.paragraphs_type.folwell_callout
+    - paragraphs.paragraphs_type.folwell_infographic_group
+    - paragraphs.paragraphs_type.folwell_link_list
+    - paragraphs.paragraphs_type.folwell_overlay_slideshow
+    - paragraphs.paragraphs_type.folwell_slideshow
+    - paragraphs.paragraphs_type.folwell_transparent_overlay_call
+    - paragraphs.paragraphs_type.form_placer
+    - paragraphs.paragraphs_type.news_by_category
+    - paragraphs.paragraphs_type.portal_grid
+    - paragraphs.paragraphs_type.promo_text
+    - paragraphs.paragraphs_type.section
+    - paragraphs.paragraphs_type.text_image
+    - paragraphs.paragraphs_type.video
+    - paragraphs.paragraphs_type.video_banner
+    - paragraphs.paragraphs_type.view_placer
+  module:
+    - entity_reference_revisions
+id: node.landing_page.field_components
+field_name: field_components
+entity_type: node
+bundle: landing_page
+label: Components
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      block_placer: block_placer
+      buttons: buttons
+      custom_embeds: custom_embeds
+      events_by_category: events_by_category
+      folwell_accordion: folwell_accordion
+      folwell_button_group: folwell_button_group
+      folwell_callout: folwell_callout
+      folwell_infographic_group: folwell_infographic_group
+      folwell_link_list: folwell_link_list
+      folwell_overlay_slideshow: folwell_overlay_slideshow
+      folwell_slideshow: folwell_slideshow
+      a11y_paragraphs_tabs_wrapper: a11y_paragraphs_tabs_wrapper
+      folwell_transparent_overlay_call: folwell_transparent_overlay_call
+      form_placer: form_placer
+      news_by_category: news_by_category
+      portal_grid: portal_grid
+      promo_text: promo_text
+      section: section
+      text_image: text_image
+      fa_text_with_optional_header: fa_text_with_optional_header
+      video: video
+      video_banner: video_banner
+      view_placer: view_placer
+    negate: 0
+    target_bundles_drag_drop:
+      a11y_paragraphs_tab_content:
+        weight: -85
+        enabled: false
+      a11y_paragraphs_tabs_panel:
+        weight: -86
+        enabled: false
+      a11y_paragraphs_tabs_wrapper:
+        weight: -70
+        enabled: true
+      block_placer:
+        weight: -89
+        enabled: true
+      buttons:
+        weight: -88
+        enabled: true
+      custom_embeds:
+        weight: -87
+        enabled: true
+      events_by_category:
+        weight: -83
+        enabled: true
+      fa_accordion_item:
+        weight: -84
+        enabled: false
+      fa_table:
+        weight: -55
+        enabled: false
+      fa_text_with_optional_header:
+        weight: -59
+        enabled: true
+      folwell_100_image:
+        weight: -82
+        enabled: false
+      folwell_20_image:
+        weight: -81
+        enabled: false
+      folwell_33_image:
+        weight: -80
+        enabled: false
+      folwell_50_image:
+        weight: -79
+        enabled: false
+      folwell_75_image:
+        weight: -53
+        enabled: false
+      folwell_accordion:
+        weight: -78
+        enabled: true
+      folwell_button_group:
+        weight: -77
+        enabled: true
+      folwell_button_item:
+        weight: -54
+        enabled: false
+      folwell_callout:
+        weight: -76
+        enabled: true
+      folwell_directional_link:
+        weight: -51
+        enabled: false
+      folwell_equal_height_callouts:
+        weight: -50
+        enabled: false
+      folwell_image:
+        weight: -75
+        enabled: false
+      folwell_infographic_group:
+        weight: -74
+        enabled: true
+      folwell_infographic_item:
+        weight: -52
+        enabled: false
+      folwell_link_list:
+        weight: -73
+        enabled: true
+      folwell_overlay_slideshow:
+        weight: -72
+        enabled: true
+      folwell_slideshow:
+        weight: -71
+        enabled: true
+      folwell_transparent_overlay_call:
+        weight: -69
+        enabled: true
+      form_placer:
+        weight: -68
+        enabled: true
+      fs_overlay_slide:
+        weight: -66
+        enabled: false
+      fs_slide:
+        weight: -61
+        enabled: false
+      news_by_category:
+        weight: -67
+        enabled: true
+      portal:
+        weight: -65
+        enabled: false
+      portal_grid:
+        weight: -64
+        enabled: true
+      promo_text:
+        weight: -63
+        enabled: true
+      section:
+        weight: -62
+        enabled: true
+      text_image:
+        weight: -60
+        enabled: true
+      video:
+        weight: -58
+        enabled: true
+      video_banner:
+        weight: -57
+        enabled: true
+      video_carousel:
+        weight: -47
+        enabled: false
+      video_with_thumbnail:
+        weight: -46
+        enabled: false
+      view_placer:
+        weight: -56
+        enabled: true
+field_type: entity_reference_revisions

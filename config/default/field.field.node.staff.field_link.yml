@@ -1,0 +1,23 @@
+uuid: e2f87708-820f-4336-ade8-95aa23b08fe3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_link
+    - node.type.staff
+  module:
+    - link
+id: node.staff.field_link
+field_name: field_link
+entity_type: node
+bundle: staff
+label: Website
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 0
+  link_type: 16
+field_type: link

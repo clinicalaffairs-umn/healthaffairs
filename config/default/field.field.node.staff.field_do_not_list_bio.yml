@@ -1,0 +1,23 @@
+uuid: eafa7c9c-08ed-4e43-99f4-038f2d2b93e1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_do_not_list_bio
+    - node.type.staff
+id: node.staff.field_do_not_list_bio
+field_name: field_do_not_list_bio
+entity_type: node
+bundle: staff
+label: 'Do not link to bio'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

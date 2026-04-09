@@ -1,0 +1,28 @@
+uuid: 0faaafb3-c7d6-40c2-b5d7-975bfd863c39
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_banner
+    - media.type.image
+    - node.type.news
+id: node.news.field_banner
+field_name: field_banner
+entity_type: node
+bundle: news
+label: 'Featured Image'
+description: '<strong>Optimal image size:</strong> 730x480. <strong>WARNING:</strong> Articles promoted to the front page must have featured images. The featured image will also be displayed on the article page.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

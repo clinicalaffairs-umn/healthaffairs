@@ -1,0 +1,28 @@
+uuid: 85d3e98d-01a5-497e-bec9-51d04692a49b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_banner
+    - media.type.image
+    - node.type.staff
+id: node.staff.field_banner
+field_name: field_banner
+entity_type: node
+bundle: staff
+label: 'Profile Image'
+description: '<strong>Optimal image size:</strong> 440x450px'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

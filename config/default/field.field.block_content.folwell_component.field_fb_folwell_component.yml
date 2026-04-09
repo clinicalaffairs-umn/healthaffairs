@@ -17,7 +17,7 @@ dependencies:
     - paragraphs.paragraphs_type.folwell_overlay_slideshow
     - paragraphs.paragraphs_type.folwell_slideshow
     - paragraphs.paragraphs_type.folwell_transparent_overlay_call
-    - paragraphs.paragraphs_type.video_carousel
+    - paragraphs.paragraphs_type.form_placer
   module:
     - entity_reference_revisions
 _core:
@@ -48,7 +48,7 @@ settings:
       folwell_infographic_group: folwell_infographic_group
       folwell_directional_link: folwell_directional_link
       folwell_equal_height_callouts: folwell_equal_height_callouts
-      video_carousel: video_carousel
+      form_placer: form_placer
     negate: 0
     target_bundles_drag_drop:
       a11y_paragraphs_tab_content:
@@ -123,8 +123,11 @@ settings:
       folwell_transparent_overlay_call:
         weight: 36
         enabled: true
-      fs_overlay_slide:
+      form_placer:
         weight: 27
+        enabled: true
+      fs_overlay_slide:
+        weight: 28
         enabled: false
       fs_slide:
         weight: 28
