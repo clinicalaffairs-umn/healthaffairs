@@ -6,8 +6,6 @@ universal_button: none
 custom_universal_button: ''
 universal_button_placement: before
 entities:
-  aggregator_feed: 0
-  aggregator_item: 0
   block_content: 0
   content_moderation_state: 0
   crop: 0

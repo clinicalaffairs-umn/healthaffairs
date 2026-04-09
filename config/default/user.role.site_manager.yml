@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - filter.format.folwell_ckeditor
     - media.type.document
     - media.type.image
     - media.type.remote_video
@@ -11,6 +12,7 @@ dependencies:
   module:
     - addanother
     - auditfiles
+    - filter
     - lightning_core
     - media
     - paragraphs_type_permissions
@@ -164,6 +166,7 @@ permissions:
   - 'update paragraph content video'
   - 'update paragraph content video_banner'
   - 'use add another'
+  - 'use text format folwell_ckeditor'
   - 'view all media revisions'
   - 'view any webform submission'
   - 'view own unpublished media'

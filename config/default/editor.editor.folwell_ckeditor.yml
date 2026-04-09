@@ -6,8 +6,6 @@ dependencies:
     - filter.format.folwell_ckeditor
   module:
     - ckeditor5
-_core:
-  default_config_hash: d1OJzQyumTPE31TnNma7FqAtQk2Oz30vZ4F85lfC_us
 format: folwell_ckeditor
 editor: ckeditor5
 settings:
@@ -47,6 +45,12 @@ settings:
       - fontawesome
       - '-'
   plugins:
+    ckeditor5_alignment:
+      enabled_alignments:
+        - center
+        - justify
+        - left
+        - right
     ckeditor5_heading:
       enabled_headings:
         - heading1
@@ -55,20 +59,12 @@ settings:
         - heading4
         - heading5
         - heading6
-    ckeditor5_style:
-      styles:
-        -
-          label: 'Intro Text'
-          element: '<p class="txt-intro">'
-        -
-          label: 'Photo Credit'
-          element: '<p class="photo-credit">'
-        -
-          label: 'Link List'
-          element: '<ul class="link-list">'
-        -
-          label: Cite
-          element: '<cite class="cite">'
+    ckeditor5_list:
+      properties:
+        reversed: false
+        startIndex: true
+        styles: true
+      multiBlock: true
     ckeditor5_sourceEditing:
       allowed_tags:
         - '<dd>'
@@ -108,19 +104,20 @@ settings:
         - '<thead width data-*>'
         - '<tr width data-*>'
         - '<ul id data-*>'
-    ckeditor5_list:
-      properties:
-        reversed: false
-        startIndex: true
-        styles: true
-    ckeditor5_alignment:
-      enabled_alignments:
-        - left
-        - center
-        - right
-        - justify
-    media_media:
-      allow_view_mode_override: true
+    ckeditor5_style:
+      styles:
+        -
+          label: 'Intro Text'
+          element: '<p class="txt-intro">'
+        -
+          label: 'Photo Credit'
+          element: '<p class="photo-credit">'
+        -
+          label: 'Link List'
+          element: '<ul class="link-list">'
+        -
+          label: Cite
+          element: '<cite class="cite">'
     ckeditor_link_styles_linkStyles:
       styles:
         -
@@ -163,5 +160,7 @@ settings:
     linkit_extension:
       linkit_enabled: true
       linkit_profile: folwell_linkit
+    media_media:
+      allow_view_mode_override: true
 image_upload:
   status: false

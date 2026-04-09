@@ -2,8 +2,12 @@ uuid: b0ed0097-698e-4716-a131-7a0ae1afdc22
 langcode: en
 status: true
 dependencies:
+  config:
+    - filter.format.webform_default
   module:
     - contact
+    - file
+    - filter
     - fontawesome
     - honeypot
     - media
@@ -20,6 +24,8 @@ permissions:
   - 'access fontawesome additional settings'
   - 'access site-wide contact form'
   - 'bypass honeypot protection'
+  - 'delete own files'
+  - 'use text format webform_default'
   - 'view media'
   - 'view paragraph content a11y_paragraphs_tab_content'
   - 'view paragraph content a11y_paragraphs_tabs_panel'

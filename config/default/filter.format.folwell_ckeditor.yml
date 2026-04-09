@@ -10,11 +10,10 @@ dependencies:
     - core.entity_view_mode.media.folwell_half
     - core.entity_view_mode.media.folwell_slideshow
     - core.entity_view_mode.media.folwell_third
-    - core.entity_view_mode.media.folwell_three_quarter
     - core.entity_view_mode.media.full
     - core.entity_view_mode.media.media_library
-    - core.entity_view_mode.media.slick
     - core.entity_view_mode.media.thumbnail
+    - core.entity_view_mode.media.folwell_three_quarter
   module:
     - blazy
     - editor
@@ -22,11 +21,9 @@ dependencies:
     - linkit
     - media
     - slick
-_core:
-  default_config_hash: 3qbqq0qEvBYLUtckvvjfD5rfOCjbqeOm8iI7NgSvsVc
 name: 'Folwell CKEditor 5'
 format: folwell_ckeditor
-weight: -4
+weight: 0
 filters:
   blazy_filter:
     id: blazy_filter
@@ -34,15 +31,15 @@ filters:
     status: false
     weight: -39
     settings:
+      media_switch: ''
+      hybrid_style: ''
+      box_style: ''
+      box_media_style: ''
+      box_caption: ''
       filter_tags:
         img: img
         iframe: iframe
-      media_switch: ''
-      box_style: ''
-      box_media_style: ''
-      hybrid_style: ''
       use_data_uri: '0'
-      box_caption: ''
   editor_file_reference:
     id: editor_file_reference
     provider: editor
@@ -79,7 +76,7 @@ filters:
     status: true
     weight: -49
     settings:
-      allowed_html: '<a id target rel class name hreflang data-* href title> <br> <p class data-*> <h1 id class> <h2 id class> <h3 id class> <h4 id class> <h5 id class> <h6 id class> <dd> <dt> <small> <aside class> <button id data-* class> <canvas id class> <cite id data-* class> <div id data-* class> <dl id data-* class> <drupal-entity data-* title alt class> <figure id class> <header id data-* class> <iframe src id title width height frameborder allowfullscreen class> <img src alt data-* id class> <pre class> <section class> <span id data-* class> <blockquote cite id class> <caption data-* class> <drupal-media title data-entity-type data-entity-uuid alt data-view-mode data-caption data-align> <hr class> <li id data-* class> <ol type id data-* class start> <strong id> <table id data-* class border cellpadding cellspacing> <tbody width data-* class> <td scope rowspan colspan> <tfoot colspan rowspan width data-* class> <th scope rowspan colspan> <thead width data-* class> <tr width data-* class> <ul type id data-* class> <em> <sub> <sup> <i class data-fa-transform>'
+      allowed_html: '<a name href hreflang title id target rel class data-* style> <aside class style> <blockquote cite id style class> <br> <button id style data-* class> <canvas id style class> <caption style data-* class> <cite id style data-* class> <code> <dd> <div id style data-* class> <dl id style data-* class> <drupal-entity data-* title alt class> <drupal-media data-entity-type data-entity-uuid data-view-mode data-align data-caption alt title> <dt> <em> <figure id style class> <h1 id style class> <h2 id style class> <h3 id style class> <h4 id style class> <h5 id style class> <h6 id style class> <header id style data-* class> <hr style class> <iframe src id style title width height frameborder class allowfullscreen> <img src alt data-* id style class> <li id style data-* class> <ol start type id style data-* class> <p style data-* class> <pre class> <s> <section class> <span id style data-* class> <strong id> <sub> <sup> <table id style data-* class> <tbody style width data-* class> <td scope colspan rowspan style data-* width class> <tfoot colspan rowspan style width data-* class> <th scope colspan rowspan style data-* width class> <thead style width data-* class> <tr style width data-* class> <u> <ul type id style data-* class> <small>'
       filter_html_help: false
       filter_html_nofollow: false
   filter_html_escape:
@@ -100,6 +97,12 @@ filters:
     status: true
     weight: -44
     settings: {  }
+  filter_image_lazy_load:
+    id: filter_image_lazy_load
+    provider: filter
+    status: true
+    weight: -47
+    settings: {  }
   filter_url:
     id: filter_url
     provider: filter
@@ -114,7 +117,6 @@ filters:
     weight: -50
     settings:
       title: false
-      media_substitution: metadata
   media_embed:
     id: media_embed
     provider: media
@@ -131,11 +133,11 @@ filters:
         folwell_half: folwell_half
         folwell_slideshow: folwell_slideshow
         folwell_third: folwell_third
-        folwell_three_quarter: folwell_three_quarter
         full: full
         media_library: media_library
         slick: slick
         thumbnail: thumbnail
+        folwell_three_quarter: folwell_three_quarter
       allowed_media_types: {  }
   slick_filter:
     id: slick_filter
@@ -144,15 +146,15 @@ filters:
     weight: 4
     settings:
       optionset: default
-      media_switch: ''
       layout: ''
-      skin: ''
       background: false
       loading: ''
       preload: false
       image_style: ''
+      media_switch: ''
       ratio: ''
       thumbnail_style: ''
+      skin: ''
       overridables:
         arrows: '0'
         autoplay: '0'
