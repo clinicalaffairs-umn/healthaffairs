@@ -48,16 +48,7 @@
           <a href="/">Home</a>
         </li>
         <li>
-          {% set groups = [] %}
-          {% for group in nodeParent.field_leadership_role %}
-            {% set groups = groups|merge([group.target_id]) %}
-          {% endfor %}
-          {% set groups = groups|join %}
-          {% if '476' in groups %}
-            <a href="{{ path('entity.node.canonical', {'node': '151'}) }}">Staff</a>
-          {% else %}
-            <a href="{{ path('entity.node.canonical', {'node': '1126'}) }}">Leadership</a>
-          {% endif %}
+          <a href="{{ path('entity.node.canonical', {'node': '16'}) }}">Staff</a>
         </li>
         <li>
           {{- nodeTitle -}}

@@ -1,6 +1,6 @@
 name: OACA Subtheme
 type: theme
-description: Custom theme by Electric Citizen for use with OACA Sites
+description: Custom theme by Electric Citizen for use with Health Affairs
 package: EC
 core_version_requirement: ^9 || ^10 || ^11
 # Defines libraries group in which we can add css/js.

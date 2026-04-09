@@ -74,18 +74,8 @@
     attach: function() {
     	$(document).ready(function(){
 	      $('.mm-navbar.wordmarked img').each(function(){
-	      	$(this).attr('src','/sites/clinicalaffairs.umn.edu/themes/oaca_subtheme/images/gold-M.svg');
+	      	$(this).attr('src','/sites/default/themes/custom/oaca_subtheme/images/gold-M.svg');
 	      });
-	    });
-	  }
-	}
-
-	/* REMOVE FOLWELL VERTICAL MAIN NAV ON BASIC MICROSITE PAGES
-	------------------ */
-	Drupal.behaviors.removeSidebarMainNav = {
-    attach: function (context, settings) {
-			$(once('removeSideNav', '.path-node.microsite .folwell-vertical-nav.menu--main', context)).each(function(){
-	      $(this).remove();
 	    });
 	  }
 	}
@@ -104,23 +94,7 @@
 	  }
 	}
 
-/* CHANGE SITE IDENTITY BASED ON MICROSITE
-	------------------------------ */
-	Drupal.behaviors.microIdentity = {
-    attach: function (context, settings) {
-			$(once('changeSiteIdentity', '.microsite .folwell-identity', context)).each(function(){
-	      $('.prefix-name a', this).attr('href','/').text('Office of Academic Clinical Affairs');
-	      var urlCurrent = window.location.pathname;
-        switch(true) {
-          case urlCurrent.startsWith('/mhi',0):
-            $('.sitename a', this).attr('href','/mhi').text('Mobile Health Initiative');
-            break;
-        }
-	    });
-	  }
-	}
-
-	/* SHOW CORRECT SMART DATE FORMAT ON EVENT NODES
+/* SHOW CORRECT SMART DATE FORMAT ON EVENT NODES
 		------------------------------ */
 		Drupal.behaviors.eventDateFormat = {
 	    attach: function (context, settings) {

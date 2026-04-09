@@ -11,10 +11,6 @@
 	}//end ol
 }//end breadcrumb
 
-.microsite .breadcrumb ol li:first-child {
-	@include visuallyHidden;
-}
-
 /* MOBILE FOLWELL CUSTOM NAV
 --------------------- */
 .mm-menu{
@@ -65,11 +61,6 @@
 /* SECTION MENU
 ---------------- */
 .folwell-vertical-nav{
-	&.menu--main{
-		.path-node.microsite &{
-			display: none;
-		}
-	}
 	.menu-item--expanded{
 		& > a{
 			@include calc(width, "100% - 35px");

@@ -11,7 +11,7 @@
 
 /* HEADER BUTTON BLOCKS
 ---------------------- */
-.block-header-buttons, #block-headerbuttonsmhisite, #block-headerbuttonsprimarysite{
+.block-header-buttons, #block-headerbuttonsprimarysite{
 	@include onlySmall{
 		width: 100%;
 		padding: $spaceSm 1em;

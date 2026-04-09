@@ -7,7 +7,6 @@
 
 use Drupal\Core\Template\Attribute;
 use Drupal\taxonomy\Entity\Term;
-use Drupal\Core\Form\FormStateInterface;
 
 /**
  * Implements hook_theme_suggestions_page_alter.
@@ -55,21 +54,6 @@ function oaca_subtheme_theme_suggestions_paragraph_alter(array &$suggestions, ar
 }
 
 /**
- * Implements hook_form_alter.
- */
-function oaca_subtheme_form_alter(&$form, $form_state, $form_id) {
-  if($form['#id'] == 'views-exposed-form-grants-main-grants') {
-    foreach ($form['field_accepting_applications_value']['#options'] as $key => &$option) {
-      if ($key == '1') {
-        $option = 'Yes';
-      } elseif ($key == '0') {
-        $option = 'No';
-      }
-    }
-  }
-}
-
-/**
  * Implements hook_preprocess_block to find node info.
  */
 function oaca_subtheme_preprocess_block(&$variables) {
@@ -94,15 +78,6 @@ function oaca_subtheme_preprocess_block(&$variables) {
     }
   }
 
-  // add block variables for microsite checking and alteration
-  $current_path = \Drupal::service('path.current')->getPath();
-  $path = \Drupal::service('path_alias.manager')->getAliasByPath($current_path);
-  switch (true) {
-    case (substr($path, 0, 4 ) == "/mhi"):
-      $variables['microsite'] = 'mhi';
-      break;
-  }
-
 }
 
   /**
@@ -123,14 +98,6 @@ function oaca_subtheme_preprocess_block(&$variables) {
         $variables['attributes']['class'][] = 'published';
       } else {
         $variables['attributes']['class'][] = 'unpublished';
-      }
-      $current_path = \Drupal::service('path.current')->getPath();
-      $path = \Drupal::service('path_alias.manager')->getAliasByPath($current_path);
-    // set variables for microsite checking and alteration
-      switch (true) {
-        case (substr($path, 0, 4 ) == "/mhi"):
-          $variables['attributes']['class'][] = 'microsite';
-          break;
       }
     }
   }
