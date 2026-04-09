@@ -18,12 +18,14 @@ mode: embedded
 content:
   field_media_oembed_video:
     type: oembed
-    weight: 2
     label: hidden
     settings:
       max_width: 0
       max_height: 0
+      loading:
+        attribute: eager
     third_party_settings: {  }
+    weight: 2
     region: content
 hidden:
   created: true

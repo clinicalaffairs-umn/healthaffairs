@@ -7,6 +7,8 @@ dependencies:
     - field.field.media.remote_video.field_media_in_library
     - field.field.media.remote_video.field_media_oembed_video
     - media.type.remote_video
+  module:
+    - media
 _core:
   default_config_hash: d2Jnk6ITTbPxDH3KfydG57zgloizNUWaeEAExGatVAc
 id: media.remote_video.media_library
@@ -14,15 +16,8 @@ targetEntityType: media
 bundle: remote_video
 mode: media_library
 content:
-  field_media_in_library:
-    type: boolean_checkbox
-    weight: 1
-    region: content
-    settings:
-      display_label: true
-    third_party_settings: {  }
-  name:
-    type: string_textfield
+  field_media_oembed_video:
+    type: oembed_textfield
     weight: 0
     region: content
     settings:
@@ -31,8 +26,11 @@ content:
     third_party_settings: {  }
 hidden:
   created: true
-  field_media_oembed_video: true
+  field_media_in_library: true
+  name: true
   path: true
   preview: true
+  publish_on: true
   status: true
   uid: true
+  unpublish_on: true

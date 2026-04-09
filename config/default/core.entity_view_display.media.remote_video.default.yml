@@ -8,7 +8,6 @@ dependencies:
     - media.type.remote_video
   module:
     - media
-    - user
 _core:
   default_config_hash: GVcT3p3X0jyWP8VaeLOzW7mAvwYo5hwFGEcWJ2vCGRg
 id: media.remote_video.default
@@ -18,12 +17,14 @@ mode: default
 content:
   field_media_oembed_video:
     type: oembed
-    weight: 0
     label: hidden
     settings:
       max_width: 0
       max_height: 0
+      loading:
+        attribute: eager
     third_party_settings: {  }
+    weight: 0
     region: content
 hidden:
   created: true
