@@ -3584,6 +3584,8 @@ display:
           expose:
             operator_limit_selection: false
             operator_list: {  }
+      filter_groups:
+        operator: AND
         groups:
           1: AND
       defaults:

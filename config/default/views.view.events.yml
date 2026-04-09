@@ -1136,6 +1136,8 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
+      filter_groups:
+        operator: AND
         groups:
           1: AND
       defaults:
@@ -2362,6 +2364,8 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
+      filter_groups:
+        operator: AND
         groups:
           1: AND
       defaults:
@@ -2807,6 +2811,8 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
+      filter_groups:
+        operator: AND
         groups:
           1: AND
       defaults:
