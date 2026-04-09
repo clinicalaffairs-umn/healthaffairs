@@ -1,9 +1,9 @@
 _core:
   default_config_hash: oNtgm16cwAKlyvZNJRtjutQvBW4OLB68VkdDVwUc5Ao
-cse_selection: All
+cse_selection: 'Twin Cities'
+cse_site_search_options: Custom
 cse_site_search_urls:
-  - ''
-cse_site_search_options: Default
+  - healthaffairs.umn.edu
 cse_results_page: /search/results
 cse_placeholder_text: 'Search UMN'
-people_search_display: true
+people_search_display: false

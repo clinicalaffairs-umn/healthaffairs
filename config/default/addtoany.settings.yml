@@ -1,3 +1,4 @@
+langcode: en
 buttons_size: 32
 additional_html: "<a class=\"a2a_button_facebook\"></a>\r\n<a class=\"a2a_button_x\"></a>\r\n<a class=\"a2a_button_linkedin\"></a>\r\n"
 additional_css: '.a2a_svg { border-radius: 0 !important; }'
@@ -23,4 +24,3 @@ entities:
   webform_submission: 0
   paragraph: 0
 no_3p: false
-langcode: en

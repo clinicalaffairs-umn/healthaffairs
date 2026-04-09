@@ -23,4 +23,6 @@ wrapper_admin: true
 wrapper_theme: false
 use_polyfills: false
 modify_viewport: true
-use_bootstrap: true
+use_bootstrap: false
+active_trail: true
+override_toolbar: true
