@@ -4,25 +4,93 @@ status: true
 dependencies:
   config:
     - field.field.node.page.body
+    - field.field.node.page.field_components
     - field.field.node.page.field_meta_tags
+    - field.field.node.page.layout_builder__layout
     - field.field.node.page.layout_selection
     - node.type.page
+    - system.menu.main
   module:
+    - entity_reference_revisions
     - layout_builder
+    - layout_builder_restrictions
     - layout_discovery
     - layout_library
+    - menu_block
+    - metatag
+    - system
+    - text
     - user
+  theme:
+    - oaca_subtheme
 third_party_settings:
   layout_builder:
     enabled: true
+    allow_custom: true
     sections:
       -
         layout_id: layout_onecol
         layout_settings:
           label: ''
         components:
-          41e972b6-dd17-473a-a348-88bd8ac44523:
-            uuid: 41e972b6-dd17-473a-a348-88bd8ac44523
+          c9db0fbf-d4b8-415e-93ac-4e1a60cb211e:
+            uuid: c9db0fbf-d4b8-415e-93ac-4e1a60cb211e
+            region: content
+            configuration:
+              id: system_breadcrumb_block
+              label: Breadcrumbs
+              label_display: '0'
+              provider: system
+              context_mapping: {  }
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: two_column_sidebar_right
+        layout_settings:
+          label: 'Section 2'
+        components:
+          0de6dae9-d6cb-48b6-b250-4d8964d94006:
+            uuid: 0de6dae9-d6cb-48b6-b250-4d8964d94006
+            region: second
+            configuration:
+              id: 'menu_block:main'
+              label: 'Main navigation'
+              label_display: visible
+              provider: menu_block
+              context_mapping: {  }
+              follow: true
+              follow_parent: child
+              label_link: true
+              label_type: active_item
+              level: 2
+              depth: 0
+              expand_all_items: true
+              parent: 'main:'
+              suggestion: folwell_vertical_nav
+            weight: 0
+            additional: {  }
+          d70d4b6b-95b5-42cd-a123-2a1951e4b11c:
+            uuid: d70d4b6b-95b5-42cd-a123-2a1951e4b11c
+            region: content
+            configuration:
+              id: 'field_block:node:page:title'
+              label: Title
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          b4329574-95a9-4536-a175-30bfa8eaec84:
+            uuid: b4329574-95a9-4536-a175-30bfa8eaec84
             region: content
             configuration:
               id: 'field_block:node:page:body'
@@ -34,45 +102,82 @@ third_party_settings:
                 label: hidden
                 settings: {  }
                 third_party_settings: {  }
-            weight: 0
-            additional: {  }
-          a9ef02c5-2c28-4405-a09f-6a332945f35f:
-            uuid: a9ef02c5-2c28-4405-a09f-6a332945f35f
-            region: content
-            configuration:
-              id: 'extra_field_block:node:page:links'
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
             weight: 1
             additional: {  }
-          8dd622d9-b3cf-482a-88b0-bbf3f8bbc0dc:
-            uuid: 8dd622d9-b3cf-482a-88b0-bbf3f8bbc0dc
+          6aa2f9bf-7b45-4576-b16d-cfbece5eb902:
+            uuid: 6aa2f9bf-7b45-4576-b16d-cfbece5eb902
             region: content
             configuration:
-              id: 'field_block:node:page:field_meta_tags'
+              id: 'field_block:node:page:field_components'
+              label: Components
               label_display: '0'
+              provider: layout_builder
               context_mapping:
                 entity: layout_builder.entity
+                view_mode: view_mode
               formatter:
-                type: metatag_empty_formatter
-                label: above
-                settings: {  }
-                third_party_settings: {  }
+                type: entity_reference_revisions_entity_view
+                label: hidden
+                settings:
+                  view_mode: default
+                third_party_settings:
+                  field_delimiter:
+                    delimiter: ''
             weight: 2
             additional: {  }
         third_party_settings: {  }
   layout_library:
     enable: true
-_core:
-  default_config_hash: Kfxnq5Imio9VFBoNa_PIkzXoTmjz_T-EY3mOrwDTddU
+  layout_builder_restrictions:
+    allowed_block_categories: {  }
+    entity_view_mode_restriction:
+      allowed_layouts:
+        - layout_onecol
+        - two_column_sidebar_left
+        - two_column_sidebar_right
+        - two_column_sidebar_left_split
+        - two_column_sidebar_right_split
+      denylisted_blocks: {  }
+      allowlisted_blocks: {  }
 id: node.page.default
 targetEntityType: node
 bundle: page
 mode: default
-content: {  }
+content:
+  addtoany:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_components:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_meta_tags:
+    type: metatag_empty_formatter
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
 hidden:
-  body: true
-  field_meta_tags: true
+  layout_builder__layout: true
   layout_selection: true
-  links: true
+  search_api_excerpt: true
