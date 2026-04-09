@@ -3,12 +3,16 @@ langcode: en
 status: true
 dependencies:
   config:
+    - media.type.document
+    - media.type.image
+    - media.type.remote_video
     - taxonomy.vocabulary.staff_group
     - taxonomy.vocabulary.title_position
   module:
     - addanother
     - auditfiles
     - lightning_core
+    - media
     - paragraphs_type_permissions
     - scheduler
 third_party_settings:
@@ -20,6 +24,11 @@ weight: 3
 is_admin: false
 permissions:
   - 'access audit files reports'
+  - 'access media overview'
+  - 'administer media'
+  - 'create document media'
+  - 'create image media'
+  - 'create media'
   - 'create paragraph content a11y_paragraphs_tab_content'
   - 'create paragraph content a11y_paragraphs_tabs_panel'
   - 'create paragraph content a11y_paragraphs_tabs_wrapper'
@@ -51,8 +60,17 @@ permissions:
   - 'create paragraph content text_image'
   - 'create paragraph content video'
   - 'create paragraph content video_banner'
+  - 'create remote_video media'
   - 'create terms in staff_group'
   - 'create terms in title_position'
+  - 'delete any document media'
+  - 'delete any image media'
+  - 'delete any media'
+  - 'delete any remote_video media'
+  - 'delete media'
+  - 'delete own document media'
+  - 'delete own image media'
+  - 'delete own remote_video media'
   - 'delete paragraph content a11y_paragraphs_tab_content'
   - 'delete paragraph content a11y_paragraphs_tabs_panel'
   - 'delete paragraph content a11y_paragraphs_tabs_wrapper'
@@ -85,10 +103,18 @@ permissions:
   - 'delete paragraph content video'
   - 'delete paragraph content video_banner'
   - 'delete terms in staff_group'
+  - 'edit any document media'
+  - 'edit any image media'
+  - 'edit any remote_video media'
+  - 'edit own document media'
+  - 'edit own image media'
+  - 'edit own remote_video media'
   - 'delete terms in title_position'
   - 'edit terms in staff_group'
   - 'edit terms in title_position'
   - 'schedule publishing of nodes'
+  - 'update any media'
+  - 'update media'
   - 'update paragraph content a11y_paragraphs_tab_content'
   - 'update paragraph content a11y_paragraphs_tabs_panel'
   - 'update paragraph content a11y_paragraphs_tabs_wrapper'
@@ -121,6 +147,8 @@ permissions:
   - 'update paragraph content video'
   - 'update paragraph content video_banner'
   - 'use add another'
+  - 'view all media revisions'
+  - 'view own unpublished media'
   - 'view paragraph content a11y_paragraphs_tab_content'
   - 'view paragraph content a11y_paragraphs_tabs_panel'
   - 'view paragraph content a11y_paragraphs_tabs_wrapper'

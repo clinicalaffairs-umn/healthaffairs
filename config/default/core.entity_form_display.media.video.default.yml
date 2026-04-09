@@ -15,15 +15,8 @@ targetEntityType: media
 bundle: video
 mode: default
 content:
-  field_media_in_library:
-    type: boolean_checkbox
-    settings:
-      display_label: true
-    weight: 2
-    third_party_settings: {  }
-    region: content
   field_media_video_file:
-    weight: 1
+    weight: 0
     settings:
       progress_indicator: throbber
     third_party_settings: {  }
@@ -31,20 +24,15 @@ content:
     region: content
   name:
     type: string_textfield
-    weight: 0
+    weight: -5
     region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-  status:
-    type: boolean_checkbox
-    settings:
-      display_label: true
-    weight: 3
-    region: content
-    third_party_settings: {  }
 hidden:
   created: true
+  field_media_in_library: true
   path: true
+  status: true
   uid: true
