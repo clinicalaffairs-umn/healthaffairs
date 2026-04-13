@@ -5,8 +5,6 @@ dependencies:
   config:
     - block_content.type.google_map
     - field.field.block_content.google_map.field_map_location
-  module:
-    - simple_gmap
 _core:
   default_config_hash: jtaU_93c5qgk4igJIOdlmtH61myWAgVXYmcXgwPLczY
 id: block_content.google_map.default
@@ -15,22 +13,11 @@ bundle: google_map
 mode: default
 content:
   field_map_location:
-    type: simple_gmap
-    label: visually_hidden
+    type: string
+    label: above
     settings:
-      include_map: true
-      include_static_map: false
-      include_link: false
-      include_text: false
-      iframe_height: '400'
-      iframe_width: 100%
-      static_scale: 1
-      zoom_level: 14
-      link_text: 'View larger map'
-      map_type: m
-      langcode: en
-      apikey: ''
+      link_to_entity: false
     third_party_settings: {  }
-    weight: 0
+    weight: 1
     region: content
 hidden: {  }

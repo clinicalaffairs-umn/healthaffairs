@@ -1,15 +1,7 @@
 uuid: 1bbcbf81-eb55-40ab-b1e3-a630214097ce
 langcode: en
 status: true
-dependencies:
-  module:
-    - contact_storage
-third_party_settings:
-  contact_storage:
-    submit_text: Send
-    show_preview: false
-    disabled_form_message: 'This contact form has been disabled.'
-    maximum_submissions_user: 0
+dependencies: {  }
 _core:
   default_config_hash: Z46ux9EOlHDSAvrhCO0L1-QcdeSiAQnQDA1eeK9yqwA
 id: sitewide
