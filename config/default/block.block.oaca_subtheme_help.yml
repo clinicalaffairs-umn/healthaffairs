@@ -1,0 +1,20 @@
+uuid: 23bf3d33-35b8-4c78-ba5c-8bc04a8c9fad
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - oaca_subtheme
+id: oaca_subtheme_help
+theme: oaca_subtheme
+region: content
+weight: -4
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

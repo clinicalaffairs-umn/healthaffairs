@@ -11,7 +11,7 @@
 
 /* HEADER BUTTON BLOCKS
 ---------------------- */
-.block-header-buttons, #block-headerbuttonsprimarysite{
+.block-header-buttons, #block-oaca-subtheme-headerbuttonsprimarysite{
 	@include onlySmall{
 		width: 100%;
 		padding: $spaceSm 1em;
@@ -45,7 +45,7 @@
 
 /* FOOTER BLOCKS
 ------------------ */
-#block-about{
+#block-oaca-subtheme-about{
 	padding-bottom: 2em;
 	h2{
 		margin-bottom: .5rem;
@@ -55,7 +55,7 @@
 	}
 }//end about
 
-#block-footernewsletter{
+#block-oaca-subtheme-footernewsletter{
 	margin-bottom: -$spaceXs;
 	.paragraph--type--form-placer{
 		.field--name-field-headline{
@@ -84,7 +84,7 @@
 	}//end form placer
 }//end footer newsletter
 
-#block-contactus{
+#block-oaca-subtheme-contact{
 	padding-bottom: 2em;
 	h2{
 		margin-bottom: .5rem;
@@ -94,7 +94,7 @@
 	}
 }//end contact
 
-#block-connectwithus{
+#block-oaca-subtheme-connectwithus{
 	padding-bottom: 1.5em;
 	h2{
 		margin-bottom: .5rem;
@@ -116,19 +116,14 @@
 	}
 }//end connect
 
-#block-feedback{
+#block-oaca-subtheme-feedback{
 	p{
 		@extend %largeText;
 	}
 }//end feedback
 
-
 .block-field-blocknodelanding-pagefield-subtitle {
 	margin-bottom:$spaceSm;
-}
-
-.block-field-blocknodelanding-pagebody {
-	// @include oacaIndents;
 }
 
 .crt-logo .crt-tag + svg.ext {

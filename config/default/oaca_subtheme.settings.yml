@@ -1,0 +1,21 @@
+features:
+  node_user_picture: 1
+  comment_user_picture: true
+  comment_user_verification: true
+  favicon: 1
+favicon:
+  use_default: 1
+campus_select: umnhf-campus-tc
+header_color: umnhf-background-maroon
+campus_links: no-links
+myu_text: myu
+display_search_box: 'yes'
+mobile_search: two-tier
+page_width: fixed-width
+first_line: ''
+site_name: 'Office for Health Affairs'
+parent_unit: 'Office for Health Affairs'
+parent_url: ''
+privacy_link: 'https://privacy.umn.edu'
+footer_date: '0'
+enable_full_width_caption: 0

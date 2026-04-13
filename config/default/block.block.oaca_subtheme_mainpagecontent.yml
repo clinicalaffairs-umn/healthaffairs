@@ -1,0 +1,20 @@
+uuid: 22f5e0f5-3a5f-4dd0-a534-0f64afe94bec
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - oaca_subtheme
+id: oaca_subtheme_mainpagecontent
+theme: oaca_subtheme
+region: content
+weight: -2
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

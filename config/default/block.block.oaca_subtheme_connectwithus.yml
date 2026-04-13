@@ -1,0 +1,23 @@
+uuid: c8e5384b-ad94-4050-bd22-a0c402886d32
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:social_media:7e449dbb-250f-4050-b185-4de9e395b554'
+  module:
+    - block_content
+  theme:
+    - oaca_subtheme
+id: oaca_subtheme_connectwithus
+theme: oaca_subtheme
+region: footer_bottom
+weight: -4
+provider: null
+plugin: 'block_content:7e449dbb-250f-4050-b185-4de9e395b554'
+settings:
+  id: 'block_content:7e449dbb-250f-4050-b185-4de9e395b554'
+  label: 'Connect with Us'
+  label_display: visible
+  provider: block_content
+  view_mode: full
+visibility: {  }

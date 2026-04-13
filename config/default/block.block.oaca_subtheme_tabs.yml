@@ -1,0 +1,20 @@
+uuid: 1d2bf7c9-83fe-4d4d-a1be-7b39e2d7de1f
+langcode: en
+status: true
+dependencies:
+  theme:
+    - oaca_subtheme
+id: oaca_subtheme_tabs
+theme: oaca_subtheme
+region: content
+weight: -5
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility: {  }

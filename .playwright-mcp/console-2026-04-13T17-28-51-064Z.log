@@ -1,0 +1,20 @@
+[    2917ms] TypeError: a.isArray is not a function
+    at D.apply (https://healthaffairs.ddev.site:33001/sites/default/themes/custom/oaca_subtheme/js/select2/select2.min.js?v=4.0.3:2:19910)
+    at new e (https://healthaffairs.ddev.site:33001/sites/default/themes/custom/oaca_subtheme/js/select2/select2.min.js?v=4.0.3:2:21585)
+    at new e (https://healthaffairs.ddev.site:33001/sites/default/themes/custom/oaca_subtheme/js/select2/select2.min.js?v=4.0.3:2:23638)
+    at HTMLSelectElement.<anonymous> (https://healthaffairs.ddev.site:33001/sites/default/themes/custom/oaca_subtheme/js/select2/select2.min.js?v=4.0.3:3:695)
+    at T.each (https://healthaffairs.ddev.site:33001/core/assets/vendor/jquery/jquery.min.js?v=4.0.0:2:2869)
+    at T.fn.init.each (https://healthaffairs.ddev.site:33001/core/assets/vendor/jquery/jquery.min.js?v=4.0.0:2:1379)
+    at a.fn.select2 (https://healthaffairs.ddev.site:33001/sites/default/themes/custom/oaca_subtheme/js/select2/select2.min.js?v=4.0.3:3:655)
+    at HTMLSelectElement.<anonymous> (https://healthaffairs.ddev.site:33001/sites/default/themes/custom/oaca_subtheme/js/forms.js?v=4.0.3:8:26)
+    at T.each (https://healthaffairs.ddev.site:33001/core/assets/vendor/jquery/jquery.min.js?v=4.0.0:2:2869)
+    at T.fn.init.each (https://healthaffairs.ddev.site:33001/core/assets/vendor/jquery/jquery.min.js?v=4.0.0:2:1379)
+[    2939ms] SyntaxError: Failed to execute 'querySelectorAll' on 'Document': '#edit-field-categories-target-id option:selected' is not a valid selector.
+    at i (https://healthaffairs.ddev.site:33001/core/assets/vendor/once/once.min.js?v=1.0.1:2:638)
+    at a (https://healthaffairs.ddev.site:33001/core/assets/vendor/once/once.min.js?v=1.0.1:2:1034)
+    at Object.attach (https://healthaffairs.ddev.site:33001/sites/default/themes/custom/oaca_subtheme/js/views.js?tdfy91:7:6)
+    at https://healthaffairs.ddev.site:33001/core/misc/drupal.js?v=11.3.3:166:24
+    at Array.forEach (<anonymous>)
+    at Drupal.attachBehaviors (https://healthaffairs.ddev.site:33001/core/misc/drupal.js?v=11.3.3:162:34)
+    at https://healthaffairs.ddev.site:33001/core/misc/drupal.init.js?v=11.3.3:32:12
+    at HTMLDocument.listener (https://healthaffairs.ddev.site:33001/core/misc/drupal.init.js?v=11.3.3:20:7)

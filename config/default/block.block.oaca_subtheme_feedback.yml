@@ -1,0 +1,23 @@
+uuid: 8f87a0fc-05f3-4afe-8d24-475ac20ae679
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:text:60147351-824b-4baf-92d6-71cf410a0cbc'
+  module:
+    - block_content
+  theme:
+    - oaca_subtheme
+id: oaca_subtheme_feedback
+theme: oaca_subtheme
+region: footer_bottom
+weight: -3
+provider: null
+plugin: 'block_content:60147351-824b-4baf-92d6-71cf410a0cbc'
+settings:
+  id: 'block_content:60147351-824b-4baf-92d6-71cf410a0cbc'
+  label: Feedback
+  label_display: '0'
+  provider: block_content
+  view_mode: full
+visibility: {  }

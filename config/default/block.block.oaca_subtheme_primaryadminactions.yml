@@ -1,0 +1,18 @@
+uuid: b986c5d4-ca4b-4039-bbe7-f951908bd677
+langcode: en
+status: true
+dependencies:
+  theme:
+    - oaca_subtheme
+id: oaca_subtheme_primaryadminactions
+theme: oaca_subtheme
+region: content
+weight: -3
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

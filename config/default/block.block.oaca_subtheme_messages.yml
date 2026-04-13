@@ -1,0 +1,20 @@
+uuid: 27eae092-92b7-48a4-b2c6-b59374d3117c
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - oaca_subtheme
+id: oaca_subtheme_messages
+theme: oaca_subtheme
+region: featured
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status Messages'
+  label_display: '0'
+  provider: system
+visibility: {  }

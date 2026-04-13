@@ -1,0 +1,143 @@
+- generic [active] [ref=e1]:
+  - text:      
+  - generic [ref=e3]:
+    - link "Skip to main content" [ref=e4] [cursor=pointer]:
+      - /url: "#content"
+    - banner [ref=e5]:
+      - generic:
+        - generic:
+          - link "Go to the University of Minnesota Twin Cities home page" [ref=e6] [cursor=pointer]:
+            - /url: https://twin-cities.umn.edu
+          - link "One Stop" [ref=e7] [cursor=pointer]:
+            - /url: https://onestop.umn.edu
+          - link "MyU" [ref=e8] [cursor=pointer]:
+            - /url: http://www.myu.umn.edu
+            - text: MyU
+        - generic [ref=e12]:
+          - generic [ref=e13]: Search
+          - textbox "search" [ref=e14]:
+            - /placeholder: Search UMN
+    - document [ref=e16]:
+      - paragraph [ref=e19]:
+        - link "Office for Health Affairs" [ref=e20] [cursor=pointer]:
+          - /url: /
+      - banner [ref=e21]:
+        - generic [ref=e23]:
+          - text: 
+          - menu "Menu" [ref=e25]:
+            - link "About » " [ref=e26] [cursor=pointer]:
+              - text: About
+              - generic [ref=e27]: » 
+            - link "Basic Page Parent » " [ref=e28] [cursor=pointer]:
+              - text: Basic Page Parent
+              - generic [ref=e29]: » 
+            - text: 
+            - link "News & Events » " [ref=e30] [cursor=pointer]:
+              - text: News & Events
+              - generic [ref=e31]: » 
+      - main [ref=e32]:
+        - article [ref=e36]:
+          - navigation "Breadcrumb" [ref=e40]:
+            - heading "Breadcrumb" [level=2] [ref=e41]
+            - list [ref=e42]:
+              - listitem [ref=e43]: News & Events 
+              - listitem [ref=e44]: News
+          - generic [ref=e46]:
+            - heading "News" [level=1] [ref=e49]
+            - paragraph [ref=e52]: Placeholder for news landing page
+          - generic [ref=e61]:
+            - generic [ref=e63]:
+              - generic [ref=e64]:
+                - generic [ref=e65]: Search by Keyword
+                - textbox "Search by Keyword" [ref=e66]
+              - generic [ref=e67]:
+                - generic [ref=e68]: Category
+                - combobox [ref=e69]
+                - combobox "- Any -" [ref=e72] [cursor=pointer]:
+                  - textbox "- Any -" [ref=e73]
+              - button "Apply" [ref=e75] [cursor=pointer]
+            - generic [ref=e76]:
+              - generic [ref=e79]:
+                - heading "News 3 schedule 12:15 non home global" [level=2] [ref=e80]:
+                  - link "News 3 schedule 12:15 non home global" [ref=e81] [cursor=pointer]:
+                    - /url: /news/news-3-schedule-1215-non-home-global
+                - time [ref=e83]: April 13, 2026
+                - generic [ref=e84]: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque…
+              - generic [ref=e85]:
+                - article [ref=e88]:
+                  - img "af afddsafdsd" [ref=e90]
+                - generic [ref=e92]:
+                  - heading "News Home 2 External Sust(link is external)" [level=2] [ref=e93]:
+                    - link "News Home 2 External Sust" [ref=e94] [cursor=pointer]:
+                      - /url: https://www.google.com
+                    - img "(link is external)" [ref=e95]
+                  - time [ref=e99]: April 13, 2026
+                  - generic [ref=e100]: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque…
+              - generic [ref=e101]:
+                - article [ref=e104]:
+                  - img "ads dadsfasf" [ref=e106]
+                - generic [ref=e108]:
+                  - heading "News Example Home" [level=2] [ref=e109]:
+                    - link "News Example Home" [ref=e110] [cursor=pointer]:
+                      - /url: /news/news-example-home
+                  - time [ref=e112]: April 13, 2026
+                  - generic [ref=e113]: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque…
+      - contentinfo [ref=e114]:
+        - generic [ref=e116]:
+          - generic [ref=e120]:
+            - heading "Office of Academic Clinical Affairs" [level=2] [ref=e121]
+            - paragraph [ref=e122]:
+              - text: 426 Church Street SE
+              - text: Minneapolis, MN 55455
+              - text: Reimagining Health for Minnesota
+          - generic [ref=e127]:
+            - generic [ref=e128]: Sign Up for Our Newsletter
+            - generic [ref=e130]:
+              - generic [ref=e131]:
+                - generic [ref=e132]: Email
+                - textbox "Email" [ref=e133]:
+                  - /placeholder: Email Address
+              - button "Submit" [ref=e135] [cursor=pointer]
+        - generic [ref=e137]:
+          - generic [ref=e138]:
+            - heading "Contact" [level=2] [ref=e139]
+            - paragraph [ref=e143]:
+              - text: 612-626-3700
+              - link "clinicalaffairs@umn.edu" [ref=e144] [cursor=pointer]:
+                - /url: mailto://clinicalaffairs@umn.edu
+          - generic [ref=e145]:
+            - heading "Connect with Us" [level=2] [ref=e146]
+            - list [ref=e150]:
+              - listitem [ref=e151]:
+                - link "Twitter" [ref=e152] [cursor=pointer]:
+                  - /url: https://twitter.com/UMNclinaffairs
+                  - img [ref=e153]
+              - listitem [ref=e155]:
+                - link "Youtube" [ref=e156] [cursor=pointer]:
+                  - /url: https://www.youtube.com/channel/UCpYWSUtt014rY_UgxpkytOQ
+                  - img [ref=e157]: 
+              - listitem [ref=e159]:
+                - link "LinkedIn" [ref=e160] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/showcase/office-of-academic-clinical-affairs
+                  - img [ref=e161]: 
+              - listitem [ref=e163]:
+                - link "Facebook" [ref=e164] [cursor=pointer]:
+                  - /url: https://www.facebook.com/UMNclinicalaffairs/
+                  - img [ref=e165]: 
+          - paragraph [ref=e171]:
+            - link "Website feedback" [ref=e172] [cursor=pointer]:
+              - /url: /form/contact
+    - contentinfo [ref=e173]:
+      - generic [ref=e174]:
+        - text: © 2026 Regents of the
+        - link "University of Minnesota" [ref=e175] [cursor=pointer]:
+          - /url: https://system.umn.edu
+        - img "(link is external)" [ref=e176]
+        - text: . All rights reserved. The University of Minnesota is an equal opportunity educator and employer.
+        - link "Privacy Statement" [ref=e179] [cursor=pointer]:
+          - /url: https://privacy.umn.edu
+        - img "(link is external)" [ref=e180]
+      - generic [ref=e183]:
+        - link "Report Web Accessibility Issues" [ref=e184] [cursor=pointer]:
+          - /url: https://umn.qualtrics.com/jfe/form/SV_6wXAi4TqHgDXJ5Q
+        - img "(link is external)" [ref=e185]

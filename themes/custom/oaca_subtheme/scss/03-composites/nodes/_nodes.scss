@@ -24,7 +24,7 @@
 /* GLOBAL
 ----------- */
 .path-node{
-	#block-oaca-subtheme-content > article{
+	#block-oaca-subtheme-mainpageconten > article{
 		padding-top: $spaceMd;
 		&#node-5056 {
 			padding-top: 0 !important;
@@ -50,7 +50,7 @@
 		.field--name-title{
 		}
 	}
-	.field--name-body{
+	.block-field-blocknodelanding-pagebody .field--name-body{
 		padding-bottom: $spaceSm;
 		@include edgeReset;
 	}
@@ -70,7 +70,7 @@
 /* HOME PAGE
 ----------------- */
 .path-frontpage{
-	#block-oaca-subtheme-content > article{
+	#block-oaca-subtheme-mainpageconten > article{
 		// padding-top: $elementSpace;
 	}
 	.layout__region:not(.ui-sortable){
@@ -322,7 +322,7 @@
 .page-node-type-news{
 
 	//only for the second region of the layout builder
-	#block-oaca-subtheme-content > article  > .layout--onecol:nth-child(2){
+	#block-oaca-subtheme-mainpageconten > article  > .layout--onecol:nth-child(2){
 		.layout__region--content{
 			@include onlySmall{
 				@include safeFlex(column,nowrap,start,start);
@@ -506,7 +506,7 @@
 .page-node-type-events{
 
 
-#block-oaca-subtheme-content > article  > .layout--onecol:nth-child(2){
+#block-oaca-subtheme-mainpageconten > article  > .layout--onecol:nth-child(2){
 		.layout__region--content{
 			@include onlySmall{
 				@include safeFlex(column,nowrap,start,start);
