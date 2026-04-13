@@ -14,8 +14,11 @@ dependencies:
     - field.field.node.events.field_smart_date
     - field.field.node.events.field_undisclosed
     - node.type.events
+  content:
+    - 'block_content:custom_breadcrumbs:247a3d7c-6810-41cd-b3b1-5d376a3b2cc0'
   module:
     - addtoany
+    - block_content
     - entity_reference_revisions
     - layout_builder
     - layout_builder_restrictions
@@ -30,6 +33,26 @@ third_party_settings:
     enabled: true
     allow_custom: false
     sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: 'Section 1'
+        components:
+          70b5830d-2cd8-4dfc-a3f6-59fbed615e65:
+            uuid: 70b5830d-2cd8-4dfc-a3f6-59fbed615e65
+            region: content
+            configuration:
+              id: 'block_content:247a3d7c-6810-41cd-b3b1-5d376a3b2cc0'
+              label: 'Event Breadcrumbs'
+              label_display: '0'
+              provider: block_content
+              context_mapping: {  }
+              status: true
+              info: ''
+              view_mode: full
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
       -
         layout_id: layout_onecol
         layout_settings:

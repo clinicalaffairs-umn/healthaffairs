@@ -23,8 +23,11 @@ dependencies:
     - field.field.node.staff.field_social_media_links
     - field.field.node.staff.field_staff_group
     - node.type.staff
+  content:
+    - 'block_content:custom_breadcrumbs:9cb71494-5449-42ee-ab6f-64c717bd6bb7'
   module:
     - address
+    - block_content
     - entity_reference_revisions
     - layout_builder
     - layout_discovery
@@ -39,6 +42,26 @@ third_party_settings:
     enabled: true
     allow_custom: false
     sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          af5bfc92-6454-48e5-9d06-9561badf8243:
+            uuid: af5bfc92-6454-48e5-9d06-9561badf8243
+            region: content
+            configuration:
+              id: 'block_content:9cb71494-5449-42ee-ab6f-64c717bd6bb7'
+              label: 'Staff Breadcrumbs'
+              label_display: '0'
+              provider: block_content
+              context_mapping: {  }
+              status: true
+              info: ''
+              view_mode: full
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
       -
         layout_id: two_column_sidebar_left_split
         layout_settings:
