@@ -3,7 +3,6 @@ langcode: en
 status: true
 dependencies:
   module:
-    - contact
     - media
     - paragraphs_type_permissions
     - system
@@ -15,7 +14,6 @@ weight: 0
 is_admin: false
 permissions:
   - 'access content'
-  - 'access site-wide contact form'
   - 'view media'
   - 'view paragraph content a11y_paragraphs_tab_content'
   - 'view paragraph content a11y_paragraphs_tabs_panel'
