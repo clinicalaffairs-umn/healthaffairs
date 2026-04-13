@@ -19,32 +19,32 @@ bundle: folwell_transparent_overlay_call
 mode: default
 content:
   field_fa_text_item_body:
+    type: text_textarea
     weight: 1
+    region: content
     settings:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
-    type: text_textarea
-    region: content
   field_fw_callout_image:
+    type: media_library_widget
     weight: 0
+    region: content
     settings:
       media_types: {  }
     third_party_settings: {  }
-    type: media_library_widget
-    region: content
   field_fw_overlay_placement:
+    type: options_select
     weight: 3
+    region: content
     settings: {  }
     third_party_settings: {  }
-    type: options_select
-    region: content
   field_fw_overlaycallout_bg_color:
+    type: options_select
     weight: 2
+    region: content
     settings: {  }
     third_party_settings: {  }
-    type: options_select
-    region: content
 hidden:
   created: true
   status: true

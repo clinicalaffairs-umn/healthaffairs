@@ -47,7 +47,6 @@ module:
   entity_block: 0
   entity_embed: 0
   entity_reference_revisions: 0
-  environment_indicator: 0
   extlink: 0
   fakeobjects: 0
   field: 0
@@ -79,11 +78,8 @@ module:
   google_tag: 0
   help: 0
   honeypot: 0
-  iframe: 0
   image: 0
   image_style_quality: 0
-  image_widget_crop: 0
-  imagick: 0
   inline_entity_form: 0
   inline_form_errors: 0
   jquery_ui: 0
@@ -95,13 +91,8 @@ module:
   layout_builder_styles: 0
   layout_discovery: 0
   layout_library: 0
-  lightning_banner_block: 0
-  lightning_contact_form: 0
   lightning_core: 0
-  lightning_landing_page: 0
   lightning_layout: 0
-  lightning_map_block: 0
-  lightning_page: 0
   lightning_scheduler: 0
   lightning_umn_folwell: 0
   lightning_umn_module_status: 0
@@ -126,21 +117,17 @@ module:
   mysql: 0
   mysql57: 0
   node: 0
-  node_storage_body_field: 0
   options: 0
   page_cache: 0
   paragraphs_type_permissions: 0
   path: 0
   path_alias: 0
-  radix_layouts: 0
-  rdf: 0
   redirect: 0
   responsive_image: 0
   responsive_menu: 0
   robotstxt: 0
   role_delegation: 0
   scheduler: 0
-  select_or_other: 0
   shortcut: 0
   simple_gmap: 0
   slick: 0
@@ -161,7 +148,6 @@ module:
   trash: 0
   twig_tweak: 0
   umn_search: 0
-  umn_superfish: 0
   user: 0
   views_block_placement_exposed_form_defaults: 0
   views_infinite_scroll: 0

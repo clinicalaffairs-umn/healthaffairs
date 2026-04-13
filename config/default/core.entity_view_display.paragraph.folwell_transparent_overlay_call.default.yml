@@ -19,27 +19,27 @@ bundle: folwell_transparent_overlay_call
 mode: default
 content:
   field_fa_text_item_body:
-    weight: 1
+    type: text_default
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: text_default
+    weight: 1
     region: content
   field_fw_callout_image:
-    weight: 0
+    type: entity_reference_entity_view
     label: hidden
     settings:
-      link: true
       view_mode: default
+      link: true
     third_party_settings: {  }
-    type: entity_reference_entity_view
+    weight: 0
     region: content
   field_fw_overlaycallout_bg_color:
     type: list_default
-    weight: 2
-    region: content
     label: above
     settings: {  }
     third_party_settings: {  }
+    weight: 2
+    region: content
 hidden:
   field_fw_overlay_placement: true

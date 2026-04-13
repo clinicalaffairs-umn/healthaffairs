@@ -14,7 +14,7 @@ media_types:
   remote_video: remote_video
   tweet: tweet
   video: video
-show_alt: null
-show_title: null
 form_mode: ''
 upload_location: ''
+show_alt: null
+show_title: null
