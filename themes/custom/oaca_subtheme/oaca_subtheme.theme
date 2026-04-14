@@ -80,14 +80,6 @@ function oaca_subtheme_preprocess_block(&$variables) {
 
 }
 
-/**
- * Implements hook_page_attachments_alter().
- */
-function oaca_subtheme_page_attachments_alter(array &$attachments) {
-  $theme_handler = \Drupal::service('extension.list.theme');
-  $attachments['#attached']['drupalSettings']['oaca_subtheme']['themePath'] = $theme_handler->getPath('oaca_subtheme');
-}
-
   /**
  * Implements hook_preprocess_html.
  */

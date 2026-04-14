@@ -74,7 +74,7 @@
     attach: function() {
     	$(document).ready(function(){
 	      $('.mm-navbar.wordmarked img').each(function(){
-	      	$(this).attr('src', '/' + drupalSettings.oaca_subtheme.themePath + '/images/gold-M.svg');
+	      	$(this).attr('src', '/sites/healthaffairs.umn.edu/themes/custom/oaca_subtheme/images/gold-M.svg');
 	      });
 	    });
 	  }
