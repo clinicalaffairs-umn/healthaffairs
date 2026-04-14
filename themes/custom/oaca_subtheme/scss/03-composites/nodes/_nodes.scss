@@ -302,7 +302,11 @@
 		}
 		a{
 			font-size: $socialIcons;
+      & + svg.ext {
+        display: none;
+      }
 		}
+
 	}
 	.field--name-body{
 		@include tab{

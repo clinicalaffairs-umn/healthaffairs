@@ -539,6 +539,14 @@
 			width: calc(100% - 365px);
 			max-width: 800px;
 		}
+    h2 {
+      a,svg.ext {
+        display: inline-block;
+      }
+      svg {
+        margin-left: .25em;
+      }
+    }
 	}
 }//end text & image
 
@@ -606,6 +614,12 @@
 
 		.portal-title h3 {
 			margin-bottom: $spaceSm;
+      a,svg.ext {
+        display: inline-block;
+      }
+      svg {
+        margin-left: .25em;
+      }
 		}
 
 		@supports (display:grid) {
@@ -663,6 +677,9 @@
 				color: $lightRed;
 				font-size: 18px;
 				margin-bottom: $spaceSm;
+        a,svg.ext {
+          display: inline-block;
+        }
 			}
 
 		}

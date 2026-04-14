@@ -191,3 +191,15 @@ function citizen_custom_views_pre_view($view, $display_id, &$args) {
   } // End Paragraphs 'X by Category' Views.
 
 } // End views_pre_view.
+
+/**
+ * Implements hook_entity_insert().
+ *
+ * Invalidate render cache for new staff nodes so the auto entity label
+ * placeholder is replaced with the resolved title on first view.
+ */
+function citizen_custom_entity_insert(\Drupal\Core\Entity\EntityInterface $entity) {
+  if ($entity->getEntityTypeId() === 'node' && $entity->bundle() === 'staff') {
+    \Drupal\Core\Cache\Cache::invalidateTags(['node:' . $entity->id()]);
+  }
+}
