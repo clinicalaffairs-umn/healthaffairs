@@ -3,7 +3,7 @@ _core:
 langcode: en
 uuid: 53cf1114-5c35-4ec0-893c-0062f787b152
 name: 'Office for Health Affairs'
-mail: dlv@umn.edu
+mail: healthaffairs@umn.edu
 slogan: ''
 page:
   403: ''
